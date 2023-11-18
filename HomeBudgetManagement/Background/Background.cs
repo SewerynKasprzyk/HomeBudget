@@ -10,6 +10,6 @@ namespace Background
 {
     internal class Background
     {
-        private int _count = 0;
+
     }
 }
