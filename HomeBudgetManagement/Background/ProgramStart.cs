@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Background
 {
-    internal class ProgramStart
+    public class ProgramStart
     {
+        
     }
 }
