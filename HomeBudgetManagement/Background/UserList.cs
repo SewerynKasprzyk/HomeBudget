@@ -11,12 +11,12 @@ namespace Background
     {
         public static List<User> Users { get => users; set => users = value; }
 
-        public static void addToList(User user)
+        public static void AddToList(User user)
         { 
             users.Add(user);
         }
 
-        public static void removeFromList(String id)
+        public static void RemoveFromList(String id)
         {
             foreach (User user in users)
             {

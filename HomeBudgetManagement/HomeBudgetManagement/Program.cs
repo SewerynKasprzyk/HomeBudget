@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Background;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,6 +18,7 @@ namespace HomeBudgetManagement
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+            FirstConfiguration firstConfiguration = new FirstConfiguration();
         }
     }
 }
