@@ -8,9 +8,10 @@ namespace Background
 {
     public class User
     {
-        public User(String name, String surname, String password, int accessLevel)
+        public User(String name, String surname, String login, String password, int accessLevel)
         {
             this.name = name;
+            this.login = login;
             this.surname = surname;
             this.password = password;
             this.accessLevel = accessLevel; // 0 indicates user have guest access level
