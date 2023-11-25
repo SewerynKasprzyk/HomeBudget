@@ -9,8 +9,6 @@ namespace Background
 {
     public static class UserList
     {
-        private static List<User> users;
-
         public static List<User> Users { get => users; set => users = value; }
 
         public static void addToList(User user)
@@ -28,8 +26,8 @@ namespace Background
                     return;
                 }
             }
-    
         }
-        
+
+        private static List<User> users;
     }
 }
