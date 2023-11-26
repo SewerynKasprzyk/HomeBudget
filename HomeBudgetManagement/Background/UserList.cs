@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,13 +19,18 @@ namespace Background
 
         public static void RemoveFromList(String id)
         {
+            users.Remove(FindUser(id));
+        }
+
+        public static User FindUser(String userId)
+        {
             foreach (User user in users)
             {
-                if(user.Id == id) 
-                {
-                    users.Remove(user);
-                }
+                if (userId == user.Id)
+                {  return user; }
             }
+
+            return null;
         }
 
         private static List<User> users;
