@@ -23,7 +23,6 @@ namespace Background
                 if(user.Id == id) 
                 {
                     users.Remove(user);
-                    return;
                 }
             }
         }
