@@ -18,7 +18,7 @@ namespace Background
             {
                 if (confirmFirstPassword == firstPassword) 
                 {
-                    User adminUser = new User(firstName, firstSurname, firstLogin, firstPassword, 2);
+                    User adminUser = new User(firstLogin, firstPassword, 2);
                     UserList.AddToList(adminUser);
                     performed = true;
                     return true;

@@ -15,8 +15,5 @@ namespace Background
             user = UserList.FindUser(userId);
         }
 
-
-
-
     }
 }

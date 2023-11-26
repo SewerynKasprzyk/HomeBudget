@@ -12,7 +12,7 @@ namespace Background
     {
         //return user
         //if Authenticate failed returns basic user with access level 0
-        public static User Authenticate(string login, string password)
+        public static String Authenticate(string login, string password)
         {
             List<User> users = UserList.Users;
 
@@ -20,11 +20,11 @@ namespace Background
             { 
                 if(user.Login == login && user.Password == password)
                 {
-                    return user;
+                    return user.Id;
                 }
             }
 
-            return new User();
+            return null;
         }
 
         /*
