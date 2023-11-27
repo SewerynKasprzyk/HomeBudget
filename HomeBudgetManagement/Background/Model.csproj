@@ -44,7 +44,7 @@
     <Compile Include="Account.cs" />
     <Compile Include="AccountList.cs" />
     <Compile Include="AccountManager.cs" />
-    <Compile Include="Category.cs" />
+    <Compile Include="Categories.cs" />
     <Compile Include="Configuration.cs" />
     <Compile Include="Expenses.cs" />
     <Compile Include="Login.cs" />
