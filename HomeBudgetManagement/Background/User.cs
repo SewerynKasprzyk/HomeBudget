@@ -22,6 +22,11 @@ namespace Background
             this.accessLevel = 0;
         }
 
+        void PassowrdChange(String newPassword)
+        {
+            this.password= newPassword;
+        }
+
         public string Id { get => id; set => id = value; }
         public string Password { get => password; set => password = value; }
         public int AccessLevel { get => accessLevel; set => accessLevel = value; }
