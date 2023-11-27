@@ -98,15 +98,14 @@ namespace Background
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public List<Category> Zywnosc { get; set; }
-        public List<Category> Mieszkanie { get; set; }
-        public List<Category> Transport { get; set; }
-        public List<Category> OpiekaZdrowotna { get; set; }
-        public List<Category> Edukacja { get; set; }
-        public List<Category> Rozrywka { get; set; }
-        public List<Category> OdziezIDom { get; set; }
-        public List<Category> Inne { get; set; }
-
+        public List<Category> Grocery { get; set; }
+        public List<Category> Housing { get; set; }
+        public List<Category> Transportation { get; set; }
+        public List<Category> Healthcare { get; set; }
+        public List<Category> Education { get; set; }
+        public List<Category> Entertainment { get; set; }
+        public List<Category> ClothingAndHome { get; set; }
+        public List<Category> Other { get; set; }
         public Category(string name)
         {
             Id = ++globalId;
@@ -117,59 +116,59 @@ namespace Background
         {
             Category categories = new Category("Categories");
 
-            categories.Zywnosc = new List<Category>
+            categories.Grocery = new List<Category>
             {
-                new Category("Żakupy spożywcze"),
-                new Category("Posiłki poza domem")
+                new Category("Grocery shopping"),
+                new Category("Meals outside home")
             };
 
-            categories.Mieszkanie = new List<Category>
+            categories.Housing = new List<Category>
             {
-                new Category("Wynajem/miesięczna rata kredytu hipotecznego"),
-                new Category("Opłaty za media (prąd, gaz, woda, internet)"),
-                new Category("Ubezpieczenie mieszkania")
+                new Category("Rent/mortgage monthly installment"),
+                new Category("Utilities (electricity, gas, water, internet)"),
+                new Category("Home insurance")
             };
 
-            categories.Transport = new List<Category>
+            categories.Transportation = new List<Category>
             {
-                new Category("Paliwo"),
-                new Category("Opłaty za parking"),
-                new Category("Ubezpieczenie samochodu"),
-                new Category("Przeglądy techniczne i naprawy")
+                new Category("Fuel"),
+                new Category("Parking fees"),
+                new Category("Car insurance"),
+                new Category("Technical inspections and repairs")
             };
 
-            categories.OpiekaZdrowotna = new List<Category>
+            categories.Healthcare = new List<Category>
             {
-                new Category("Składki na ubezpieczenie zdrowotne"),
-                new Category("Wizyty u lekarza"),
-                new Category("Leki i suplementy")
+                new Category("Health insurance premiums"),
+                new Category("Doctor's visits"),
+                new Category("Medications and supplements")
             };
 
-            categories.Edukacja = new List<Category>
+            categories.Education = new List<Category>
             {
-                new Category("Opłaty za szkołę"),
-                new Category("Kursy lub szkolenia dodatkowe"),
-                new Category("Materiały edukacyjne")
+                new Category("School fees"),
+                new Category("Courses or additional training"),
+                new Category("Educational materials")
             };
 
-            categories.Rozrywka = new List<Category>
+            categories.Entertainment = new List<Category>
             {
-                new Category("Filmy, koncerty, wydarzenia kulturalne"),
-                new Category("Subskrypcje usług streamingowych"),
-                new Category("Wyjścia")
+                new Category("Movies, concerts, cultural events"),
+                new Category("Streaming service subscriptions"),
+                new Category("Entertainment outings")
             };
 
-            categories.OdziezIDom = new List<Category>
+            categories.ClothingAndHome = new List<Category>
             {
-                new Category("Zakupy odzieży"),
-                new Category("Meble i dekoracje"),
-                new Category("Sprzęt AGD i RTV")
+                new Category("Clothing purchases"),
+                new Category("Furniture and decorations"),
+                new Category("Home appliances and electronics")
             };
 
-            categories.Inne = new List<Category>
+            categories.Other = new List<Category>
             {
-                new Category("Wydatki związane z zwierzętami domowymi"),
-                new Category("Nieprzewidziane wydatki")
+                new Category("Expenses related to pets"),
+                new Category("Unforeseen expenses")
             };
 
             return categories;
