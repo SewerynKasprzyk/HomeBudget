@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account.cs" />
+    <Compile Include="AccountList.cs" />
     <Compile Include="AccountManager.cs" />
     <Compile Include="Configuration.cs" />
     <Compile Include="Login.cs" />
