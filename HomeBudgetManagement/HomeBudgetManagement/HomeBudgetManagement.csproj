@@ -77,9 +77,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Background\Background.csproj">
+    <ProjectReference Include="..\Background\Model.csproj">
       <Project>{b1615fb5-1eae-4168-bf2d-edc5b7941a2c}</Project>
-      <Name>Background</Name>
+      <Name>Model</Name>
     </ProjectReference>
     <ProjectReference Include="..\Database\Database.csproj">
       <Project>{099bcabb-4328-4f6f-840e-c16ea25da0ee}</Project>

@@ -5,7 +5,7 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeBudgetManagement", "HomeBudgetManagement\HomeBudgetManagement.csproj", "{6F477B2E-0C87-47A3-9683-FFF8E5C84DCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Background", "Background\Background.csproj", "{B1615FB5-1EAE-4168-BF2D-EDC5B7941A2C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Background\Model.csproj", "{B1615FB5-1EAE-4168-BF2D-EDC5B7941A2C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{099BCABB-4328-4F6F-840E-C16EA25DA0EE}"
 EndProject
