@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HomeBudgetManagement.User;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,8 +17,9 @@ namespace HomeBudgetManagement
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new User());
-            //Application.Run(new Client());
+            //Application.Run(new User_menu());
+            Application.Run(new Client());
+            //Application.Run(new Finance_Raport());
         }
     }
 }

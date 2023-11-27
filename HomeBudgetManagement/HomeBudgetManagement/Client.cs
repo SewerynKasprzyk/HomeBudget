@@ -30,8 +30,8 @@ namespace HomeBudgetManagement
                     throw new Exception("Pole tekstowe nie może być puste.");
                 }
 
-                User user = new User();
-                user.Show();
+                User_menu user_menu = new User_menu();
+                user_menu.Show();
             }
             catch (Exception ex)
             {
