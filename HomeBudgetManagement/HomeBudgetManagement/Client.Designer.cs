@@ -1,6 +1,6 @@
 ﻿namespace HomeBudgetManagement
 {
-    partial class Klient
+    partial class Client
     {
         /// <summary>
         /// Required designer variable.

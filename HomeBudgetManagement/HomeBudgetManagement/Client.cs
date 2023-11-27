@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HomeBudgetManagement
 {
-    public partial class Klient : Form
+    public partial class Client : Form
     {
-        public Klient()
+        public Client()
         {
             InitializeComponent();
         }
