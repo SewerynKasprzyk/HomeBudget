@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="Account.cs" />
     <Compile Include="AccountManager.cs" />
+    <Compile Include="Budget.cs" />
+    <Compile Include="BudgetList.cs" />
     <Compile Include="Configuration.cs" />
     <Compile Include="Login.cs" />
     <Compile Include="ProgramStart.cs" />
