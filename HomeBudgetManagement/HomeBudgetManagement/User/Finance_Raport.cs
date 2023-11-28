@@ -37,5 +37,10 @@ namespace HomeBudgetManagement.User
             User_menu user_menu = new User_menu();
             user_menu.Show();
         }
+
+        private void BudgetStateManagement_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
