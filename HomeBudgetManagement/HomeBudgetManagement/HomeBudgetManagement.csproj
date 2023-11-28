@@ -74,20 +74,6 @@
     </Compile>
     <EmbeddedResource Include="Client.resx">
       <DependentUpon>Client.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AdminAddingFounds.resx">
-      <DependentUpon>AdminAddingFounds.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BudgetReview.resx">
-      <DependentUpon>BudgetReview.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BudgetStateManagement.resx">
-      <DependentUpon>BudgetStateManagement.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LimitsModification.resx">
-      <DependentUpon>LimitsModification.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
