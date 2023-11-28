@@ -46,7 +46,8 @@
     <Compile Include="Category.cs" />
     <Compile Include="CategoryList.cs" />
     <Compile Include="Configuration.cs" />
-    <Compile Include="Expenses.cs" />
+    <Compile Include="ExpensesIncomes.cs" />
+    <Compile Include="ExpensesIncomesList.cs" />
     <Compile Include="Login.cs" />
     <Compile Include="ProgramStart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
