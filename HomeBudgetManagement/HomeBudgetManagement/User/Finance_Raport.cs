@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HomeBudgetManagement.User
+namespace HomeBudgetManagement.UserForm
 {
     public partial class Finance_Raport : Form
     {

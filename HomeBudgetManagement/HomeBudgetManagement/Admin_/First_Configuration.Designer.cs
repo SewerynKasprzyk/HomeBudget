@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.login = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.labelLogin = new System.Windows.Forms.TextBox();
+            this.labelPassword = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,27 +49,26 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "First configuration ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // login
+            // labelLogin
             // 
-            this.login.BackColor = System.Drawing.Color.DimGray;
-            this.login.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.login.Location = new System.Drawing.Point(237, 168);
-            this.login.Name = "login";
-            this.login.Size = new System.Drawing.Size(323, 26);
-            this.login.TabIndex = 3;
+            this.labelLogin.BackColor = System.Drawing.Color.DimGray;
+            this.labelLogin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelLogin.Location = new System.Drawing.Point(237, 168);
+            this.labelLogin.Name = "labelLogin";
+            this.labelLogin.Size = new System.Drawing.Size(323, 26);
+            this.labelLogin.TabIndex = 3;
             // 
-            // textBox1
+            // labelPassword
             // 
-            this.textBox1.BackColor = System.Drawing.Color.DimGray;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox1.Location = new System.Drawing.Point(237, 248);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(323, 26);
-            this.textBox1.TabIndex = 4;
+            this.labelPassword.BackColor = System.Drawing.Color.DimGray;
+            this.labelPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelPassword.Location = new System.Drawing.Point(237, 248);
+            this.labelPassword.Name = "labelPassword";
+            this.labelPassword.Size = new System.Drawing.Size(323, 26);
+            this.labelPassword.TabIndex = 4;
             // 
             // label4
             // 
@@ -126,6 +125,7 @@
             this.button1.TabIndex = 10;
             this.button1.Text = "Confirm";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // First_Configuration
             // 
@@ -138,8 +138,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.login);
+            this.Controls.Add(this.labelPassword);
+            this.Controls.Add(this.labelLogin);
             this.Controls.Add(this.label1);
             this.Name = "First_Configuration";
             this.Text = "System_Configuration";
@@ -151,8 +151,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox login;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox labelLogin;
+        private System.Windows.Forms.TextBox labelPassword;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

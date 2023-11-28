@@ -29,24 +29,22 @@
         private void InitializeComponent()
         {
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.listViewUser = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.labelName = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.login = new System.Windows.Forms.TextBox();
+            this.textfieldCreate = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonCreate = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.buttonPowerAdd = new System.Windows.Forms.Button();
+            this.buttonDelete = new System.Windows.Forms.Button();
+            this.buttonPowerRemove = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -62,19 +60,14 @@
             this.label2.Text = "User account management";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox1
+            // listViewUser
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.DimGray;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Maciek",
-            "Basia",
-            "Marek",
-            "Kuba"});
-            this.comboBox1.Location = new System.Drawing.Point(27, 129);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(175, 21);
-            this.comboBox1.TabIndex = 3;
+            this.listViewUser.BackColor = System.Drawing.Color.DimGray;
+            this.listViewUser.FormattingEnabled = true;
+            this.listViewUser.Location = new System.Drawing.Point(27, 129);
+            this.listViewUser.Name = "listViewUser";
+            this.listViewUser.Size = new System.Drawing.Size(175, 21);
+            this.listViewUser.TabIndex = 3;
             // 
             // label1
             // 
@@ -124,17 +117,17 @@
             this.label5.Text = "Income:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label6
+            // labelName
             // 
-            this.label6.AutoSize = true;
-            this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(152, 166);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(98, 25);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "<Name>";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelName.AutoSize = true;
+            this.labelName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelName.Location = new System.Drawing.Point(152, 166);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(98, 25);
+            this.labelName.TabIndex = 8;
+            this.labelName.Text = "<Name>";
+            this.labelName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
             // 
@@ -172,15 +165,15 @@
             this.label9.Text = "Create new user";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // login
+            // textfieldCreate
             // 
-            this.login.BackColor = System.Drawing.Color.DimGray;
-            this.login.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.login.Location = new System.Drawing.Point(486, 93);
-            this.login.Name = "login";
-            this.login.Size = new System.Drawing.Size(231, 26);
-            this.login.TabIndex = 12;
+            this.textfieldCreate.BackColor = System.Drawing.Color.DimGray;
+            this.textfieldCreate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textfieldCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textfieldCreate.Location = new System.Drawing.Point(486, 93);
+            this.textfieldCreate.Name = "textfieldCreate";
+            this.textfieldCreate.Size = new System.Drawing.Size(231, 26);
+            this.textfieldCreate.TabIndex = 12;
             // 
             // label10
             // 
@@ -194,17 +187,18 @@
             this.label10.Text = "Name:";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // buttonCreate
             // 
-            this.button1.BackColor = System.Drawing.Color.DimGray;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.Location = new System.Drawing.Point(504, 129);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(107, 37);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Create";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonCreate.BackColor = System.Drawing.Color.DimGray;
+            this.buttonCreate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonCreate.Location = new System.Drawing.Point(504, 129);
+            this.buttonCreate.Name = "buttonCreate";
+            this.buttonCreate.Size = new System.Drawing.Size(107, 37);
+            this.buttonCreate.TabIndex = 14;
+            this.buttonCreate.Text = "Create";
+            this.buttonCreate.UseVisualStyleBackColor = false;
+            this.buttonCreate.Click += new System.EventHandler(this.buttonCreate_Click);
             // 
             // label11
             // 
@@ -218,67 +212,42 @@
             this.label11.Text = "Add/Remove admin previlages to user";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox2
+            // buttonPowerAdd
             // 
-            this.comboBox2.BackColor = System.Drawing.Color.DimGray;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Maciek",
-            "Basia",
-            "Marek",
-            "Kuba"});
-            this.comboBox2.Location = new System.Drawing.Point(506, 248);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(175, 21);
-            this.comboBox2.TabIndex = 16;
+            this.buttonPowerAdd.BackColor = System.Drawing.Color.DimGray;
+            this.buttonPowerAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonPowerAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonPowerAdd.Location = new System.Drawing.Point(469, 256);
+            this.buttonPowerAdd.Name = "buttonPowerAdd";
+            this.buttonPowerAdd.Size = new System.Drawing.Size(107, 37);
+            this.buttonPowerAdd.TabIndex = 18;
+            this.buttonPowerAdd.Text = "Add";
+            this.buttonPowerAdd.UseVisualStyleBackColor = false;
             // 
-            // label12
+            // buttonDelete
             // 
-            this.label12.AutoSize = true;
-            this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label12.Location = new System.Drawing.Point(392, 245);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(121, 24);
-            this.label12.TabIndex = 17;
-            this.label12.Text = "Select user ";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonDelete.BackColor = System.Drawing.Color.DimGray;
+            this.buttonDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonDelete.Location = new System.Drawing.Point(68, 256);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(107, 37);
+            this.buttonDelete.TabIndex = 19;
+            this.buttonDelete.Text = "Delete";
+            this.buttonDelete.UseVisualStyleBackColor = false;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
-            // button2
+            // buttonPowerRemove
             // 
-            this.button2.BackColor = System.Drawing.Color.DimGray;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.Location = new System.Drawing.Point(435, 286);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(107, 37);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.DimGray;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button3.Location = new System.Drawing.Point(68, 256);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(107, 37);
-            this.button3.TabIndex = 19;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.DimGray;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button4.Location = new System.Drawing.Point(548, 286);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(107, 37);
-            this.button4.TabIndex = 20;
-            this.button4.Text = "Remove";
-            this.button4.UseVisualStyleBackColor = false;
+            this.buttonPowerRemove.BackColor = System.Drawing.Color.DimGray;
+            this.buttonPowerRemove.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonPowerRemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonPowerRemove.Location = new System.Drawing.Point(592, 256);
+            this.buttonPowerRemove.Name = "buttonPowerRemove";
+            this.buttonPowerRemove.Size = new System.Drawing.Size(107, 37);
+            this.buttonPowerRemove.TabIndex = 20;
+            this.buttonPowerRemove.Text = "Remove";
+            this.buttonPowerRemove.UseVisualStyleBackColor = false;
             // 
             // button5
             // 
@@ -298,24 +267,22 @@
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.buttonPowerRemove);
+            this.Controls.Add(this.buttonDelete);
+            this.Controls.Add(this.buttonPowerAdd);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonCreate);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.login);
+            this.Controls.Add(this.textfieldCreate);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.labelName);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.listViewUser);
             this.Controls.Add(this.label2);
             this.Name = "User_Account_Management";
             this.Text = "User_Account_Management";
@@ -327,24 +294,22 @@
         #endregion
 
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox listViewUser;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox login;
+        private System.Windows.Forms.TextBox textfieldCreate;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonCreate;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonPowerAdd;
+        private System.Windows.Forms.Button buttonDelete;
+        private System.Windows.Forms.Button buttonPowerRemove;
         private System.Windows.Forms.Button button5;
     }
 }

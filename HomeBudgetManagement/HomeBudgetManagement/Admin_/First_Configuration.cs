@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Background;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,9 +18,16 @@ namespace HomeBudgetManagement.Admin_
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
+            Configuration configuration = new Configuration();
 
+            //Demo
+            if (configuration.FirstConfiguration(labelLogin.Text, "  ", "  ", labelPassword.Text, labelPassword.Text))
+            {
+                Program.ChangeForm(typeof(Admin));
+            }
+            else { }
         }
     }
 }
