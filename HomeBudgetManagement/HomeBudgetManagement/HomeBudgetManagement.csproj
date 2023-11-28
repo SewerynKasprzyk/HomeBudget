@@ -46,11 +46,65 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin.cs">
+    <Compile Include="Admin_\Admin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin.Designer.cs">
+    <Compile Include="Admin_\Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_\AdminAddingFounds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_\AdminAddingFounds.designer.cs">
+      <DependentUpon>AdminAddingFounds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_\BudgetReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_\BudgetReview.designer.cs">
+      <DependentUpon>BudgetReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_\BudgetStateManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_\BudgetStateManagement.designer.cs">
+      <DependentUpon>BudgetStateManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_\CategoryReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_\CategoryReview.Designer.cs">
+      <DependentUpon>CategoryReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_\LimitsModification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_\LimitsModification.designer.cs">
+      <DependentUpon>LimitsModification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_\First_Configuration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_\First_Configuration.Designer.cs">
+      <DependentUpon>First_Configuration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_\System_Configuration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_\System_Configuration.Designer.cs">
+      <DependentUpon>System_Configuration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_\UserReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_\UserReview.Designer.cs">
+      <DependentUpon>UserReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_\User_Account_Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_\User_Account_Management.Designer.cs">
+      <DependentUpon>User_Account_Management.cs</DependentUpon>
     </Compile>
     <Compile Include="Client.cs">
       <SubType>Form</SubType>
@@ -60,11 +114,53 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\CreateGoal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\CreateGoal.Designer.cs">
+      <DependentUpon>CreateGoal.cs</DependentUpon>
+    </Compile>
     <Compile Include="User\Expense_Management.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="User\Expense_Management.Designer.cs">
       <DependentUpon>Expense_Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\FinancialGoalManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\FinancialGoalManagement.Designer.cs">
+      <DependentUpon>FinancialGoalManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\Limit_Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\Limit_Management.Designer.cs">
+      <DependentUpon>Limit_Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\ManageAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\ManageAccount.Designer.cs">
+      <DependentUpon>ManageAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\Manage_Account_Balance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\Manage_Account_Balance.Designer.cs">
+      <DependentUpon>Manage_Account_Balance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\ModifyGoals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\ModifyGoals.Designer.cs">
+      <DependentUpon>ModifyGoals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\PlanGoals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\PlanGoals.Designer.cs">
+      <DependentUpon>PlanGoals.cs</DependentUpon>
     </Compile>
     <Compile Include="User\User_menu.cs">
       <SubType>Form</SubType>
@@ -78,6 +174,36 @@
     <Compile Include="User\Finance_Raport.Designer.cs">
       <DependentUpon>Finance_Raport.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Admin_\Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_\AdminAddingFounds.resx">
+      <DependentUpon>AdminAddingFounds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_\BudgetReview.resx">
+      <DependentUpon>BudgetReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_\BudgetStateManagement.resx">
+      <DependentUpon>BudgetStateManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_\CategoryReview.resx">
+      <DependentUpon>CategoryReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_\LimitsModification.resx">
+      <DependentUpon>LimitsModification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_\First_Configuration.resx">
+      <DependentUpon>First_Configuration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_\System_Configuration.resx">
+      <DependentUpon>System_Configuration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_\UserReview.resx">
+      <DependentUpon>UserReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_\User_Account_Management.resx">
+      <DependentUpon>User_Account_Management.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Client.resx">
       <DependentUpon>Client.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,8 +216,29 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="User\CreateGoal.resx">
+      <DependentUpon>CreateGoal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User\Expense_Management.resx">
       <DependentUpon>Expense_Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\FinancialGoalManagement.resx">
+      <DependentUpon>FinancialGoalManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\Limit_Management.resx">
+      <DependentUpon>Limit_Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\ManageAccount.resx">
+      <DependentUpon>ManageAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\Manage_Account_Balance.resx">
+      <DependentUpon>Manage_Account_Balance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\ModifyGoals.resx">
+      <DependentUpon>ModifyGoals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\PlanGoals.resx">
+      <DependentUpon>PlanGoals.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User\User_menu.resx">
       <DependentUpon>User_menu.cs</DependentUpon>

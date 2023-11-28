@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HomeBudgetManagement.Admin_;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,6 +30,7 @@ namespace HomeBudgetManagement
                     // Obsługa błędu - jedno z pól tekstowych jest puste
                     throw new Exception("Pole tekstowe nie może być puste.");
                 }
+                
 
                 Program.ChangeForm(typeof(User_menu));
             }
@@ -58,6 +60,21 @@ namespace HomeBudgetManagement
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Program.ChangeForm(typeof(First_Configuration));
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Program.ChangeForm(typeof(Admin));
         }
     }
 }

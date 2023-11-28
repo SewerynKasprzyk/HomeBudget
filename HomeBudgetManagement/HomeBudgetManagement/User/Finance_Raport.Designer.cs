@@ -160,6 +160,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Finance_Raport";
             this.Text = "Finance Raport";
+            this.Load += new System.EventHandler(this.Finance_Raport_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

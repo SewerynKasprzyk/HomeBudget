@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace HomeBudgetManagement.User
 {
-    public partial class Finance_Raport : Form
+    public partial class ModifyGoals : Form
     {
-        public Finance_Raport()
+        public ModifyGoals()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //formuła zapisania do pliku PDF
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -27,17 +22,17 @@ namespace HomeBudgetManagement.User
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void ButtonBackToPlanGoals_Click(object sender, EventArgs e)
         {
             Program.ChangeForm(typeof(User_menu));
         }
 
-        private void Finance_Raport_Load(object sender, EventArgs e)
+        private void buttonSetChanges_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonChangeBalance_Click(object sender, EventArgs e)
         {
 
         }

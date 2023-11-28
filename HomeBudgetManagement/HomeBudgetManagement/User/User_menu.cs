@@ -37,5 +37,25 @@ namespace HomeBudgetManagement
         {
             Program.ChangeForm(typeof(Expense_Management));
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Program.ChangeForm(typeof(Client));
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Program.ChangeForm(typeof(ManageAccount));
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Program.ChangeForm(typeof(Manage_Account_Balance));
+        }
+
+        private void ButtonPlanYourGoals_Click(object sender, EventArgs e)
+        {
+            Program.ChangeForm(typeof(PlanGoals));
+        }
     }
 }
