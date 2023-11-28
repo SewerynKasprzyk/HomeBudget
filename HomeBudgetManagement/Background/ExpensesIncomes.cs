@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Background
 {
-    internal class ExpensesIncome //Nazwa do zmiany jbc
+    public class ExpensesIncomes //Nazwa do zmiany jbc
     {
         public string Name { get => name; set => name = value; }
         public double Value { get => value; set => this.value = value; }
 
-        ExpensesIncome(String name, double value)
+        ExpensesIncomes(String name, double value)
         {
             this.name = name;
             this.value = value;

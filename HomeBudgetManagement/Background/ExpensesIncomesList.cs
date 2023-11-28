@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Background
 {
-    internal class ExpensesIncomesList
+    public class ExpensesIncomesList
     {
-        internal static List<ExpensesIncome> ExpensesList { get => expensesList; set => expensesList = value; }
-        internal static List<ExpensesIncome> IncomesList { get => incomesList; set => incomesList = value; }
+        public static List<ExpensesIncomes> ExpensesList { get => expensesList; set => expensesList = value; }
+        public static List<ExpensesIncomes> IncomesList { get => incomesList; set => incomesList = value; }
 
-        public static void AddToList(ExpensesIncome expInc)
+        public static void AddToList(ExpensesIncomes expInc)
         {
             if(expInc.Value > 0)
             {
@@ -23,7 +23,7 @@ namespace Background
             }  
         }
         
-        private static List<ExpensesIncome> expensesList;
-        private static List<ExpensesIncome> incomesList;
+        private static List<ExpensesIncomes> expensesList;
+        private static List<ExpensesIncomes> incomesList;
     }
 }
