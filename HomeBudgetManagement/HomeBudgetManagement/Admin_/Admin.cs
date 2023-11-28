@@ -1,4 +1,4 @@
-﻿using HomeBudgetManagement.User;
+﻿using HomeBudgetManagement.Admin_;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,34 +11,29 @@ using System.Windows.Forms;
 
 namespace HomeBudgetManagement
 {
-    public partial class User_menu : Form
+    public partial class Admin : Form
     {
-        public User_menu()
+        public Admin()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            Program.ChangeForm(typeof(Finance_Raport)); ;
+            Program.ChangeForm(typeof(BudgetStateManagement));
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Program.ChangeForm(typeof(User_Account_Management));
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Program.ChangeForm(typeof(Expense_Management));
+            Program.ChangeForm(typeof(System_Configuration));
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
             Program.ChangeForm(typeof(Client));
         }

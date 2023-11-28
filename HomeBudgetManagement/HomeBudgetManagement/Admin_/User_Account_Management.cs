@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HomeBudgetManagement
+namespace HomeBudgetManagement.Admin_
 {
-    public partial class Admin : Form
+    public partial class User_Account_Management : Form
     {
-        public Admin()
+        public User_Account_Management()
         {
             InitializeComponent();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Program.ChangeForm(typeof(Admin));
         }
     }
 }

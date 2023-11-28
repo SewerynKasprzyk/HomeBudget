@@ -46,11 +46,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin.cs">
+    <Compile Include="Admin_\Admin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin.Designer.cs">
+    <Compile Include="Admin_\Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_\AdminAddingFounds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_\AdminAddingFounds.designer.cs">
+      <DependentUpon>AdminAddingFounds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_\BudgetReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_\BudgetReview.designer.cs">
+      <DependentUpon>BudgetReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_\BudgetStateManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_\BudgetStateManagement.designer.cs">
+      <DependentUpon>BudgetStateManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_\LimitsModification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_\LimitsModification.designer.cs">
+      <DependentUpon>LimitsModification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_\First_Configuration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_\First_Configuration.Designer.cs">
+      <DependentUpon>First_Configuration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_\System_Configuration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_\System_Configuration.Designer.cs">
+      <DependentUpon>System_Configuration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_\User_Account_Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_\User_Account_Management.Designer.cs">
+      <DependentUpon>User_Account_Management.cs</DependentUpon>
     </Compile>
     <Compile Include="Client.cs">
       <SubType>Form</SubType>
@@ -78,6 +120,30 @@
     <Compile Include="User\Finance_Raport.Designer.cs">
       <DependentUpon>Finance_Raport.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Admin_\Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_\AdminAddingFounds.resx">
+      <DependentUpon>AdminAddingFounds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_\BudgetReview.resx">
+      <DependentUpon>BudgetReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_\BudgetStateManagement.resx">
+      <DependentUpon>BudgetStateManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_\LimitsModification.resx">
+      <DependentUpon>LimitsModification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_\First_Configuration.resx">
+      <DependentUpon>First_Configuration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_\System_Configuration.resx">
+      <DependentUpon>System_Configuration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_\User_Account_Management.resx">
+      <DependentUpon>User_Account_Management.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Client.resx">
       <DependentUpon>Client.cs</DependentUpon>
     </EmbeddedResource>
