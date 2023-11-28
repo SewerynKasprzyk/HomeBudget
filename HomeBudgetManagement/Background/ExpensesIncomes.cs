@@ -8,17 +8,14 @@ namespace Background
 {
     public class ExpensesIncomes //Nazwa do zmiany jbc
     {
-        public string Name { get => name; set => name = value; }
-        public double Value { get => value; set => this.value = value; }
+        public string Name { get; set; }
+        public double Value { get; set; }
 
-        ExpensesIncomes(String name, double value)
+        public ExpensesIncomes(String name, double value)
         {
-            this.name = name;
-            this.value = value;
+            this.Name = name;
+            this.Value = value;
         }
-
-        private double value;
-        private String name;
 
     }
 }

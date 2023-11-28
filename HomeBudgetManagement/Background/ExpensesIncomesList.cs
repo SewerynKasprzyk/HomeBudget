@@ -6,24 +6,13 @@ using System.Threading.Tasks;
 
 namespace Background
 {
-    public class ExpensesIncomesList
+    public static class ExpensesIncomesList
     {
-        public static List<ExpensesIncomes> ExpensesList { get => expensesList; set => expensesList = value; }
-        public static List<ExpensesIncomes> IncomesList { get => incomesList; set => incomesList = value; }
+        public static List<ExpensesIncomes> ExpensesList { get; set ; }
 
         public static void AddToList(ExpensesIncomes expInc)
         {
-            if(expInc.Value > 0)
-            {
-                incomesList.Add(expInc);
-            }
-            else
-            {
-                expensesList.Add(expInc);
-            }  
+            ExpensesList.Add(expInc);
         }
-        
-        private static List<ExpensesIncomes> expensesList;
-        private static List<ExpensesIncomes> incomesList;
     }
 }
