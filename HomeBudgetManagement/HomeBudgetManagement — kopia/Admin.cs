@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HomeBudgetManagement.User
+namespace HomeBudgetManagement
 {
-    public partial class Expense_Management : Form
+    public partial class Admin : Form
     {
-        public Expense_Management()
+        public Admin()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Program.ChangeForm(typeof(User_menu));
         }
     }
 }
