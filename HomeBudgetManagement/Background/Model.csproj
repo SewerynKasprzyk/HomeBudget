@@ -44,9 +44,13 @@
     <Compile Include="Account.cs" />
     <Compile Include="AccountList.cs" />
     <Compile Include="AccountManager.cs" />
+    <Compile Include="Category.cs" />
+    <Compile Include="CategoryList.cs" />
     <Compile Include="Budget.cs" />
     <Compile Include="BudgetList.cs" />
     <Compile Include="Configuration.cs" />
+    <Compile Include="ExpensesIncomes.cs" />
+    <Compile Include="ExpensesIncomesList.cs" />
     <Compile Include="Login.cs" />
     <Compile Include="ProgramStart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
