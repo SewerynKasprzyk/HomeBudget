@@ -11,7 +11,7 @@ namespace Background
 
         static CategoryList()
         {
-            
+            Categories = new List<Category>();
         }
 
         public static void AddToList(Category item)

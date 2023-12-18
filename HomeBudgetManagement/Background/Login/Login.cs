@@ -20,6 +20,7 @@ namespace Background
             { 
                 if(user.Login == login && user.Password == password)
                 {
+                    Configuration.LoggedUser = user;
                     return user.Id;
                 }
             }

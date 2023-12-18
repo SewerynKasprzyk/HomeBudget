@@ -20,9 +20,22 @@ namespace Background
             }
         }
 
+        public static void RemoveFromList(String accountID)
+        {
+            foreach (Account acc in accounts)
+            {
+                if(acc.AccountId == accountID)
+                {
+                    accounts.Remove(acc);
+                }
+            }
+        }
+        internal static List<Account> Accounts { get => accounts; set => accounts = value; }
+
         //Demo
         static AccountList()
         { 
+            Accounts = new List<Account>();
             foreach (var user in UserList.Users) 
             {
                 Accounts.Add(new Account(user.Id));

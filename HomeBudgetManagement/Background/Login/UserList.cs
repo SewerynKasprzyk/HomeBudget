@@ -10,6 +10,10 @@ namespace Background
 {
     public static class UserList
     {
+        static UserList()
+        { 
+            users = new List<User>();
+        }
         public static List<User> Users { get => users; set => users = value; }
 
         public static void AddToList(User user)
