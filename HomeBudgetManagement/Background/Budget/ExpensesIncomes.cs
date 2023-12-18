@@ -8,13 +8,15 @@ namespace Background.Budget
 {
     public class ExpensesIncomes //Nazwa do zmiany jbc
     {
-        public string Name { get; set; }
-        public double Value { get; set; }
-
-        public ExpensesIncomes(String name, double value)
+        public ExpensesIncomes(String name, double value, Budget budget)
         {
             this.Name = name;
             this.Value = value;
+            this.AccouuntId = budget.BudgetId;
         }
+
+        public int AccouuntId { get; set; }
+        public string Name { get; set; }
+        public double Value { get; set; }
     }
 }

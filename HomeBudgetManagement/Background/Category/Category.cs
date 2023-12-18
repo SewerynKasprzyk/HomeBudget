@@ -4,12 +4,10 @@ namespace Background
 {
     public class Category
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-
         public Category(string name)
         {
             Name = name;
+            Value = 0;
         }
 
         //demo
@@ -17,6 +15,16 @@ namespace Background
         {
             Name = name;
             Id = id;
+            Value = 0;
         }
+
+        public void AddValue(float value)
+        {
+            Value += value;
+        }
+
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public float Value { get; set; }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Background
 {
-    internal static class AccountList
+    public static class AccountList
     {
         public static void AddToList(Account acc)
         {
@@ -16,20 +16,20 @@ namespace Background
             }
             else
             {
-                accounts.Add(acc);
+                Accounts.Add(acc);
             }
         }
-        internal static List<Account> Accounts { get => accounts; set => accounts = value; }
 
         //Demo
         static AccountList()
         { 
             foreach (var user in UserList.Users) 
             {
-                accounts.Add(new Account(user.Id));
+                Accounts.Add(new Account(user.Id));
             }
         }
 
-        private static List<Account> accounts;
+        public static List<Account> Accounts { get; set; }
+        //private static List<Account> accounts;
     }
 }
