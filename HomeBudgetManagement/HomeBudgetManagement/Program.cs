@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Background;
+using Background.Budget;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -16,6 +18,7 @@ namespace HomeBudgetManagement
         [STAThread]
         static void Main()
         {
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             currentForm = new Client();
