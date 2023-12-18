@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxSetAdminPassword = new System.Windows.Forms.TextBox();
@@ -35,27 +36,28 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panelLoginLeftBlue = new System.Windows.Forms.Panel();
             this.panelPassword = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panelSetAdminLogin = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBoxSetAdminLogin = new System.Windows.Forms.TextBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panelSetAdminPassword = new System.Windows.Forms.Panel();
             this.buttonClose = new System.Windows.Forms.Button();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panelLoginLeftBlue.SuspendLayout();
             this.panelPassword.SuspendLayout();
+            this.panelSetAdminLogin.SuspendLayout();
+            this.panelSetAdminPassword.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panelSetAdminLogin.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panelSetAdminPassword.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -149,15 +151,6 @@
             this.panelPassword.Size = new System.Drawing.Size(499, 41);
             this.panelPassword.TabIndex = 13;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::HomeBudgetManagement.Properties.Resources.icons8_password_24;
-            this.pictureBox2.Location = new System.Drawing.Point(9, 7);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox2.TabIndex = 14;
-            this.pictureBox2.TabStop = false;
-            // 
             // textBoxPassword
             // 
             this.textBoxPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(243)))), ((int)(((byte)(251)))));
@@ -181,15 +174,6 @@
             this.label9.Size = new System.Drawing.Size(236, 27);
             this.label9.TabIndex = 15;
             this.label9.Text = "First configuration in the";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::HomeBudgetManagement.Properties.Resources.icons8_man_raising_hand_icon_100;
-            this.pictureBox3.Location = new System.Drawing.Point(62, 52);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox3.TabIndex = 14;
-            this.pictureBox3.TabStop = false;
             // 
             // label6
             // 
@@ -237,16 +221,6 @@
             this.panelSetAdminLogin.Size = new System.Drawing.Size(503, 41);
             this.panelSetAdminLogin.TabIndex = 12;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::HomeBudgetManagement.Properties.Resources.icons8_user_24;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // textBoxSetAdminLogin
             // 
             this.textBoxSetAdminLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(243)))), ((int)(((byte)(251)))));
@@ -259,15 +233,6 @@
             this.textBoxSetAdminLogin.TabIndex = 3;
             this.textBoxSetAdminLogin.Click += new System.EventHandler(this.textBoxSetAdminLogin_click);
             this.textBoxSetAdminLogin.TextChanged += new System.EventHandler(this.login_TextChanged_1);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::HomeBudgetManagement.Properties.Resources.icons8_password_24;
-            this.pictureBox4.Location = new System.Drawing.Point(9, 7);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox4.TabIndex = 14;
-            this.pictureBox4.TabStop = false;
             // 
             // panelSetAdminPassword
             // 
@@ -296,6 +261,47 @@
             this.buttonClose.UseVisualStyleBackColor = true;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_click);
             // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.Visible = true;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::HomeBudgetManagement.Properties.Resources.icons8_password_24;
+            this.pictureBox4.Location = new System.Drawing.Point(9, 7);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox4.TabIndex = 14;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::HomeBudgetManagement.Properties.Resources.icons8_user_24;
+            this.pictureBox1.Location = new System.Drawing.Point(9, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(9, 7);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox2.TabIndex = 14;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::HomeBudgetManagement.Properties.Resources.icons8_man_raising_hand_icon_1001;
+            this.pictureBox3.Location = new System.Drawing.Point(62, 52);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox3.TabIndex = 14;
+            this.pictureBox3.TabStop = false;
+            // 
             // First_Configuration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -318,14 +324,14 @@
             this.panelLoginLeftBlue.PerformLayout();
             this.panelPassword.ResumeLayout(false);
             this.panelPassword.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panelSetAdminLogin.ResumeLayout(false);
             this.panelSetAdminLogin.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panelSetAdminPassword.ResumeLayout(false);
             this.panelSetAdminPassword.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -352,5 +358,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panelSetAdminPassword;
         private System.Windows.Forms.Button buttonClose;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
     }
 }
