@@ -35,6 +35,26 @@ namespace Background
             }
         }
 
+        public void ManageAccountByLogin(String login)
+        {
+            this.account.AccountId = UserList.FindUserByLogin(login).Id;
+
+            int index = 0;
+            foreach (var account in AccountList.Accounts)
+            {
+                if (account.AccountId == this.account.AccountId)
+                {
+                    this.account = account;
+                    this.verificated = true;
+                    this.index = index;
+                    return;
+                }
+
+                this.verificated = false;
+                index++;
+            }
+        }
+
         public void ChangeName(String name)
         {
             this.ReloadAcc();
