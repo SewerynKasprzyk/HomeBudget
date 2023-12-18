@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Background
 {
-    public static class AccountList
+    internal static class AccountList
     {
         public static void AddToList(Account acc)
         {
@@ -19,23 +19,11 @@ namespace Background
                 accounts.Add(acc);
             }
         }
-
-        public static void RemoveFromList(String accountID)
-        {
-            foreach (Account acc in accounts)
-            {
-                if(acc.AccountId == accountID)
-                {
-                    accounts.Remove(acc);
-                }
-            }
-        }
         internal static List<Account> Accounts { get => accounts; set => accounts = value; }
 
         //Demo
         static AccountList()
         { 
-            Accounts = new List<Account>();
             foreach (var user in UserList.Users) 
             {
                 accounts.Add(new Account(user.Id));

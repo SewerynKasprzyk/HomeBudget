@@ -82,7 +82,7 @@ namespace Background
 
         public void Delete()
         {
-            AccountList.RemoveFromList(account.AccountId);
+            AccountList.Accounts.RemoveAt(this.index);
         }
 
         public void GivePower()

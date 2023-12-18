@@ -11,7 +11,6 @@ namespace Background
     public class Configuration
     {
         public static int AccessLevel { get => accessLevel; set => accessLevel = value; }
-        public static User LoggedUser { get => loggedUser; set => loggedUser = value; }
 
         public bool FirstConfiguration(String firstLogin, String firstName, String firstSurname, String firstPassword, String confirmFirstPassword)
         {
@@ -29,10 +28,8 @@ namespace Background
             return false;
         }
 
-
         private bool performed = false;
         private static int accessLevel = 0;
-        private static User loggedUser = null;
 
     }
 }
