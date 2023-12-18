@@ -16,6 +16,7 @@ namespace Background.Budget
         private String name = "Error";
         private String description ="";
 
+        //Demo
         public Limit(int limitID, int accountID, float limitValue, string name)
         {
             this.limitID = limitID;
@@ -24,14 +25,11 @@ namespace Background.Budget
             this.name = name;
         }
 
-        public Limit(int limitID, int accountID, float limitValue, float actualValue, string name, string description)
+        public Limit(int accountID, float limitValue, string name)
         {
-            this.limitID = limitID;
             this.accountID = accountID;
             this.limitValue = limitValue;
-            this.actualValue = actualValue;
             this.name = name;
-            this.description = description;
         }
 
         public int LimitID { get => limitID; set => limitID = value; }
