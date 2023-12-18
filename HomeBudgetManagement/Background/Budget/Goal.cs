@@ -21,7 +21,7 @@ namespace Background.Budget
         public void SubFromValue(float value) { Value -= value; }   
 
         public int Id { get; set; }
-        public String Name { get; set; }
+        public string Name { get; set; }
         public float Value { get; set; }
         public float Limit { get; set; }
         public int Deadline { get; set; }
