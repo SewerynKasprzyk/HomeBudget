@@ -33,9 +33,9 @@ namespace Background.Budget
             BudegtValue -= value;
         }
 
-        private static int budgetId = 0;
-        private float budegtValue;
-        private float budgetLimit;
+        //private static int budgetId = 0;
+        //private float budegtValue;
+        //private float budgetLimit;
         private Limit limit;
 
         public float BudegtValue { get ; set; }

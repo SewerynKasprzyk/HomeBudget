@@ -22,15 +22,14 @@ namespace Background
 
         public static void RemoveFromList(String accountID)
         {
-            foreach (Account acc in accounts)
+            foreach (Account acc in Accounts)
             {
                 if(acc.AccountId == accountID)
                 {
-                    accounts.Remove(acc);
+                    Accounts.Remove(acc);
                 }
             }
         }
-        internal static List<Account> Accounts { get => accounts; set => accounts = value; }
 
         //Demo
         static AccountList()
