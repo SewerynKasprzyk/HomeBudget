@@ -44,6 +44,8 @@
     <Compile Include="Account\Account.cs" />
     <Compile Include="Account\AccountList.cs" />
     <Compile Include="Account\AccountManager.cs" />
+    <Compile Include="Budget\BudgetManager.cs" />
+    <Compile Include="Budget\GoalsList.cs" />
     <Compile Include="Budget\Limit.cs" />
     <Compile Include="Budget\Goal.cs" />
     <Compile Include="Category\Category.cs" />

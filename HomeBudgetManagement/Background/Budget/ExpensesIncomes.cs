@@ -16,6 +16,5 @@ namespace Background.Budget
             this.Name = name;
             this.Value = value;
         }
-
     }
 }
