@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Background.Budget
 {
-    class Goal
+    public class Goal
     {
         public Goal(int id, string name, float limit)
         {
@@ -16,6 +16,8 @@ namespace Background.Budget
             Value = 0;
             Deadline = -1; //jeżeli -1 to goal jest bezterminowy
         }
+
+        public Goal() { }
 
         public void AddToValue(float value) { Value += value; }
         public void SubFromValue(float value) { Value -= value; }   
