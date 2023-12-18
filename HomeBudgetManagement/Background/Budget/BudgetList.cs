@@ -7,26 +7,39 @@ using System.Threading.Tasks;
 
 namespace Background
 {
-    public class BudgetList
-    {    
-        public BudgetList() 
+    public static class BudgetList
+    {
+        public static Budget GetBudget(int budgetID)
         {
-            this.Budgets = new List<Budget>();
+            foreach (Budget budget in budgets)
+            {
+                if (budget.BudgetId == budgetID)
+                {
+                    return budget;
+                }
+            }
+
+            return new Budget();
         }
 
-        public void AddBudget(Budget item)
+        static BudgetList() 
         {
-            this.Budgets.Add(item);
+            Budgets = new List<Budget>();
         }
 
-        public void SubBudget(Budget item)
+        public static void AddBudget(Budget item)
         {
-            this.Budgets.Remove(item);
+            Budgets.Add(item);
         }
 
-        public List<Budget> Budgets { get; set; }
+        public static void SubBudget(Budget item)
+        {
+            Budgets.Remove(item);
+        }
 
-        private List<Budget> budgets;
+        public static List<Budget> Budgets { get; set; }
+
+        private static List<Budget> budgets;
     }
 
 }
