@@ -49,5 +49,10 @@ namespace HomeBudgetManagement.Admin_
             accountManager.addUser(textfieldCreate.Text, "!QAZ2wsx", "", "", 1, "12");
             ReinitCombo();
         }
+
+        private void User_Account_Management_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
