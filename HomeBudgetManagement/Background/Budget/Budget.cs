@@ -16,10 +16,10 @@ namespace Background.Budget
             this.BudgetLimit = 0;
         }
 
-        public Budget(float value,  int id)
+        public Budget(float value, Account account)
         {
             this.BudegtValue = value;
-            this.BudgetId = id;
+            this.BudgetId = int.Parse(account.AccountId);
             this.BudgetLimit = 0;
         }
         
@@ -33,9 +33,9 @@ namespace Background.Budget
             BudegtValue -= value;
         }
 
-        private static int budgetId = 0;
-        private float budegtValue;
-        private float budgetLimit;
+        //private static int budgetId = 0;
+        //private float budegtValue;
+        //private float budgetLimit;
         private Limit limit;
 
         public float BudegtValue { get ; set; }

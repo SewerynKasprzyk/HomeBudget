@@ -16,21 +16,20 @@ namespace Background
             }
             else
             {
-                accounts.Add(acc);
+                Accounts.Add(acc);
             }
         }
 
         public static void RemoveFromList(String accountID)
         {
-            foreach (Account acc in accounts)
+            foreach (Account acc in Accounts)
             {
                 if(acc.AccountId == accountID)
                 {
-                    accounts.Remove(acc);
+                    Accounts.Remove(acc);
                 }
             }
         }
-        internal static List<Account> Accounts { get => accounts; set => accounts = value; }
 
         //Demo
         static AccountList()
@@ -38,10 +37,11 @@ namespace Background
             Accounts = new List<Account>();
             foreach (var user in UserList.Users) 
             {
-                accounts.Add(new Account(user.Id));
+                Accounts.Add(new Account(user.Id));
             }
         }
 
-        private static List<Account> accounts;
+        public static List<Account> Accounts { get; set; }
+        //private static List<Account> accounts;
     }
 }
