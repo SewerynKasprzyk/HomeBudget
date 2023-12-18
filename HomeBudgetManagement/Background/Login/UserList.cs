@@ -33,6 +33,16 @@ namespace Background
             return null;
         }
 
+        public static User FindUserByLogin(String login)
+        {
+            foreach (User user in users)
+            {
+                if (login == user.Login)
+                { return user; }
+            }
+
+            return null;
+        }
         private static List<User> users;
     }
 }
