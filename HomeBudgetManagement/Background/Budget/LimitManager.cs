@@ -14,14 +14,31 @@ namespace Background.Budget
 
         public LimitManager(int userID)
         {
+            limits = new List<Limit>();
             this.userID = userID;
         }
 
-        public List<Limit> GetListOfAccLimits()
+        public void GetListOfAccLimits()
         {
-            foreach (Limit limit in LimitList)
+            foreach (Limit limit in LimitList.List)
             {
-                
+                if(userID == limit.AccountID)
+                {
+                    Limits.Add(limit);
+                }
+            }
+        }
+
+        public void ManageLimit(int limitId)
+        {
+            GetListOfAccLimits();
+
+            foreach (Limit limit in limits)
+            {
+                if (limitId == limit.LimitID)
+                {
+                    this.limit = limit;
+                }
             }
         }
 
