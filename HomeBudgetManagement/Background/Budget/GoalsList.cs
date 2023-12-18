@@ -6,16 +6,33 @@ using System.Threading.Tasks;
 
 namespace Background.Budget
 {
-    class GoalsList
+    public static class GoalsList
     {
-        public List<Goal> Goals { get; set; }
+        static GoalsList()
+        {
+            Goals = new List<Goal>();
+        }
+        public static List<Goal> Goals { get; set; }
 
-        public void AddToList(Goal goal)
+        public static Goal GetGoal(int GoalID)
+        {
+            foreach (Goal goal in Goals)
+            {
+                if(goal.Id == GoalID)
+                {
+                    return goal;
+                }
+            }
+
+            return new Goal();
+        }
+
+        public static void AddToList(Goal goal)
         {
             Goals.Add(goal);
         }
 
-        public void RemoveFromList(Goal goal) 
+        public static void RemoveFromList(Goal goal) 
         {
             Goals.Remove(goal);        
         }

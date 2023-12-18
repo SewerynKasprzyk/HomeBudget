@@ -4,16 +4,42 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Background
+namespace Background.Budget
 {
-    internal class Limit
+    public class Limit
     {
         private int limitID;
+        private int accountID;
         private float limitValue;
-        private float actualValue;
+        private float actualValue = 0;
 
-        private String name;
-        private String description;
+        private String name = "Error";
+        private String description ="";
+
+        public Limit(int limitID, int accountID, float limitValue, string name)
+        {
+            this.limitID = limitID;
+            this.accountID = accountID;
+            this.limitValue = limitValue;
+            this.name = name;
+        }
+
+        public Limit(int limitID, int accountID, float limitValue, float actualValue, string name, string description)
+        {
+            this.limitID = limitID;
+            this.accountID = accountID;
+            this.limitValue = limitValue;
+            this.actualValue = actualValue;
+            this.name = name;
+            this.description = description;
+        }
+
+        public int LimitID { get => limitID; set => limitID = value; }
+        public int AccountID { get => accountID; set => accountID = value; }
+        public float LimitValue { get => limitValue; set => limitValue = value; }
+        public float ActualValue { get => actualValue; set => actualValue = value; }
+        public string Name { get => name; set => name = value; }
+        public string Description { get => description; set => description = value; }
 
         public float GetCompletion()
         {
@@ -23,28 +49,6 @@ namespace Background
         {
             this.actualValue += add;
         }
-        public Limit(int limitID, float limitValue, string name)
-        {
-            this.limitID = limitID;
-            this.limitValue = limitValue;
-            this.actualValue = 0;
-            this.name = name;
-            this.description = name;
-        }
 
-        public Limit(int limitID, float limitValue, float actualValue, string name, string description)
-        {
-            this.limitID = limitID;
-            this.limitValue = limitValue;
-            this.actualValue = actualValue;
-            this.name = name;
-            this.description = description;
-        }
-
-        public int LimitID { get => limitID; set => limitID = value; }
-        public float LimitValue { get => limitValue; set => limitValue = value; }
-        public float ActualValue { get => actualValue; set => actualValue = value; }
-        public string Name { get => name; set => name = value; }
-        public string Description { get => description; set => description = value; }
     }
 }

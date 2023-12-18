@@ -36,9 +36,11 @@ namespace Background.Budget
         private static int budgetId = 0;
         private float budegtValue;
         private float budgetLimit;
+        private Limit limit;
 
         public float BudegtValue { get ; set; }
         public int BudgetId { get; set; }
         public float BudgetLimit {  get; set; }
+        public Limit Limit { get => limit; set => limit = value; }
     }
 }
