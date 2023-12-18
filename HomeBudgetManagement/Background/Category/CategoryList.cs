@@ -14,18 +14,18 @@ namespace Background
             
         }
 
-        static void AddToList(Category item)
+        public static void AddToList(Category item)
         {
             Categories.Add(item);
         }
 
         //to deeply implement
-        static void RemoveFromList(Category item)
+        public static void RemoveFromList(Category item)
         {
             Categories.Remove(item);
         }
 
-        private static List<Category> Categories { get; set; }
+        public static List<Category> Categories { get; set; }
    
     }
 }

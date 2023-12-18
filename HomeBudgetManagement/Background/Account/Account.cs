@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Background
 {
-    internal class Account
+    public class Account
     {
-       public Account() { }
+        public Account() { }
 
         //demo
         public Account(String accountId) 
