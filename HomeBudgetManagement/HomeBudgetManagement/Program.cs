@@ -1,5 +1,6 @@
 ﻿using Background;
 using Background.Budget;
+using HomeBudgetManagement.Admin_;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,7 +22,17 @@ namespace HomeBudgetManagement
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            currentForm = new Client();
+
+            if(!Configuration.Performed)
+            {
+                currentForm = new First_Configuration();
+            }
+
+            else 
+            { 
+                currentForm = new Client(); 
+            }
+
 
             Application.Run(currentForm);
 

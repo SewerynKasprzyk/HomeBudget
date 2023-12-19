@@ -1,4 +1,5 @@
-﻿using HomeBudgetManagement.User;
+﻿using Background;
+using HomeBudgetManagement.User;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -40,6 +41,7 @@ namespace HomeBudgetManagement
 
         private void button5_Click(object sender, EventArgs e)
         {
+            Login.Logout();
             Program.ChangeForm(typeof(Client));
         }
 

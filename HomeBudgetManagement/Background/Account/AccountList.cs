@@ -27,6 +27,7 @@ namespace Background
                 if(acc.AccountId == accountID)
                 {
                     Accounts.Remove(acc);
+                    return;
                 }
             }
         }

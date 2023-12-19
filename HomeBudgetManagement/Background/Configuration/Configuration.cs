@@ -12,6 +12,7 @@ namespace Background
     {
         public static int AccessLevel { get => accessLevel; set => accessLevel = value; }
         public static User LoggedUser { get => loggedUser; set => loggedUser = value; }
+        public static bool Performed { get => performed; set => performed = value; }
 
         public bool FirstConfiguration(String firstLogin, String firstName, String firstSurname, String firstPassword, String confirmFirstPassword)
         {
@@ -30,7 +31,7 @@ namespace Background
         }
 
 
-        private bool performed = false;
+        private static bool performed = false;
         private static int accessLevel = 0;
         private static User loggedUser = null;
 

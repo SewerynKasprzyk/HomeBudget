@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ namespace Background
     {
         //return user
         //if Authenticate failed returns basic user with access level 0
+        //if user -> acces level is 1 | if powerUser -> acces level is 2
         public static String Authenticate(string login, string password)
         {
             List<User> users = UserList.Users;
@@ -21,6 +23,8 @@ namespace Background
                 if(user.Login == login && user.Password == password)
                 {
                     Configuration.LoggedUser = user;
+                    Configuration.AccessLevel = Configuration.LoggedUser.AccessLevel;
+
                     return user.Id;
                 }
             }
@@ -44,7 +48,7 @@ namespace Background
 
         //Test Logout
 
-        static void Logout()
+        public static void Logout()
         {
             //Powrot do Logowania
             Configuration.AccessLevel = 0;

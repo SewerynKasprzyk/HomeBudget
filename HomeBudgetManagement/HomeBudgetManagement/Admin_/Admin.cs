@@ -35,6 +35,7 @@ namespace HomeBudgetManagement
 
         private void button4_Click(object sender, EventArgs e)
         {
+            Background.Login.Logout();
             Program.ChangeForm(typeof(Client));
         }
 

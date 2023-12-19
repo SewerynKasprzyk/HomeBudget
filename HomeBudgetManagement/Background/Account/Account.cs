@@ -25,5 +25,10 @@ namespace Background
         //private int budgetId;
         private String accountName;
         private String accountSurname;
+
+        public override string ToString()
+        {
+            return UserList.FindUser(accountId).Login;
+        }
     }
 }

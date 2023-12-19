@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Background.Budget;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,11 @@ namespace HomeBudgetManagement.User
         private void ButtonBackToPlanGoals_Click(object sender, EventArgs e)
         {
             Program.ChangeForm(typeof(PlanGoals));
+        }
+
+        private void buttonCreateGoal_Click(object sender, EventArgs e)
+        {
+            GoalsList.AddToList(new Goal(GoalsList.Goals.Count + 1, textBoxGoalName.Text, float.Parse(textBoxBalanceGoal.Text)));
         }
     }
 }

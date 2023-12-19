@@ -23,6 +23,11 @@ namespace Background
             Value += value;
         }
 
+        public override string ToString()
+        {
+            return Name;
+        }
+
         public int Id { get; set; }
         public string Name { get; set; }
         public float Value { get; set; }

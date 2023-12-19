@@ -70,7 +70,7 @@ namespace Background.Budget
 
             foreach (Budget item in BudgetList.Budgets)
             {
-                allBudget += item.BudegtValue;
+                allBudget += item.BudgetValue;
             }
             return "Budget is: " + allBudget;
         }

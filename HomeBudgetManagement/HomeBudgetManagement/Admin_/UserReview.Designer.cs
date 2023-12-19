@@ -68,6 +68,7 @@
             this.ComboBoxSelectUser.Name = "ComboBoxSelectUser";
             this.ComboBoxSelectUser.Size = new System.Drawing.Size(162, 21);
             this.ComboBoxSelectUser.TabIndex = 28;
+            this.ComboBoxSelectUser.SelectedIndexChanged += new System.EventHandler(this.ComboBoxSelectUser_SelectedIndexChanged);
             // 
             // LabelCategorySelect
             // 

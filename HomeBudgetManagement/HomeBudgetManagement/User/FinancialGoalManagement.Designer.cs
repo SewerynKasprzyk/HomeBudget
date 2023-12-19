@@ -107,6 +107,7 @@
             this.ButtonAddToGoal.TabIndex = 7;
             this.ButtonAddToGoal.Text = "Add";
             this.ButtonAddToGoal.UseVisualStyleBackColor = true;
+            this.ButtonAddToGoal.Click += new System.EventHandler(this.ButtonAddToGoal_Click);
             // 
             // LabelYourBalance
             // 
@@ -136,6 +137,7 @@
             this.ButtonToCashOut.TabIndex = 12;
             this.ButtonToCashOut.Text = "Cash out";
             this.ButtonToCashOut.UseVisualStyleBackColor = true;
+            this.ButtonToCashOut.Click += new System.EventHandler(this.ButtonToCashOut_Click);
             // 
             // TextBoxValueToCashOut
             // 

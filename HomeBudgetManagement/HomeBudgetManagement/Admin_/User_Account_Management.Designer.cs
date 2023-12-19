@@ -42,8 +42,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -177,7 +175,7 @@
             this.login.BackColor = System.Drawing.Color.DimGray;
             this.login.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.login.Location = new System.Drawing.Point(486, 93);
+            this.login.Location = new System.Drawing.Point(496, 93);
             this.login.Name = "login";
             this.login.Size = new System.Drawing.Size(231, 26);
             this.login.TabIndex = 12;
@@ -205,6 +203,7 @@
             this.button1.TabIndex = 14;
             this.button1.Text = "Create";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label11
             // 
@@ -218,32 +217,6 @@
             this.label11.Text = "Add/Remove admin previlages to user";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox2
-            // 
-            this.comboBox2.BackColor = System.Drawing.Color.DimGray;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Maciek",
-            "Basia",
-            "Marek",
-            "Kuba"});
-            this.comboBox2.Location = new System.Drawing.Point(506, 248);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(175, 21);
-            this.comboBox2.TabIndex = 16;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label12.Location = new System.Drawing.Point(392, 245);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(121, 24);
-            this.label12.TabIndex = 17;
-            this.label12.Text = "Select user ";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.DimGray;
@@ -255,6 +228,7 @@
             this.button2.TabIndex = 18;
             this.button2.Text = "Add";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -267,6 +241,7 @@
             this.button3.TabIndex = 19;
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -279,6 +254,7 @@
             this.button4.TabIndex = 20;
             this.button4.Text = "Remove";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -301,8 +277,6 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label10);
@@ -340,8 +314,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;

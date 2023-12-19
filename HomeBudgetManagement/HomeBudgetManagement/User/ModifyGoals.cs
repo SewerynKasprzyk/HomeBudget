@@ -24,7 +24,7 @@ namespace HomeBudgetManagement.User
 
         private void ButtonBackToPlanGoals_Click(object sender, EventArgs e)
         {
-            Program.ChangeForm(typeof(User_menu));
+            Program.ChangeForm(typeof(PlanGoals));
         }
 
         private void buttonSetChanges_Click(object sender, EventArgs e)

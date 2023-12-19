@@ -12,6 +12,7 @@ namespace Background
         {
             this.verificated = false;
             this.userId = userId;
+            this.account = new Account();
             this.ManageAccount(this.userId);
         }
 
@@ -90,6 +91,11 @@ namespace Background
             UserList.Users[index].AccessLevel = 2;
         }
 
+        public void RemovePower()
+        {
+            UserList.Users[index].AccessLevel = 1;
+        }
+
         //demo
         public bool addUser(String login, String password, String name, String surname, int power, String demoUserId)
         {
@@ -124,10 +130,14 @@ namespace Background
                 acc.AccountName = name;
                 acc.AccountSurname = surname;
 
+                AccountList.AddToList(acc);
+
                 User user = new User();
                 user.Login = login;
                 user.Password = password;
                 user.AccessLevel= power;
+
+                UserList.AddToList(user);
 
                 return true;
             }

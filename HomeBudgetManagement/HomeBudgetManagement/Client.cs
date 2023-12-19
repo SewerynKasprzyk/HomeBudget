@@ -1,4 +1,5 @@
-﻿using HomeBudgetManagement.Admin_;
+﻿using Background;
+using HomeBudgetManagement.Admin_;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -32,8 +33,30 @@ namespace HomeBudgetManagement
                     throw new Exception("Pole tekstowe nie może być puste.");
                 }
 
+                Login.Authenticate(textboxLogin.Text, textBoxPassword.Text);
 
-                Program.ChangeForm(typeof(User_menu));
+                switch (Configuration.AccessLevel)
+                {
+
+                    case 1:
+                        {
+                            Program.ChangeForm(typeof(User_menu));
+                            break;
+                        }
+
+                        case 2:
+                        {
+                            Program.ChangeForm(typeof(Admin));
+                            break;
+                        }
+
+                    default:
+                        {
+                            Program.ChangeForm(typeof(Client));
+                            break;
+                        }
+                }
+
             }
             catch (Exception ex)
             {

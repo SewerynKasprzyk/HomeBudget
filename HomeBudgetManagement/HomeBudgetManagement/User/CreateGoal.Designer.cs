@@ -99,6 +99,7 @@
             this.buttonCreateGoal.TabIndex = 23;
             this.buttonCreateGoal.Text = "Create";
             this.buttonCreateGoal.UseVisualStyleBackColor = true;
+            this.buttonCreateGoal.Click += new System.EventHandler(this.buttonCreateGoal_Click);
             // 
             // CreateGoal
             // 

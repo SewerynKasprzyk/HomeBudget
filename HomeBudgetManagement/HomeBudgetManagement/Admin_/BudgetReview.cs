@@ -1,4 +1,5 @@
-﻿using HomeBudgetManagement.Admin_;
+﻿using Background.Budget;
+using HomeBudgetManagement.Admin_;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,13 @@ namespace HomeBudgetManagement
         public LabelBudget()
         {
             InitializeComponent();
+            InitLabels();
+        }
+
+        private void InitLabels()
+        {
+            BudgetManager budgetManager = new BudgetManager();
+            LabelAllBudget.Text = budgetManager.ShowAllBudget();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

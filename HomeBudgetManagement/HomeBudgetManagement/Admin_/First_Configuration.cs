@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Background;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -95,6 +96,14 @@ namespace HomeBudgetManagement.Admin_
         private void buttonClose_click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Background.Configuration configuration = new Background.Configuration();
+            configuration.FirstConfiguration(textBoxSetAdminLogin.Text, "AdminDemo", "AdminDemo", textBoxSetAdminPassword.Text, textBoxSetAdminPassword.Text);
+            Login.Authenticate(textBoxSetAdminLogin.Text, textBoxSetAdminPassword.Text);
+            Program.ChangeForm(typeof(Admin));
         }
     }
 }

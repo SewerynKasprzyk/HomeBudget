@@ -29,51 +29,52 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ButtonConfirm = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxSetAdminPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panelLoginLeftBlue = new System.Windows.Forms.Panel();
             this.panelPassword = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panelSetAdminLogin = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBoxSetAdminLogin = new System.Windows.Forms.TextBox();
             this.panelSetAdminPassword = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.buttonClose = new System.Windows.Forms.Button();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panelLoginLeftBlue.SuspendLayout();
             this.panelPassword.SuspendLayout();
-            this.panelSetAdminLogin.SuspendLayout();
-            this.panelSetAdminPassword.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panelSetAdminLogin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelSetAdminPassword.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // ButtonConfirm
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Impact", 11.75F);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(439, 291);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(204, 50);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "CONFIRM";
-            this.button1.UseVisualStyleBackColor = false;
+            this.ButtonConfirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
+            this.ButtonConfirm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ButtonConfirm.FlatAppearance.BorderSize = 0;
+            this.ButtonConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonConfirm.Font = new System.Drawing.Font("Impact", 11.75F);
+            this.ButtonConfirm.ForeColor = System.Drawing.Color.White;
+            this.ButtonConfirm.Location = new System.Drawing.Point(439, 291);
+            this.ButtonConfirm.Name = "ButtonConfirm";
+            this.ButtonConfirm.Size = new System.Drawing.Size(204, 50);
+            this.ButtonConfirm.TabIndex = 10;
+            this.ButtonConfirm.Text = "CONFIRM";
+            this.ButtonConfirm.UseVisualStyleBackColor = false;
+            this.ButtonConfirm.Click += new System.EventHandler(this.button1_Click);
             // 
             // label4
             // 
@@ -151,6 +152,14 @@
             this.panelPassword.Size = new System.Drawing.Size(499, 41);
             this.panelPassword.TabIndex = 13;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(9, 7);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox2.TabIndex = 14;
+            this.pictureBox2.TabStop = false;
+            // 
             // textBoxPassword
             // 
             this.textBoxPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(243)))), ((int)(((byte)(251)))));
@@ -174,6 +183,15 @@
             this.label9.Size = new System.Drawing.Size(236, 27);
             this.label9.TabIndex = 15;
             this.label9.Text = "First configuration in the";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::HomeBudgetManagement.Properties.Resources.icons8_man_raising_hand_icon_1001;
+            this.pictureBox3.Location = new System.Drawing.Point(62, 52);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox3.TabIndex = 14;
+            this.pictureBox3.TabStop = false;
             // 
             // label6
             // 
@@ -221,6 +239,16 @@
             this.panelSetAdminLogin.Size = new System.Drawing.Size(503, 41);
             this.panelSetAdminLogin.TabIndex = 12;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::HomeBudgetManagement.Properties.Resources.icons8_user_24;
+            this.pictureBox1.Location = new System.Drawing.Point(9, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // textBoxSetAdminLogin
             // 
             this.textBoxSetAdminLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(243)))), ((int)(((byte)(251)))));
@@ -246,6 +274,15 @@
             this.panelSetAdminPassword.Size = new System.Drawing.Size(507, 41);
             this.panelSetAdminPassword.TabIndex = 13;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::HomeBudgetManagement.Properties.Resources.icons8_password_24;
+            this.pictureBox4.Location = new System.Drawing.Point(9, 7);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox4.TabIndex = 14;
+            this.pictureBox4.TabStop = false;
+            // 
             // buttonClose
             // 
             this.buttonClose.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -266,42 +303,6 @@
             this.notifyIcon1.Text = "notifyIcon1";
             this.notifyIcon1.Visible = true;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::HomeBudgetManagement.Properties.Resources.icons8_password_24;
-            this.pictureBox4.Location = new System.Drawing.Point(9, 7);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox4.TabIndex = 14;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::HomeBudgetManagement.Properties.Resources.icons8_user_24;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(9, 7);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox2.TabIndex = 14;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::HomeBudgetManagement.Properties.Resources.icons8_man_raising_hand_icon_1001;
-            this.pictureBox3.Location = new System.Drawing.Point(62, 52);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox3.TabIndex = 14;
-            this.pictureBox3.TabStop = false;
-            // 
             // First_Configuration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -312,7 +313,7 @@
             this.Controls.Add(this.panelSetAdminPassword);
             this.Controls.Add(this.panelSetAdminLogin);
             this.Controls.Add(this.panelLoginLeftBlue);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ButtonConfirm);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -324,21 +325,21 @@
             this.panelLoginLeftBlue.PerformLayout();
             this.panelPassword.ResumeLayout(false);
             this.panelPassword.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panelSetAdminLogin.ResumeLayout(false);
             this.panelSetAdminLogin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelSetAdminPassword.ResumeLayout(false);
             this.panelSetAdminPassword.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ButtonConfirm;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBoxSetAdminPassword;
         private System.Windows.Forms.Label label2;

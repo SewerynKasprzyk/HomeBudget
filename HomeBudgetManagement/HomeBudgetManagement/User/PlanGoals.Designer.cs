@@ -33,12 +33,12 @@
             this.buttonCreateGoal = new System.Windows.Forms.Button();
             this.buttonModifyGoal = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.comboBoxSelectGoal = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.buttonDeleteGoal = new System.Windows.Forms.Button();
-            this.labelGoalName = new System.Windows.Forms.Label();
             this.labelGoalAmount = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.labelGoalLimit = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -91,16 +91,6 @@
             this.label2.TabIndex = 21;
             this.label2.Text = "Select goal to check";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(401, 219);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 24);
-            this.label3.TabIndex = 22;
-            this.label3.Text = "Goal name: ";
-            // 
             // comboBoxSelectGoal
             // 
             this.comboBoxSelectGoal.FormattingEnabled = true;
@@ -108,6 +98,7 @@
             this.comboBoxSelectGoal.Name = "comboBoxSelectGoal";
             this.comboBoxSelectGoal.Size = new System.Drawing.Size(202, 21);
             this.comboBoxSelectGoal.TabIndex = 23;
+            this.comboBoxSelectGoal.SelectedIndexChanged += new System.EventHandler(this.comboBoxSelectGoal_SelectedIndexChanged_1);
             // 
             // label4
             // 
@@ -128,16 +119,6 @@
             this.buttonDeleteGoal.Text = "Delete Goal";
             this.buttonDeleteGoal.UseVisualStyleBackColor = true;
             // 
-            // labelGoalName
-            // 
-            this.labelGoalName.AutoSize = true;
-            this.labelGoalName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelGoalName.Location = new System.Drawing.Point(519, 219);
-            this.labelGoalName.Name = "labelGoalName";
-            this.labelGoalName.Size = new System.Drawing.Size(108, 24);
-            this.labelGoalName.TabIndex = 26;
-            this.labelGoalName.Text = "XXXXXXX";
-            // 
             // labelGoalAmount
             // 
             this.labelGoalAmount.AutoSize = true;
@@ -148,6 +129,27 @@
             this.labelGoalAmount.TabIndex = 27;
             this.labelGoalAmount.Text = "XXXXXXX";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Location = new System.Drawing.Point(401, 219);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(102, 24);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "Goal Limit: ";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // labelGoalLimit
+            // 
+            this.labelGoalLimit.AutoSize = true;
+            this.labelGoalLimit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelGoalLimit.Location = new System.Drawing.Point(519, 219);
+            this.labelGoalLimit.Name = "labelGoalLimit";
+            this.labelGoalLimit.Size = new System.Drawing.Size(108, 24);
+            this.labelGoalLimit.TabIndex = 26;
+            this.labelGoalLimit.Text = "XXXXXXX";
+            // 
             // PlanGoals
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -155,7 +157,7 @@
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.labelGoalAmount);
-            this.Controls.Add(this.labelGoalName);
+            this.Controls.Add(this.labelGoalLimit);
             this.Controls.Add(this.buttonDeleteGoal);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBoxSelectGoal);
@@ -179,11 +181,11 @@
         private System.Windows.Forms.Button buttonCreateGoal;
         private System.Windows.Forms.Button buttonModifyGoal;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBoxSelectGoal;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button buttonDeleteGoal;
-        private System.Windows.Forms.Label labelGoalName;
         private System.Windows.Forms.Label labelGoalAmount;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelGoalLimit;
     }
 }

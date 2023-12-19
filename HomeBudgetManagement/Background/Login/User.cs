@@ -13,11 +13,12 @@ namespace Background
             this.login = login;
             this.password = password;
             this.accessLevel = accessLevel; // 0 indicates user have guest access level
+            this.id = "15";
         }
 
         public User()
         {
-            this.id = "null";
+            this.id = "15";
             this.password = null;
             this.accessLevel = 0;
         }

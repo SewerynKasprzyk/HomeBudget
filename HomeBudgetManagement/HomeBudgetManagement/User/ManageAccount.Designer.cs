@@ -80,6 +80,7 @@
             this.ButtonChangePassword.TabIndex = 19;
             this.ButtonChangePassword.Text = "Change";
             this.ButtonChangePassword.UseVisualStyleBackColor = true;
+            this.ButtonChangePassword.Click += new System.EventHandler(this.ButtonChangePassword_Click);
             // 
             // ManageAccount
             // 

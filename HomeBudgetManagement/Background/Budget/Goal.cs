@@ -20,7 +20,12 @@ namespace Background.Budget
         public Goal() { }
 
         public void AddToValue(float value) { Value += value; }
-        public void SubFromValue(float value) { Value -= value; }   
+        public void SubFromValue(float value) { Value -= value; }
+
+        public override string ToString()
+        {
+            return Name;
+        }
 
         public int Id { get; set; }
         public string Name { get; set; }
