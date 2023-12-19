@@ -28,7 +28,7 @@ namespace HomeBudgetManagement.User
                 ComboBoxSelectGoal.Items.Add(goal);
             }
 
-            label5.Text = BudgetList.GetBudget(int.Parse(Configuration.LoggedUser.Id)).BudgetValue.ToString();
+            //label5.Text = BudgetList.GetBudget(int.Parse(Configuration.LoggedUser.Id)).BudgetValue.ToString();
 
         }
 
