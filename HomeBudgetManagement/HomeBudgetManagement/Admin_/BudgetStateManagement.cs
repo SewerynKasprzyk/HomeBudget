@@ -44,5 +44,10 @@ namespace HomeBudgetManagement
         {
             Program.ChangeForm(typeof(Admin));
         }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
