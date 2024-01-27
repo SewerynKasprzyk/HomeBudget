@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Database;
+using Database.Enums;
+using HomeBudgetManagement.Model.ConfigurationContext;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,64 +15,12 @@ namespace HomeBudgetManagement.Admin_
 {
     public partial class First_Configuration : Form
     {
+        private UserService _userService;
+
         public First_Configuration()
         {
+            _userService = new UserService(new HomeManagementDbContext());
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void login_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void login_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void textBoxSetAdminLogin_click(object sender, EventArgs e)
@@ -95,6 +46,20 @@ namespace HomeBudgetManagement.Admin_
         private void buttonClose_click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var user = _userService.CreateUser(new Database.Entities.User()
+            {
+                Limit = 1000,
+                Login = textBoxSetAdminLogin.Text,
+                Password = textBoxSetAdminPassword.Text,
+                Role = Role.Admin,
+            });
+
+            Configuration.LoggedUser = user;
+            Program.ChangeForm(typeof(Admin));
         }
     }
 }
