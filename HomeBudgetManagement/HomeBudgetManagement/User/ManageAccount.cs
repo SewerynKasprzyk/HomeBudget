@@ -21,5 +21,15 @@ namespace HomeBudgetManagement.User
         {
             Program.ChangeForm(typeof(User_menu));
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

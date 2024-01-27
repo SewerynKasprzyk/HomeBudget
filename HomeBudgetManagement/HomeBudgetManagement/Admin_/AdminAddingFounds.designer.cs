@@ -58,19 +58,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Impact", 24F);
-            this.label1.Location = new System.Drawing.Point(327, 52);
+            this.label1.Font = new System.Drawing.Font("Impact", 32F);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
+            this.label1.Location = new System.Drawing.Point(320, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(194, 39);
+            this.label1.Size = new System.Drawing.Size(254, 53);
             this.label1.TabIndex = 0;
             this.label1.Text = "Adding Funds";
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Impact", 8.25F);
-            this.textBox1.Location = new System.Drawing.Point(39, 7);
+            this.textBox1.Font = new System.Drawing.Font("Impact", 10F);
+            this.textBox1.Location = new System.Drawing.Point(39, 6);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(178, 21);
+            this.textBox1.Size = new System.Drawing.Size(178, 24);
             this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -78,6 +79,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Impact", 16F);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
             this.label2.Location = new System.Drawing.Point(322, 125);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(114, 27);
@@ -88,6 +90,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Impact", 16F);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
             this.label3.Location = new System.Drawing.Point(322, 211);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(242, 27);
@@ -100,7 +103,8 @@
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Impact", 12F);
-            this.button5.Location = new System.Drawing.Point(667, 385);
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(685, 408);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(103, 30);
             this.button5.TabIndex = 22;
@@ -183,7 +187,7 @@
             this.panelSetAdminLogin.ForeColor = System.Drawing.Color.Black;
             this.panelSetAdminLogin.Location = new System.Drawing.Point(303, 155);
             this.panelSetAdminLogin.Name = "panelSetAdminLogin";
-            this.panelSetAdminLogin.Size = new System.Drawing.Size(503, 41);
+            this.panelSetAdminLogin.Size = new System.Drawing.Size(503, 44);
             this.panelSetAdminLogin.TabIndex = 24;
             // 
             // pictureBox4
@@ -197,11 +201,11 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Impact", 8.25F);
+            this.comboBox1.Font = new System.Drawing.Font("Impact", 10F);
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(39, 10);
+            this.comboBox1.Location = new System.Drawing.Point(39, 8);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(178, 23);
+            this.comboBox1.Size = new System.Drawing.Size(178, 25);
             this.comboBox1.TabIndex = 3;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -214,7 +218,7 @@
             this.panel1.ForeColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(303, 241);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(503, 35);
+            this.panel1.Size = new System.Drawing.Size(503, 38);
             this.panel1.TabIndex = 25;
             // 
             // pictureBox1
@@ -256,6 +260,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdminAddingFounds";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

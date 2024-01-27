@@ -83,6 +83,16 @@ namespace HomeBudgetManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_budget_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-budget-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_budget_80 {
             get {
                 object obj = ResourceManager.GetObject("icons8-budget-80", resourceCulture);
@@ -116,6 +126,16 @@ namespace HomeBudgetManagement.Properties {
         internal static System.Drawing.Bitmap icons8_coins_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8-coins-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_financial_dynamic_presentation_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-financial-dynamic-presentation-100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -176,6 +196,16 @@ namespace HomeBudgetManagement.Properties {
         internal static System.Drawing.Bitmap icons8_password_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-password-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_planning_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-planning-100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

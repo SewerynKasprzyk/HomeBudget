@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.ComboBoxSelectGoal = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,135 +40,177 @@
             this.TextBoxValueToCashOut = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.ButtonBackToUserMenu = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.buttonClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
+            this.label1.Font = new System.Drawing.Font("Impact", 32F);
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(171, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(467, 40);
+            this.label1.Size = new System.Drawing.Size(508, 53);
             this.label1.TabIndex = 0;
             this.label1.Text = "Financial Goal Management";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(270, 150);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(226, 29);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Add balance to goal";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(320, 190);
+            this.label3.Font = new System.Drawing.Font("Impact", 20F);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
+            this.label3.Location = new System.Drawing.Point(28, 181);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(120, 26);
+            this.label3.Size = new System.Drawing.Size(139, 34);
             this.label3.TabIndex = 3;
             this.label3.Text = "Select goal";
             // 
             // ComboBoxSelectGoal
             // 
+            this.ComboBoxSelectGoal.Font = new System.Drawing.Font("Impact", 10F);
             this.ComboBoxSelectGoal.FormattingEnabled = true;
-            this.ComboBoxSelectGoal.Location = new System.Drawing.Point(304, 223);
+            this.ComboBoxSelectGoal.Location = new System.Drawing.Point(34, 218);
             this.ComboBoxSelectGoal.Name = "ComboBoxSelectGoal";
-            this.ComboBoxSelectGoal.Size = new System.Drawing.Size(153, 21);
+            this.ComboBoxSelectGoal.Size = new System.Drawing.Size(179, 25);
             this.ComboBoxSelectGoal.TabIndex = 4;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(163, 280);
+            this.label4.Font = new System.Drawing.Font("Impact", 20F);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
+            this.label4.Location = new System.Drawing.Point(29, 255);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(134, 26);
+            this.label4.Size = new System.Drawing.Size(219, 34);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Value to add";
+            this.label4.Text = "The Amount to add";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // TextBoxAddToValue
             // 
-            this.TextBoxAddToValue.Location = new System.Drawing.Point(154, 319);
+            this.TextBoxAddToValue.Font = new System.Drawing.Font("Impact", 10F);
+            this.TextBoxAddToValue.Location = new System.Drawing.Point(35, 292);
             this.TextBoxAddToValue.Name = "TextBoxAddToValue";
-            this.TextBoxAddToValue.Size = new System.Drawing.Size(153, 20);
+            this.TextBoxAddToValue.Size = new System.Drawing.Size(178, 24);
             this.TextBoxAddToValue.TabIndex = 6;
             // 
             // ButtonAddToGoal
             // 
-            this.ButtonAddToGoal.Location = new System.Drawing.Point(191, 357);
+            this.ButtonAddToGoal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
+            this.ButtonAddToGoal.FlatAppearance.BorderSize = 0;
+            this.ButtonAddToGoal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonAddToGoal.Font = new System.Drawing.Font("Impact", 12F);
+            this.ButtonAddToGoal.ForeColor = System.Drawing.Color.White;
+            this.ButtonAddToGoal.Location = new System.Drawing.Point(34, 328);
             this.ButtonAddToGoal.Name = "ButtonAddToGoal";
-            this.ButtonAddToGoal.Size = new System.Drawing.Size(75, 23);
+            this.ButtonAddToGoal.Size = new System.Drawing.Size(179, 50);
             this.ButtonAddToGoal.TabIndex = 7;
             this.ButtonAddToGoal.Text = "Add";
-            this.ButtonAddToGoal.UseVisualStyleBackColor = true;
+            this.ButtonAddToGoal.UseVisualStyleBackColor = false;
             // 
             // LabelYourBalance
             // 
             this.LabelYourBalance.AutoSize = true;
-            this.LabelYourBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LabelYourBalance.Location = new System.Drawing.Point(246, 100);
+            this.LabelYourBalance.Font = new System.Drawing.Font("Impact", 20F);
+            this.LabelYourBalance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
+            this.LabelYourBalance.Location = new System.Drawing.Point(28, 133);
             this.LabelYourBalance.Name = "LabelYourBalance";
-            this.LabelYourBalance.Size = new System.Drawing.Size(184, 31);
+            this.LabelYourBalance.Size = new System.Drawing.Size(166, 34);
             this.LabelYourBalance.TabIndex = 8;
             this.LabelYourBalance.Text = "Your Balance:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.Location = new System.Drawing.Point(424, 100);
+            this.label5.Font = new System.Drawing.Font("Impact", 20F);
+            this.label5.ForeColor = System.Drawing.Color.Green;
+            this.label5.Location = new System.Drawing.Point(200, 133);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(101, 31);
+            this.label5.Size = new System.Drawing.Size(78, 34);
             this.label5.TabIndex = 9;
             this.label5.Text = "XXXX$";
             // 
             // ButtonToCashOut
             // 
-            this.ButtonToCashOut.Location = new System.Drawing.Point(475, 357);
+            this.ButtonToCashOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
+            this.ButtonToCashOut.FlatAppearance.BorderSize = 0;
+            this.ButtonToCashOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonToCashOut.Font = new System.Drawing.Font("Impact", 12F);
+            this.ButtonToCashOut.ForeColor = System.Drawing.Color.White;
+            this.ButtonToCashOut.Location = new System.Drawing.Point(286, 328);
             this.ButtonToCashOut.Name = "ButtonToCashOut";
-            this.ButtonToCashOut.Size = new System.Drawing.Size(75, 23);
+            this.ButtonToCashOut.Size = new System.Drawing.Size(179, 50);
             this.ButtonToCashOut.TabIndex = 12;
             this.ButtonToCashOut.Text = "Cash out";
-            this.ButtonToCashOut.UseVisualStyleBackColor = true;
+            this.ButtonToCashOut.UseVisualStyleBackColor = false;
             // 
             // TextBoxValueToCashOut
             // 
-            this.TextBoxValueToCashOut.Location = new System.Drawing.Point(437, 319);
+            this.TextBoxValueToCashOut.Font = new System.Drawing.Font("Impact", 10F);
+            this.TextBoxValueToCashOut.Location = new System.Drawing.Point(286, 292);
             this.TextBoxValueToCashOut.Name = "TextBoxValueToCashOut";
-            this.TextBoxValueToCashOut.Size = new System.Drawing.Size(153, 20);
+            this.TextBoxValueToCashOut.Size = new System.Drawing.Size(179, 24);
             this.TextBoxValueToCashOut.TabIndex = 11;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(424, 280);
+            this.label6.Font = new System.Drawing.Font("Impact", 20F);
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
+            this.label6.Location = new System.Drawing.Point(280, 255);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(180, 26);
+            this.label6.Size = new System.Drawing.Size(272, 34);
             this.label6.TabIndex = 10;
-            this.label6.Text = "Value to cash out";
+            this.label6.Text = "The Amount to cash out";
             // 
             // ButtonBackToUserMenu
             // 
-            this.ButtonBackToUserMenu.Location = new System.Drawing.Point(12, 12);
+            this.ButtonBackToUserMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
+            this.ButtonBackToUserMenu.FlatAppearance.BorderSize = 0;
+            this.ButtonBackToUserMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonBackToUserMenu.Font = new System.Drawing.Font("Impact", 12F);
+            this.ButtonBackToUserMenu.ForeColor = System.Drawing.Color.White;
+            this.ButtonBackToUserMenu.Location = new System.Drawing.Point(685, 408);
             this.ButtonBackToUserMenu.Name = "ButtonBackToUserMenu";
-            this.ButtonBackToUserMenu.Size = new System.Drawing.Size(119, 30);
+            this.ButtonBackToUserMenu.Size = new System.Drawing.Size(103, 30);
             this.ButtonBackToUserMenu.TabIndex = 16;
             this.ButtonBackToUserMenu.Text = "Back";
-            this.ButtonBackToUserMenu.UseVisualStyleBackColor = true;
+            this.ButtonBackToUserMenu.UseVisualStyleBackColor = false;
             this.ButtonBackToUserMenu.Click += new System.EventHandler(this.ButtonBackToUserMenu_Click);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, -1);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(801, 113);
+            this.flowLayoutPanel1.TabIndex = 17;
+            // 
+            // buttonClose
+            // 
+            this.buttonClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
+            this.buttonClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonClose.FlatAppearance.BorderSize = 0;
+            this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClose.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold);
+            this.buttonClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(218)))), ((int)(((byte)(244)))));
+            this.buttonClose.Location = new System.Drawing.Point(751, -1);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Size = new System.Drawing.Size(50, 50);
+            this.buttonClose.TabIndex = 51;
+            this.buttonClose.Text = "X";
+            this.buttonClose.UseVisualStyleBackColor = false;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // FinancialGoalManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gray;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(218)))), ((int)(((byte)(244)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.ButtonBackToUserMenu);
             this.Controls.Add(this.ButtonToCashOut);
             this.Controls.Add(this.TextBoxValueToCashOut);
@@ -181,10 +222,14 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.ComboBoxSelectGoal);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FinancialGoalManagement";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FinancialGoalManagement";
+            this.Load += new System.EventHandler(this.FinancialGoalManagement_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,7 +238,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox ComboBoxSelectGoal;
         private System.Windows.Forms.Label label4;
@@ -205,5 +249,7 @@
         private System.Windows.Forms.TextBox TextBoxValueToCashOut;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button ButtonBackToUserMenu;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Button buttonClose;
     }
 }

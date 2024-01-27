@@ -26,5 +26,20 @@ namespace HomeBudgetManagement.User
         {
             Program.ChangeForm(typeof(Manage_Account_Balance));
         }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FinancialGoalManagement_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

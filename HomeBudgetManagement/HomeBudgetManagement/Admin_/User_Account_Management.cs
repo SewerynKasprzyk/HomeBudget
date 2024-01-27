@@ -21,5 +21,15 @@ namespace HomeBudgetManagement.Admin_
         {
             Program.ChangeForm(typeof(Admin));
         }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void login_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -42,10 +42,12 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.Font = new System.Drawing.Font("Impact", 10F);
+            this.comboBox1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(70, 237);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(214, 21);
+            this.comboBox1.Size = new System.Drawing.Size(214, 25);
             this.comboBox1.TabIndex = 1;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -54,6 +56,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
             this.label1.Font = new System.Drawing.Font("Impact", 36F);
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(212, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(402, 60);
@@ -64,6 +67,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Impact", 20F);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
             this.label2.Location = new System.Drawing.Point(64, 191);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(210, 34);
@@ -75,6 +79,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Impact", 20F);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
             this.label3.Location = new System.Drawing.Point(312, 191);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(109, 34);
@@ -83,9 +88,11 @@
             // 
             // textBox1
             // 
+            this.textBox1.Font = new System.Drawing.Font("Impact", 10F);
+            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.textBox1.Location = new System.Drawing.Point(318, 238);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(160, 20);
+            this.textBox1.Size = new System.Drawing.Size(160, 24);
             this.textBox1.TabIndex = 6;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -95,6 +102,7 @@
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Impact", 12F);
+            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
             this.button5.Location = new System.Drawing.Point(685, 408);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(103, 30);
@@ -109,7 +117,8 @@
             this.ButtonSetLimit.FlatAppearance.BorderSize = 0;
             this.ButtonSetLimit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonSetLimit.Font = new System.Drawing.Font("Impact", 12F);
-            this.ButtonSetLimit.Location = new System.Drawing.Point(511, 206);
+            this.ButtonSetLimit.ForeColor = System.Drawing.Color.White;
+            this.ButtonSetLimit.Location = new System.Drawing.Point(513, 210);
             this.ButtonSetLimit.Name = "ButtonSetLimit";
             this.ButtonSetLimit.Size = new System.Drawing.Size(179, 52);
             this.ButtonSetLimit.TabIndex = 23;

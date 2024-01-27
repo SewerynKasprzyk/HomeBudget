@@ -49,6 +49,7 @@
             this.ButtonBack.FlatAppearance.BorderSize = 0;
             this.ButtonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonBack.Font = new System.Drawing.Font("Impact", 12F);
+            this.ButtonBack.ForeColor = System.Drawing.Color.White;
             this.ButtonBack.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ButtonBack.Location = new System.Drawing.Point(122, 408);
             this.ButtonBack.Name = "ButtonBack";
@@ -64,6 +65,7 @@
             this.ButtonCategoryReview.FlatAppearance.BorderSize = 0;
             this.ButtonCategoryReview.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonCategoryReview.Font = new System.Drawing.Font("Impact", 12F);
+            this.ButtonCategoryReview.ForeColor = System.Drawing.Color.White;
             this.ButtonCategoryReview.Location = new System.Drawing.Point(32, 187);
             this.ButtonCategoryReview.Name = "ButtonCategoryReview";
             this.ButtonCategoryReview.Size = new System.Drawing.Size(180, 65);
@@ -78,6 +80,7 @@
             this.ButtonUserBudgetReview.FlatAppearance.BorderSize = 0;
             this.ButtonUserBudgetReview.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonUserBudgetReview.Font = new System.Drawing.Font("Impact", 12F);
+            this.ButtonUserBudgetReview.ForeColor = System.Drawing.Color.White;
             this.ButtonUserBudgetReview.Location = new System.Drawing.Point(32, 106);
             this.ButtonUserBudgetReview.Name = "ButtonUserBudgetReview";
             this.ButtonUserBudgetReview.Size = new System.Drawing.Size(180, 65);
@@ -136,10 +139,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Impact", 18F);
-            this.label1.Location = new System.Drawing.Point(29, 64);
+            this.label1.Font = new System.Drawing.Font("Impact", 22F);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
+            this.label1.Location = new System.Drawing.Point(3, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(183, 29);
+            this.label1.Size = new System.Drawing.Size(231, 37);
             this.label1.TabIndex = 29;
             this.label1.Text = "Select the Review";
             // 

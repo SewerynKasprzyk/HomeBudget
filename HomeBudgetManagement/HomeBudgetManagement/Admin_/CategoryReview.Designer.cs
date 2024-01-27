@@ -46,8 +46,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.LabelCategorySelect = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.buttonClose = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -56,6 +56,7 @@
             // 
             this.LabelBudgetReview.AutoSize = true;
             this.LabelBudgetReview.Font = new System.Drawing.Font("Impact", 32F);
+            this.LabelBudgetReview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
             this.LabelBudgetReview.Location = new System.Drawing.Point(283, 27);
             this.LabelBudgetReview.Name = "LabelBudgetReview";
             this.LabelBudgetReview.Size = new System.Drawing.Size(315, 53);
@@ -68,7 +69,8 @@
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Impact", 12F);
-            this.button5.Location = new System.Drawing.Point(675, 399);
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(685, 408);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(103, 30);
             this.button5.TabIndex = 27;
@@ -80,6 +82,7 @@
             // 
             this.LabelCategory1.AutoSize = true;
             this.LabelCategory1.Font = new System.Drawing.Font("Impact", 16F);
+            this.LabelCategory1.ForeColor = System.Drawing.Color.White;
             this.LabelCategory1.Location = new System.Drawing.Point(36, 89);
             this.LabelCategory1.Name = "LabelCategory1";
             this.LabelCategory1.Size = new System.Drawing.Size(109, 27);
@@ -91,7 +94,8 @@
             this.LabelCategory1Budget.AutoSize = true;
             this.LabelCategory1Budget.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
             this.LabelCategory1Budget.Font = new System.Drawing.Font("Impact", 16F);
-            this.LabelCategory1Budget.Location = new System.Drawing.Point(159, 89);
+            this.LabelCategory1Budget.ForeColor = System.Drawing.Color.White;
+            this.LabelCategory1Budget.Location = new System.Drawing.Point(154, 89);
             this.LabelCategory1Budget.Name = "LabelCategory1Budget";
             this.LabelCategory1Budget.Size = new System.Drawing.Size(68, 27);
             this.LabelCategory1Budget.TabIndex = 31;
@@ -102,7 +106,8 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
             this.label1.Font = new System.Drawing.Font("Impact", 16F);
-            this.label1.Location = new System.Drawing.Point(159, 135);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(154, 136);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 27);
             this.label1.TabIndex = 33;
@@ -113,7 +118,8 @@
             this.LabelCategory2.AutoSize = true;
             this.LabelCategory2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
             this.LabelCategory2.Font = new System.Drawing.Font("Impact", 16F);
-            this.LabelCategory2.Location = new System.Drawing.Point(29, 135);
+            this.LabelCategory2.ForeColor = System.Drawing.Color.White;
+            this.LabelCategory2.Location = new System.Drawing.Point(36, 135);
             this.LabelCategory2.Name = "LabelCategory2";
             this.LabelCategory2.Size = new System.Drawing.Size(112, 27);
             this.LabelCategory2.TabIndex = 32;
@@ -124,7 +130,8 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
             this.label3.Font = new System.Drawing.Font("Impact", 16F);
-            this.label3.Location = new System.Drawing.Point(159, 180);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(154, 180);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(68, 27);
             this.label3.TabIndex = 35;
@@ -135,6 +142,7 @@
             this.LabelCategory3.AutoSize = true;
             this.LabelCategory3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
             this.LabelCategory3.Font = new System.Drawing.Font("Impact", 16F);
+            this.LabelCategory3.ForeColor = System.Drawing.Color.White;
             this.LabelCategory3.Location = new System.Drawing.Point(29, 180);
             this.LabelCategory3.Name = "LabelCategory3";
             this.LabelCategory3.Size = new System.Drawing.Size(113, 27);
@@ -146,7 +154,8 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
             this.label5.Font = new System.Drawing.Font("Impact", 16F);
-            this.label5.Location = new System.Drawing.Point(159, 221);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(154, 221);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(68, 27);
             this.label5.TabIndex = 37;
@@ -157,6 +166,7 @@
             this.LabelCategory4.AutoSize = true;
             this.LabelCategory4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
             this.LabelCategory4.Font = new System.Drawing.Font("Impact", 16F);
+            this.LabelCategory4.ForeColor = System.Drawing.Color.White;
             this.LabelCategory4.Location = new System.Drawing.Point(29, 221);
             this.LabelCategory4.Name = "LabelCategory4";
             this.LabelCategory4.Size = new System.Drawing.Size(112, 27);
@@ -168,7 +178,8 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
             this.label7.Font = new System.Drawing.Font("Impact", 16F);
-            this.label7.Location = new System.Drawing.Point(159, 259);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(154, 259);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(68, 27);
             this.label7.TabIndex = 39;
@@ -179,6 +190,7 @@
             this.LabelCategory5.AutoSize = true;
             this.LabelCategory5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
             this.LabelCategory5.Font = new System.Drawing.Font("Impact", 16F);
+            this.LabelCategory5.ForeColor = System.Drawing.Color.White;
             this.LabelCategory5.Location = new System.Drawing.Point(29, 259);
             this.LabelCategory5.Name = "LabelCategory5";
             this.LabelCategory5.Size = new System.Drawing.Size(113, 27);
@@ -190,7 +202,8 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
             this.label9.Font = new System.Drawing.Font("Impact", 16F);
-            this.label9.Location = new System.Drawing.Point(159, 300);
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(154, 300);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(68, 27);
             this.label9.TabIndex = 41;
@@ -201,6 +214,7 @@
             this.LabelCategory6.AutoSize = true;
             this.LabelCategory6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
             this.LabelCategory6.Font = new System.Drawing.Font("Impact", 16F);
+            this.LabelCategory6.ForeColor = System.Drawing.Color.White;
             this.LabelCategory6.Location = new System.Drawing.Point(29, 300);
             this.LabelCategory6.Name = "LabelCategory6";
             this.LabelCategory6.Size = new System.Drawing.Size(113, 27);
@@ -211,6 +225,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Impact", 16F);
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
             this.label11.Location = new System.Drawing.Point(402, 180);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(68, 27);
@@ -221,6 +236,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Impact", 16F);
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
             this.label12.Location = new System.Drawing.Point(287, 180);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(109, 27);
@@ -231,6 +247,7 @@
             // 
             this.LabelCategorySelect.AutoSize = true;
             this.LabelCategorySelect.Font = new System.Drawing.Font("Impact", 20F);
+            this.LabelCategorySelect.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
             this.LabelCategorySelect.Location = new System.Drawing.Point(286, 129);
             this.LabelCategorySelect.Name = "LabelCategorySelect";
             this.LabelCategorySelect.Size = new System.Drawing.Size(338, 34);
@@ -241,19 +258,17 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
             this.panel1.Controls.Add(this.LabelCategory1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.LabelCategory1Budget);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.LabelCategory2);
             this.panel1.Location = new System.Drawing.Point(-7, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(275, 452);
             this.panel1.TabIndex = 44;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::HomeBudgetManagement.Properties.Resources.icons8_categories_100;
-            this.pictureBox3.Location = new System.Drawing.Point(638, 221);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox3.TabIndex = 45;
-            this.pictureBox3.TabStop = false;
             // 
             // buttonClose
             // 
@@ -271,6 +286,15 @@
             this.buttonClose.UseVisualStyleBackColor = false;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::HomeBudgetManagement.Properties.Resources.icons8_categories_100;
+            this.pictureBox3.Location = new System.Drawing.Point(638, 221);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox3.TabIndex = 45;
+            this.pictureBox3.TabStop = false;
+            // 
             // CategoryReview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -281,21 +305,15 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.LabelCategory6);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.LabelCategory5);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.LabelCategory4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.LabelCategory3);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.LabelCategory2);
-            this.Controls.Add(this.LabelCategory1Budget);
             this.Controls.Add(this.LabelCategorySelect);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.LabelBudgetReview);
             this.Controls.Add(this.panel1);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CategoryReview";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

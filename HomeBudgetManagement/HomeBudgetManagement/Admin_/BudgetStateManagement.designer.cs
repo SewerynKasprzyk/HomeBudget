@@ -91,6 +91,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Impact", 21F);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
             this.label1.Location = new System.Drawing.Point(276, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(255, 35);

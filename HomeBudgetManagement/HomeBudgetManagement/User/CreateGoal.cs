@@ -21,5 +21,15 @@ namespace HomeBudgetManagement.User
         {
             Program.ChangeForm(typeof(PlanGoals));
         }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

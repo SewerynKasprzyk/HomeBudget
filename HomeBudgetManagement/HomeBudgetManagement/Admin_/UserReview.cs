@@ -21,5 +21,10 @@ namespace HomeBudgetManagement.Admin_
         {
             Program.ChangeForm(typeof(LabelBudget));
         }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -322,5 +322,14 @@
   <ItemGroup>
     <None Include="Resources\icons8-categories-100.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-budget-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-planning-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-financial-dynamic-presentation-100.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
