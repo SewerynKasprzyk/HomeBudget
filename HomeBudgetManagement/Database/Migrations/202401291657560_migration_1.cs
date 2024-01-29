@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitMigration : DbMigration
+    public partial class migration_1 : DbMigration
     {
         public override void Up()
         {
@@ -61,6 +61,16 @@
                     })
                 .PrimaryKey(t => t.Id);
             
+            CreateTable(
+                "dbo.Goals",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Amonunt = c.Decimal(nullable: false, precision: 18, scale: 2),
+                        Name = c.String(),
+                    })
+                .PrimaryKey(t => t.Id);
+            
         }
         
         public override void Down()
@@ -71,6 +81,7 @@
             DropIndex("dbo.Transactions", new[] { "Balance_Id" });
             DropIndex("dbo.Transactions", new[] { "User_Id" });
             DropIndex("dbo.Transactions", new[] { "Category_Id" });
+            DropTable("dbo.Goals");
             DropTable("dbo.Users");
             DropTable("dbo.Categories");
             DropTable("dbo.Transactions");

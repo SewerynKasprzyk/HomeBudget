@@ -1,4 +1,6 @@
-﻿using System;
+﻿using HomeBudgetManagement.Admin_;
+using HomeBudgetManagement.Model.ConfigurationContext;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -18,7 +20,16 @@ namespace HomeBudgetManagement
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            currentForm = new Client();
+            Configuration.selfConfig();
+
+            if (Configuration.Performed)
+            {
+                currentForm = new Client();
+            }
+            else
+            {
+                currentForm = new First_Configuration();
+            }
 
             Application.Run(currentForm);
 
