@@ -205,6 +205,7 @@
             this.ButtonBackToUserMenu.FlatAppearance.BorderSize = 0;
             this.ButtonBackToUserMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonBackToUserMenu.Font = new System.Drawing.Font("Impact", 12F);
+            this.ButtonBackToUserMenu.ForeColor = System.Drawing.Color.White;
             this.ButtonBackToUserMenu.Location = new System.Drawing.Point(685, 408);
             this.ButtonBackToUserMenu.Name = "ButtonBackToUserMenu";
             this.ButtonBackToUserMenu.Size = new System.Drawing.Size(103, 30);

@@ -161,7 +161,7 @@
             this.panel2.Controls.Add(this.button4);
             this.panel2.Location = new System.Drawing.Point(550, -1);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(250, 452);
+            this.panel2.Size = new System.Drawing.Size(253, 452);
             this.panel2.TabIndex = 24;
             // 
             // imageList1
