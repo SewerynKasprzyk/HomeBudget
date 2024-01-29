@@ -1,10 +1,14 @@
-﻿using HomeBudgetManagement.Admin_;
+﻿using Background;
+using Database;
+using HomeBudgetManagement.Admin_;
+using HomeBudgetManagement.Model.ConfigurationContext;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -31,8 +35,8 @@ namespace HomeBudgetManagement
                     // Obsługa błędu - jedno z pól tekstowych jest puste
                     throw new Exception("Pole tekstowe nie może być puste.");
                 }
-
-
+                UserService userService = new UserService(new HomeManagementDbContext());
+                Configuration.LoggedUser = userService.GetAllUsers().FirstOrDefault(x => x.Login == textboxLogin.Text);
                 Program.ChangeForm(typeof(User_menu));
             }
             catch (Exception ex)

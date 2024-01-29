@@ -1,8 +1,11 @@
 ﻿namespace Background
 {
+    using System.Collections.Generic;
     using System.Data.Entity;
+    using System.Linq;
     using Database;
     using Database.Entities;
+    using HomeBudgetManagement.Model.ConfigurationContext;
 
     public class GoalService
     {
@@ -33,6 +36,11 @@
             _context.Entry(goal).State = EntityState.Modified;
             _context.SaveChanges();
             return goal;
+        }
+
+        public List<Goal> GetAllGoals(long id)
+        {
+            return _context.Goals.Where(x => x.User.Id == id).ToList();
         }
 
         // Delete

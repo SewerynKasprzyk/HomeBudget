@@ -73,7 +73,6 @@
             this.label1.Size = new System.Drawing.Size(248, 53);
             this.label1.TabIndex = 20;
             this.label1.Text = "Modify Goals";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // comboBoxSelectGoal
             // 
@@ -83,6 +82,7 @@
             this.comboBoxSelectGoal.Name = "comboBoxSelectGoal";
             this.comboBoxSelectGoal.Size = new System.Drawing.Size(202, 25);
             this.comboBoxSelectGoal.TabIndex = 30;
+            this.comboBoxSelectGoal.SelectedIndexChanged += new System.EventHandler(this.comboBoxSelectGoal_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -257,7 +257,6 @@
             this.Name = "ModifyGoals";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModifyGoals";
-            this.Load += new System.EventHandler(this.ModifyGoals_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

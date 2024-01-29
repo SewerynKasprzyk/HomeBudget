@@ -79,7 +79,6 @@
             this.label2.Size = new System.Drawing.Size(350, 39);
             this.label2.TabIndex = 19;
             this.label2.Text = "Add name of the new goal";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textBoxGoalName
             // 
@@ -121,6 +120,7 @@
             this.buttonCreateGoal.TabIndex = 23;
             this.buttonCreateGoal.Text = "Create";
             this.buttonCreateGoal.UseVisualStyleBackColor = false;
+            this.buttonCreateGoal.Click += new System.EventHandler(this.buttonCreateGoal_Click);
             // 
             // panel1
             // 

@@ -7,8 +7,8 @@ namespace Database.Entities
     {
         [Key]
         public int Id { get; set; }
-        public decimal Amonunt { get; set; } 
-        public string Name { get; set; }    
-
+        public decimal Amount { get; set; } 
+        public string Name { get; set; } 
+        public User User { get; set; } 
     }
 }

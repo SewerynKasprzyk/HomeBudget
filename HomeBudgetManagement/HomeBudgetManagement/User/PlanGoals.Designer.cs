@@ -132,6 +132,7 @@
             this.comboBoxSelectGoal.Name = "comboBoxSelectGoal";
             this.comboBoxSelectGoal.Size = new System.Drawing.Size(202, 25);
             this.comboBoxSelectGoal.TabIndex = 23;
+            this.comboBoxSelectGoal.SelectedIndexChanged += new System.EventHandler(this.comboBoxSelectGoal_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -157,6 +158,7 @@
             this.buttonDeleteGoal.TabIndex = 25;
             this.buttonDeleteGoal.Text = "Delete Goal";
             this.buttonDeleteGoal.UseVisualStyleBackColor = false;
+            this.buttonDeleteGoal.Click += new System.EventHandler(this.buttonDeleteGoal_Click);
             // 
             // labelGoalName
             // 

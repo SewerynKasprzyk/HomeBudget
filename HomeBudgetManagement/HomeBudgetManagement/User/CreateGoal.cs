@@ -1,4 +1,8 @@
-﻿using System;
+﻿using Background;
+using Background.Manager;
+using Database.Entities;
+using HomeBudgetManagement.Model.ConfigurationContext;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,7 +13,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HomeBudgetManagement.User
-{
+{   
     public partial class CreateGoal : Form
     {
         public CreateGoal()
@@ -27,9 +31,11 @@ namespace HomeBudgetManagement.User
             Application.Exit();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void buttonCreateGoal_Click(object sender, EventArgs e)
         {
-
+            GoalManager goalManager = new GoalManager();
+            goalManager.AddGoal(textBoxGoalName.Text, textBoxBalanceGoal.Text);
+            MessageBox.Show($"Goal successfully created", "Goal Created", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

@@ -63,6 +63,14 @@
     <Compile Include="Migrations\202401291828134_test.designer.cs">
       <DependentUpon>202401291828134_test.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202401292100134_UserGoal.cs" />
+    <Compile Include="Migrations\202401292100134_UserGoal.designer.cs">
+      <DependentUpon>202401292100134_UserGoal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202401292137453_RepairedAmount.cs" />
+    <Compile Include="Migrations\202401292137453_RepairedAmount.designer.cs">
+      <DependentUpon>202401292137453_RepairedAmount.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -73,6 +81,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202401291828134_test.resx">
       <DependentUpon>202401291828134_test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202401292100134_UserGoal.resx">
+      <DependentUpon>202401292100134_UserGoal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202401292137453_RepairedAmount.resx">
+      <DependentUpon>202401292137453_RepairedAmount.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
