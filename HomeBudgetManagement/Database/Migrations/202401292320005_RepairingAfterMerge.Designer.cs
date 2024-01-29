@@ -7,13 +7,13 @@ namespace Database.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class RepairedAmount : IMigrationMetadata
+    public sealed partial class RepairingAfterMerge : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(RepairedAmount));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(RepairingAfterMerge));
         
         string IMigrationMetadata.Id
         {
-            get { return "202401292137453_RepairedAmount"; }
+            get { return "202401292320005_RepairingAfterMerge"; }
         }
         
         string IMigrationMetadata.Source

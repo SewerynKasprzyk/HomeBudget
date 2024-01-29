@@ -1,18 +1,9 @@
-﻿using Background;
-using Background.Manager;
-using Database.Enums;
+﻿using Database.Enums;
 using HomeBudgetManagement.Admin_;
 using HomeBudgetManagement.Model.ConfigurationContext;
+using Model.Manager;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
 using System.Drawing;
-using System.Linq;
-using System.Runtime.Remoting.Contexts;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HomeBudgetManagement

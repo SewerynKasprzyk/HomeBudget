@@ -1,5 +1,5 @@
-﻿using Background.Manager;
-using Database.Entities;
+﻿using Database.Entities;
+using Model.Manager;
 using System;
 using System.Linq;
 using System.Windows.Forms;
@@ -43,7 +43,13 @@ namespace HomeBudgetManagement.User
 
         private void buttonDeleteGoal_Click(object sender, EventArgs e)
         {
+
             var selectedGoal = (Goal)comboBoxSelectGoal.SelectedItem;
+            if (selectedGoal == null)
+            {
+                MessageBox.Show($"Nothing to delete", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             DialogResult result = MessageBox.Show($"Are you sure you want to delete {selectedGoal.Name}?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes)

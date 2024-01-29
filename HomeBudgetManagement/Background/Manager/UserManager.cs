@@ -3,9 +3,8 @@ using Database.Entities;
 using Database.Enums;
 using HomeBudgetManagement.Model.ConfigurationContext;
 using System;
-using System.Threading;
 
-namespace Background
+namespace Model.Manager
 {
     public class UserManager
     {

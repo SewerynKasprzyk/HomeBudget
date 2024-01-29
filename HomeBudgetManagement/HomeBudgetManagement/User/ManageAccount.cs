@@ -1,6 +1,7 @@
-﻿using Background;
-using Database;
+﻿using Database;
 using HomeBudgetManagement.Model.ConfigurationContext;
+using Model;
+using Model.Manager;
 using System;
 using System.Windows.Forms;
 

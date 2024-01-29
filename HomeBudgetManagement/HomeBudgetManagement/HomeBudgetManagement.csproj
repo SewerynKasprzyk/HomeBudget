@@ -277,7 +277,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Background\Model.csproj">
-      <Project>{b1615fb5-1eae-4168-bf2d-edc5b7941a2c}</Project>
+      <Project>{B1615FB5-1EAE-4168-BF2D-EDC5B7941A2C}</Project>
       <Name>Model</Name>
     </ProjectReference>
     <ProjectReference Include="..\Database\Database.csproj">

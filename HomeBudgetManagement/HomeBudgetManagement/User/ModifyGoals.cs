@@ -1,5 +1,5 @@
-﻿using Background.Manager;
-using Database.Entities;
+﻿using Database.Entities;
+using Model.Manager;
 using System;
 using System.Windows.Forms;
 

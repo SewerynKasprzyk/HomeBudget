@@ -60,17 +60,9 @@
     <Compile Include="Entities\User.cs" />
     <Compile Include="Enums\Role.cs" />
     <Compile Include="HomeManagementDbContext.cs" />
-    <Compile Include="Migrations\202401292131056_test.cs" />
-    <Compile Include="Migrations\202401292131056_test.designer.cs">
-      <DependentUpon>202401292131056_test.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202401292100134_UserGoal.cs" />
-    <Compile Include="Migrations\202401292100134_UserGoal.designer.cs">
-      <DependentUpon>202401292100134_UserGoal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202401292137453_RepairedAmount.cs" />
-    <Compile Include="Migrations\202401292137453_RepairedAmount.designer.cs">
-      <DependentUpon>202401292137453_RepairedAmount.cs</DependentUpon>
+    <Compile Include="Migrations\202401292320005_RepairingAfterMerge.cs" />
+    <Compile Include="Migrations\202401292320005_RepairingAfterMerge.designer.cs">
+      <DependentUpon>202401292320005_RepairingAfterMerge.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -80,14 +72,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202401292131056_test.resx">
-      <DependentUpon>202401292131056_test.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202401292100134_UserGoal.resx">
-      <DependentUpon>202401292100134_UserGoal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202401292137453_RepairedAmount.resx">
-      <DependentUpon>202401292137453_RepairedAmount.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202401292320005_RepairingAfterMerge.resx">
+      <DependentUpon>202401292320005_RepairingAfterMerge.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

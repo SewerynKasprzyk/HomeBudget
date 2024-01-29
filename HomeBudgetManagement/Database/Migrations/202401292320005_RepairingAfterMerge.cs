@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class test : DbMigration
+    public partial class RepairingAfterMerge : DbMigration
     {
         public override void Up()
         {
@@ -71,10 +71,13 @@
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Amonunt = c.Decimal(nullable: false, precision: 18, scale: 2),
+                        Amount = c.Decimal(nullable: false, precision: 18, scale: 2),
                         Name = c.String(),
+                        User_Id = c.Int(),
                     })
-                .PrimaryKey(t => t.Id);
+                .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.Users", t => t.User_Id)
+                .Index(t => t.User_Id);
             
             CreateTable(
                 "dbo.BalanceWholes",
@@ -91,10 +94,12 @@
         public override void Down()
         {
             DropForeignKey("dbo.Transactions", "BalanceWhole_Id", "dbo.BalanceWholes");
+            DropForeignKey("dbo.Goals", "User_Id", "dbo.Users");
             DropForeignKey("dbo.Balances", "Id", "dbo.Users");
             DropForeignKey("dbo.Transactions", "Balance_Id", "dbo.Balances");
             DropForeignKey("dbo.Transactions", "User_Id", "dbo.Users");
             DropForeignKey("dbo.Transactions", "Category_Id", "dbo.Categories");
+            DropIndex("dbo.Goals", new[] { "User_Id" });
             DropIndex("dbo.Transactions", new[] { "BalanceWhole_Id" });
             DropIndex("dbo.Transactions", new[] { "Balance_Id" });
             DropIndex("dbo.Transactions", new[] { "User_Id" });

@@ -1,12 +1,11 @@
-﻿namespace Background
-{
-    using System.Collections.Generic;
-    using System.Data.Entity;
-    using System.Linq;
-    using Database;
-    using Database.Entities;
-    using HomeBudgetManagement.Model.ConfigurationContext;
+﻿using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+using Database;
+using Database.Entities;
 
+namespace Model
+{
     public class GoalService
     {
         private HomeManagementDbContext _context;

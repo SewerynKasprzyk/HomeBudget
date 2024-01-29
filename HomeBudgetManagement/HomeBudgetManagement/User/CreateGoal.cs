@@ -1,19 +1,9 @@
-﻿using Background;
-using Background.Manager;
-using Database.Entities;
-using HomeBudgetManagement.Model.ConfigurationContext;
+﻿using Model.Manager;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HomeBudgetManagement.User
-{   
+{
     public partial class CreateGoal : Form
     {
         public CreateGoal()

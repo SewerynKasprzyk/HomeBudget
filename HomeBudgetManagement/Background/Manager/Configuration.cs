@@ -1,8 +1,9 @@
-﻿using Background.Manager;
+﻿using Model.Manager;
 using Database;
 using Database.Entities;
 using Database.Enums;
 using System;
+using Model;
 
 namespace HomeBudgetManagement.Model.ConfigurationContext
 {
