@@ -24,8 +24,5 @@ namespace HomeBudgetManagement.Model.ConfigurationContext
 
             return false;
         }*/
-
-
-
     }
 }

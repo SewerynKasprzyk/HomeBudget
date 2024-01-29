@@ -54,6 +54,7 @@
     <Compile Include="Database.cs" />
     <Compile Include="Entities\Balance.cs" />
     <Compile Include="Entities\Category.cs" />
+    <Compile Include="Entities\Goal.cs" />
     <Compile Include="Entities\Transaction.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Enums\Role.cs" />
