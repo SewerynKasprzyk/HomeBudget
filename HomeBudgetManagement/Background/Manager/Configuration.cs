@@ -8,41 +8,51 @@ namespace HomeBudgetManagement.Model.ConfigurationContext
 {
     public static class Configuration
     {
-        public static int AccessLevel { get; set; } = 0;
+        public static Role AccessLevel { get; set; } = Role.Guest;
         public static User LoggedUser { get; set; } = null;
         public static bool Performed { get; set; } = false;
 
         public static bool FirstConfiguration(String firstLogin, String firstName, String firstSurname, String firstPassword, String confirmFirstPassword)
-        {    
-             if (!Performed)
-             {
-                 if (Validation.Validate(firstLogin, firstPassword, confirmFirstPassword))
+        {
+
+                 if (!Performed)
                  {
-                     UserService service = new UserService(new HomeManagementDbContext());
-
-                     var user = service.CreateUser(new User()
+                     if (!Validation.PasswordCheck(firstPassword))
                      {
-                         Limit = 100000000000,
-                         Login = firstLogin,
-                         Password = firstPassword,
-                         Role = Role.Admin,
-                     });
+                        throw new Exception("Password does not meet strong password requirements");
+                     }
+                     if (Validation.Validate(firstLogin, firstPassword, confirmFirstPassword))
+                     {
+                         UserService service = new UserService(new HomeManagementDbContext());
 
-                     LoggedUser = user;
-                     return true;
+                         var user = service.CreateUser(new User()
+                         {
+                             Limit = 100000000000,
+                             Login = firstLogin,
+                             Password = firstPassword,
+                             Role = Role.Admin,
+                         });
+
+                         LoggedUser = user;
+                         AccessLevel = user.Role;         
+                    
+                         return true;
+                     }
+                     else
+                     {
+                        throw new Exception("Validate failed. Please chceck your input.");
+                     }
                  }
                  return false;
-             }
-             return false;
-        }
+            }
 
-        public static void SelfConfig()
-        {
+            public static void SelfConfig()
+            {
             UserService service = new UserService(new HomeManagementDbContext());
 
             foreach (var user in service.GetAllUsers())
             {
-                if(user.Role == Role.Admin)
+                if (user.Role == Role.Admin)
                 {
                     Performed = true;
                     return;
