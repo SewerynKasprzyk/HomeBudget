@@ -32,7 +32,7 @@
             this.ButtonAccountBalanceManagement = new System.Windows.Forms.Button();
             this.buttonExpense = new System.Windows.Forms.Button();
             this.ButtonManageAccount = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelNickname = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -107,15 +107,17 @@
             this.ButtonManageAccount.UseVisualStyleBackColor = false;
             this.ButtonManageAccount.Click += new System.EventHandler(this.ButtonManageAccount_Click);
             // 
-            // label1
+            // labelNickname
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Impact", 24F);
-            this.label1.Location = new System.Drawing.Point(445, 98);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(268, 39);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "<Name/Nickname>";
+            this.labelNickname.AccessibleDescription = "labelNickname";
+            this.labelNickname.AccessibleName = "labelNickname";
+            this.labelNickname.AutoSize = true;
+            this.labelNickname.Font = new System.Drawing.Font("Impact", 24F);
+            this.labelNickname.Location = new System.Drawing.Point(445, 98);
+            this.labelNickname.Name = "labelNickname";
+            this.labelNickname.Size = new System.Drawing.Size(268, 39);
+            this.labelNickname.TabIndex = 4;
+            this.labelNickname.Text = "<Name/Nickname>";
             // 
             // label2
             // 
@@ -262,7 +264,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelNickname);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "User_menu";
@@ -280,7 +282,7 @@
         private System.Windows.Forms.Button ButtonAccountBalanceManagement;
         private System.Windows.Forms.Button buttonExpense;
         private System.Windows.Forms.Button ButtonManageAccount;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelNickname;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

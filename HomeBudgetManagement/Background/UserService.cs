@@ -16,6 +16,7 @@ public class UserService
     // Create
     public User CreateUser(User user)
     {
+        user.Balance = new Balance();
         _context.Users.Add(user);
         _context.SaveChanges();
         return user;
@@ -45,6 +46,13 @@ public class UserService
             _context.SaveChanges();
         }
     }
+
+    public Balance GetUserBalance(int userId)
+    {
+        var user = _context.Users.Find(userId);
+        return user != null ? user.Balance : null;
+    }
+
     public List<User> GetAllUsers()
     {
         return _context.Users.ToList();

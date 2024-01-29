@@ -1,4 +1,5 @@
-﻿using Database;
+﻿using Background.Manager;
+using Database;
 using Database.Enums;
 using HomeBudgetManagement.Model.ConfigurationContext;
 using System;
@@ -50,10 +51,19 @@ namespace HomeBudgetManagement.Admin_
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(Configuration.FirstConfiguration(textBoxSetAdminLogin.Text, "", "", textBoxSetAdminPassword.Text, textBoxSetAdminPassword.Text) == true)
+            try
             {
-                Program.ChangeForm(typeof(Admin));
+                if(Configuration.FirstConfiguration(textBoxSetAdminLogin.Text, "", "", textBoxSetAdminPassword.Text, textBoxSetAdminPassword.Text) == true)
+                {
+                    Program.ChangeForm(typeof(Admin));
+                }            
             }
+                 catch (Exception ex)
+            {
+                // Obsługa wyjątku i wyświetlenie komunikatu w oknie dialogowym
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        
         }
     }
 }

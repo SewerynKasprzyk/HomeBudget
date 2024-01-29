@@ -1,4 +1,6 @@
-﻿using HomeBudgetManagement.User;
+﻿using Background;
+using HomeBudgetManagement.Model.ConfigurationContext;
+using HomeBudgetManagement.User;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,11 +18,14 @@ namespace HomeBudgetManagement
         public User_menu()
         {
             InitializeComponent();
+            UpdateView();
         }
 
         private void buttonLogout_Click(object sender, EventArgs e)
         {
-
+            UserManager userManager = new UserManager();
+            userManager.Logout();
+            Program.ChangeForm(typeof(Client));
         }
 
         private void buttonRaport_Click(object sender, EventArgs e)
@@ -51,6 +56,10 @@ namespace HomeBudgetManagement
         private void buttonClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+        private void UpdateView()
+        {
+            labelNickname.Text = Configuration.LoggedUser.Login;
         }
     }
 }
