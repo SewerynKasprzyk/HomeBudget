@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Background.cs" />
+    <Compile Include="Manager\UserManager.cs" />
     <Compile Include="Manager\Configuration.cs" />
     <Compile Include="GoalService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

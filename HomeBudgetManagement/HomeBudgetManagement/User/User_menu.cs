@@ -18,39 +18,29 @@ namespace HomeBudgetManagement
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void buttonLogout_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void buttonRaport_Click(object sender, EventArgs e)
         {
-
+            Program.ChangeForm(typeof(Finance_Raport));
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Program.ChangeForm(typeof(Finance_Raport)); ;
-        }
-
-        private void button3_Click(object sender, EventArgs e)
+        private void buttonExpense_Click(object sender, EventArgs e)
         {
             Program.ChangeForm(typeof(Expense_Management));
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            Program.ChangeForm(typeof(Client));
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Program.ChangeForm(typeof(ManageAccount));
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void ButtonAccountBalanceManagement_Click(object sender, EventArgs e)
         {
             Program.ChangeForm(typeof(Manage_Account_Balance));
+        }
+
+        private void ButtonManageAccount_Click(object sender, EventArgs e)
+        {
+            Program.ChangeForm(typeof(ManageAccount)); 
         }
 
         private void ButtonPlanYourGoals_Click(object sender, EventArgs e)

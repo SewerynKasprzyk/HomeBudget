@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonRaport = new System.Windows.Forms.Button();
             this.ButtonAccountBalanceManagement = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttonExpense = new System.Windows.Forms.Button();
             this.ButtonManageAccount = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.button5 = new System.Windows.Forms.Button();
+            this.buttonLogout = new System.Windows.Forms.Button();
             this.ButtonPlanYourGoals = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
@@ -47,20 +47,20 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonRaport
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Impact", 12F);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(68, 60);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(179, 50);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Generate financial raport";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonRaport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
+            this.buttonRaport.FlatAppearance.BorderSize = 0;
+            this.buttonRaport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRaport.Font = new System.Drawing.Font("Impact", 12F);
+            this.buttonRaport.ForeColor = System.Drawing.Color.White;
+            this.buttonRaport.Location = new System.Drawing.Point(68, 60);
+            this.buttonRaport.Name = "buttonRaport";
+            this.buttonRaport.Size = new System.Drawing.Size(179, 50);
+            this.buttonRaport.TabIndex = 0;
+            this.buttonRaport.Text = "Generate financial raport";
+            this.buttonRaport.UseVisualStyleBackColor = false;
+            this.buttonRaport.Click += new System.EventHandler(this.buttonRaport_Click);
             // 
             // ButtonAccountBalanceManagement
             // 
@@ -75,22 +75,22 @@
             this.ButtonAccountBalanceManagement.TabIndex = 1;
             this.ButtonAccountBalanceManagement.Text = "Account balance management";
             this.ButtonAccountBalanceManagement.UseVisualStyleBackColor = false;
-            this.ButtonAccountBalanceManagement.Click += new System.EventHandler(this.button2_Click);
+            this.ButtonAccountBalanceManagement.Click += new System.EventHandler(this.ButtonAccountBalanceManagement_Click);
             // 
-            // button3
+            // buttonExpense
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Impact", 12F);
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(68, 133);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(179, 50);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Expense management";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.buttonExpense.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
+            this.buttonExpense.FlatAppearance.BorderSize = 0;
+            this.buttonExpense.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonExpense.Font = new System.Drawing.Font("Impact", 12F);
+            this.buttonExpense.ForeColor = System.Drawing.Color.White;
+            this.buttonExpense.Location = new System.Drawing.Point(68, 133);
+            this.buttonExpense.Name = "buttonExpense";
+            this.buttonExpense.Size = new System.Drawing.Size(179, 50);
+            this.buttonExpense.TabIndex = 2;
+            this.buttonExpense.Text = "Expense management";
+            this.buttonExpense.UseVisualStyleBackColor = false;
+            this.buttonExpense.Click += new System.EventHandler(this.buttonExpense_Click);
             // 
             // ButtonManageAccount
             // 
@@ -105,7 +105,7 @@
             this.ButtonManageAccount.TabIndex = 3;
             this.ButtonManageAccount.Text = "Manage your account";
             this.ButtonManageAccount.UseVisualStyleBackColor = false;
-            this.ButtonManageAccount.Click += new System.EventHandler(this.button4_Click);
+            this.ButtonManageAccount.Click += new System.EventHandler(this.ButtonManageAccount_Click);
             // 
             // label1
             // 
@@ -136,7 +136,6 @@
             this.label3.Size = new System.Drawing.Size(105, 29);
             this.label3.TabIndex = 6;
             this.label3.Text = "Income:   ";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -156,20 +155,20 @@
             this.progressBar1.TabIndex = 8;
             this.progressBar1.Value = 69;
             // 
-            // button5
+            // buttonLogout
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(218)))), ((int)(((byte)(244)))));
-            this.button5.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Impact", 12F);
-            this.button5.Location = new System.Drawing.Point(685, 408);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(103, 30);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "Log out";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.buttonLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(218)))), ((int)(((byte)(244)))));
+            this.buttonLogout.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.buttonLogout.FlatAppearance.BorderSize = 0;
+            this.buttonLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLogout.Font = new System.Drawing.Font("Impact", 12F);
+            this.buttonLogout.Location = new System.Drawing.Point(685, 408);
+            this.buttonLogout.Name = "buttonLogout";
+            this.buttonLogout.Size = new System.Drawing.Size(103, 30);
+            this.buttonLogout.TabIndex = 9;
+            this.buttonLogout.Text = "Log out";
+            this.buttonLogout.UseVisualStyleBackColor = false;
+            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
             // 
             // ButtonPlanYourGoals
             // 
@@ -190,9 +189,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(218)))), ((int)(((byte)(244)))));
             this.panel1.Controls.Add(this.ButtonPlanYourGoals);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.buttonRaport);
             this.panel1.Controls.Add(this.ButtonAccountBalanceManagement);
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.buttonExpense);
             this.panel1.Controls.Add(this.ButtonManageAccount);
             this.panel1.Location = new System.Drawing.Point(-1, 0);
             this.panel1.Name = "panel1";
@@ -258,7 +257,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.buttonLogout);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -277,16 +276,16 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonRaport;
         private System.Windows.Forms.Button ButtonAccountBalanceManagement;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonExpense;
         private System.Windows.Forms.Button ButtonManageAccount;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button buttonLogout;
         private System.Windows.Forms.Button ButtonPlanYourGoals;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label5;

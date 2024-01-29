@@ -96,6 +96,7 @@
             this.ButtonChangePassword.TabIndex = 19;
             this.ButtonChangePassword.Text = "Change";
             this.ButtonChangePassword.UseVisualStyleBackColor = false;
+            this.ButtonChangePassword.Click += new System.EventHandler(this.ButtonChangePassword_Click);
             // 
             // panel1
             // 
@@ -106,7 +107,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(801, 113);
             this.panel1.TabIndex = 20;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // buttonClose
             // 
