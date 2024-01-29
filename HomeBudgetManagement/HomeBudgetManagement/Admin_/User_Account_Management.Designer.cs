@@ -193,7 +193,6 @@
             this.login.Name = "login";
             this.login.Size = new System.Drawing.Size(231, 24);
             this.login.TabIndex = 12;
-            this.login.TextChanged += new System.EventHandler(this.login_TextChanged);
             // 
             // label10
             // 

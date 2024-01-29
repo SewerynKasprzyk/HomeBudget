@@ -99,7 +99,6 @@
             this.LabelBudgetReview.Size = new System.Drawing.Size(280, 53);
             this.LabelBudgetReview.TabIndex = 25;
             this.LabelBudgetReview.Text = "Budget Review";
-            this.LabelBudgetReview.Click += new System.EventHandler(this.LabelBudgetReview_Click);
             // 
             // LabelOverallBudget
             // 
@@ -187,7 +186,6 @@
             this.Name = "LabelBudget";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BudgetReview";
-            this.Load += new System.EventHandler(this.LabelBudget_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

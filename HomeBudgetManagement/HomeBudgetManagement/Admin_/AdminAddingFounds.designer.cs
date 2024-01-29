@@ -176,7 +176,6 @@
             this.label7.Size = new System.Drawing.Size(263, 27);
             this.label7.TabIndex = 1;
             this.label7.Text = "Feel Free to Add Some Funds";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // panelSetAdminLogin
             // 
@@ -228,9 +227,7 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(24, 24);
             this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
+            this.pictureBox1.TabStop = false;            // 
             // buttonClose
             // 
             this.buttonClose.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -265,7 +262,6 @@
             this.Name = "AdminAddingFounds";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddingFounds";
-            this.Load += new System.EventHandler(this.AdminAddingFounds_Load);
             this.panelLoginLeftBlue.ResumeLayout(false);
             this.panelLoginLeftBlue.PerformLayout();
             this.panelPassword.ResumeLayout(false);

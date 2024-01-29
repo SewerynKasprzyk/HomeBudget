@@ -17,11 +17,6 @@ namespace HomeBudgetManagement.Admin_
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             Program.ChangeForm(typeof(Admin));

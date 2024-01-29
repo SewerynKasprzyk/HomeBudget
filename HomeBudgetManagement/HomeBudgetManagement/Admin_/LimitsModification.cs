@@ -27,11 +27,6 @@ namespace HomeBudgetManagement
             //kwota limitu
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button5_Click(object sender, EventArgs e)
         {
             Program.ChangeForm(typeof(BudgetStateManagement));

@@ -32,41 +32,6 @@ namespace HomeBudgetManagement
             Program.ChangeForm(typeof(BudgetStateManagement));
         }
 
-        private void textBoxSetAdminLogin_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxSetAdminPassword_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AdminAddingFounds_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonClose_Click(object sender, EventArgs e)
         {
             Application.Exit();

@@ -26,10 +26,5 @@ namespace HomeBudgetManagement.Admin_
         {
             Application.Exit();
         }
-
-        private void login_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

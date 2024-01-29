@@ -35,11 +35,6 @@ namespace HomeBudgetManagement
             Program.ChangeForm(typeof(AdminAddingFounds));
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button5_Click(object sender, EventArgs e)
         {
             Program.ChangeForm(typeof(Admin));

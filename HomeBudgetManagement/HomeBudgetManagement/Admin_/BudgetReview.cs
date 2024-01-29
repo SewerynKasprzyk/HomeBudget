@@ -53,11 +53,6 @@ namespace HomeBudgetManagement
             Program.ChangeForm(typeof(BudgetStateManagement));
         }
 
-        private void LabelBudgetReview_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void ButtonCategoryReview_Click(object sender, EventArgs e)
         {
             Program.ChangeForm(typeof(CategoryReview));
@@ -66,11 +61,6 @@ namespace HomeBudgetManagement
         private void ButtonUserBudgetReview_Click(object sender, EventArgs e)
         {
             Program.ChangeForm(typeof(UserReview));
-        }
-
-        private void LabelBudget_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void buttonClose_Click(object sender, EventArgs e)

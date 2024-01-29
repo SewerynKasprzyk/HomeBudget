@@ -18,34 +18,9 @@ namespace HomeBudgetManagement
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Program.ChangeForm(typeof(BudgetStateManagement));
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Program.ChangeForm(typeof(User_Account_Management));
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Program.ChangeForm(typeof(System_Configuration));
-        }
-
         private void button4_Click(object sender, EventArgs e)
         {
             Program.ChangeForm(typeof(Client));
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void buttonClose_Click(object sender, EventArgs e)
