@@ -27,5 +27,20 @@ namespace HomeBudgetManagement
         {
             Application.Exit();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Program.ChangeForm(typeof(System_Configuration));
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Program.ChangeForm(typeof(BudgetStateManagement));
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Program.ChangeForm(typeof(User_Account_Management));
+        }
     }
 }
