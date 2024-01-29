@@ -20,7 +20,21 @@ namespace Background
             this.category = category;
         }
 
-        //public addCategory()
+        public void AddCategory(String name, decimal limit)
+        {
+            Service.Add(new Category { Name = name, Limit = limit });
+        }
 
+        public void ChangeName(String name)
+        {
+            category.Name = name;
+            Service.Update(category);
+        }
+
+        public void ChangeName(decimal limit)
+        {
+            category.Limit = limit;
+            Service.Update(category);
+        }
     }
 }

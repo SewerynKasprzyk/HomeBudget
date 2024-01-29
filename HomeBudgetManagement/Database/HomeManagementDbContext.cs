@@ -6,6 +6,7 @@ namespace Database
     public class HomeManagementDbContext : DbContext
     {
         public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<BalanceWhole> WholeBalances { get; set; }
         public virtual DbSet<Balance> Balances { get; set; }
         public virtual DbSet<Transaction> Transactions { get; set; }
         public virtual DbSet<Category> Categories { get; set; }
