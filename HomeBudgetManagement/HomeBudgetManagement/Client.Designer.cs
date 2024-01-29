@@ -215,6 +215,7 @@
             this.panelPassword.Name = "panelPassword";
             this.panelPassword.Size = new System.Drawing.Size(499, 41);
             this.panelPassword.TabIndex = 12;
+            this.panelPassword.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPassword_Paint);
             // 
             // pictureBox2
             // 

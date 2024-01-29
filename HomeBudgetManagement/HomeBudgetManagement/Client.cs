@@ -1,8 +1,13 @@
-﻿using HomeBudgetManagement.Admin_;
+﻿using Background;
+using Background.Manager;
+using Database.Enums;
+using HomeBudgetManagement.Admin_;
+using HomeBudgetManagement.Model.ConfigurationContext;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,11 +24,9 @@ namespace HomeBudgetManagement
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-
+        { 
             try
             {
-
                 //formuła logowania
 
                 if (string.IsNullOrWhiteSpace(textboxLogin.Text) || string.IsNullOrWhiteSpace(textBoxPassword.Text))
@@ -31,9 +34,27 @@ namespace HomeBudgetManagement
                     // Obsługa błędu - jedno z pól tekstowych jest puste
                     throw new Exception("Pole tekstowe nie może być puste.");
                 }
+                UserManager usr = new UserManager();
+                if (usr.LoginProcess(textboxLogin.Text, textBoxPassword.Text))
+                {
+                    if(Configuration.AccessLevel == Role.User)
+                    {
+                        Program.ChangeForm(typeof(User_menu));
+                    }
+                    else if(Configuration.AccessLevel == Role.Admin)
+                    {
+                        Program.ChangeForm(typeof(Admin));
+                    }
+                    else if (Configuration.AccessLevel == Role.Guest)
+                    { }
+                    
+                }
+                else
+                {
+                    throw new Exception("Incorrect login details");
+                }
 
-
-                Program.ChangeForm(typeof(User_menu));
+                
             }
             catch (Exception ex)
             {
@@ -130,6 +151,11 @@ namespace HomeBudgetManagement
         }
 
         private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelPassword_Paint(object sender, PaintEventArgs e)
         {
 
         }

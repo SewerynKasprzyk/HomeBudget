@@ -42,6 +42,7 @@ namespace Background.Manager
                 return false;
             }
             return true;
+
         }
       
         public static bool Validate(string login, string password, string confPass)
