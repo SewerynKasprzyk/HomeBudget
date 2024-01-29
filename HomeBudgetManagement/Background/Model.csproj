@@ -51,7 +51,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Background.cs" />
+    <Compile Include="CategoryManager.cs" />
+    <Compile Include="CategoryService.cs" />
     <Compile Include="Manager\Configuration.cs" />
     <Compile Include="GoalService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
