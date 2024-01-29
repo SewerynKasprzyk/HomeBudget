@@ -59,9 +59,9 @@
     <Compile Include="Entities\User.cs" />
     <Compile Include="Enums\Role.cs" />
     <Compile Include="HomeManagementDbContext.cs" />
-    <Compile Include="Migrations\202401291657560_migration_1.cs" />
-    <Compile Include="Migrations\202401291657560_migration_1.designer.cs">
-      <DependentUpon>202401291657560_migration_1.cs</DependentUpon>
+    <Compile Include="Migrations\202401291828134_test.cs" />
+    <Compile Include="Migrations\202401291828134_test.designer.cs">
+      <DependentUpon>202401291828134_test.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -71,8 +71,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202401291657560_migration_1.resx">
-      <DependentUpon>202401291657560_migration_1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202401291828134_test.resx">
+      <DependentUpon>202401291828134_test.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
