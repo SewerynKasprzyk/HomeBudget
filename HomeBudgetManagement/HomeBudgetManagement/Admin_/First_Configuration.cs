@@ -1,4 +1,5 @@
-﻿using Database;
+﻿using Background.Manager;
+using Database;
 using Database.Enums;
 using HomeBudgetManagement.Model.ConfigurationContext;
 using System;
@@ -49,7 +50,7 @@ namespace HomeBudgetManagement.Admin_
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
+        {            
             if(Configuration.FirstConfiguration(textBoxSetAdminLogin.Text, "", "", textBoxSetAdminPassword.Text, textBoxSetAdminPassword.Text) == true)
             {
                 Program.ChangeForm(typeof(Admin));

@@ -1,4 +1,5 @@
-﻿using HomeBudgetManagement.Admin_;
+﻿using Background.Manager;
+using HomeBudgetManagement.Admin_;
 using HomeBudgetManagement.Model.ConfigurationContext;
 using System;
 using System.Collections.Generic;
@@ -20,7 +21,7 @@ namespace HomeBudgetManagement
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Configuration.selfConfig();
+            Configuration.SelfConfig();
 
             if (Configuration.Performed)
             {
