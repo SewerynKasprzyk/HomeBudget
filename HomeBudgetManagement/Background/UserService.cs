@@ -1,6 +1,8 @@
 ﻿using Database;
 using Database.Entities;
+using System.Collections.Generic;
 using System.Data.Entity;
+using System.Linq;
 
 public class UserService
 {
@@ -42,5 +44,9 @@ public class UserService
             _context.Users.Remove(user);
             _context.SaveChanges();
         }
+    }
+    public List<User> GetAllUsers()
+    {
+        return _context.Users.ToList();
     }
 }

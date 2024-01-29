@@ -30,7 +30,7 @@ namespace HomeBudgetManagement.Admin_
             textBoxSetAdminLogin.BackColor = Color.White;
             panelSetAdminLogin.BackColor = Color.White;
             panelSetAdminPassword.BackColor = customColor;
-            textBoxSetAdminPassword.BackColor =customColor;
+            textBoxSetAdminPassword.BackColor = customColor;
         }
 
         private void textBoxSetAdminPassword_click(object sender, EventArgs e)
@@ -50,16 +50,10 @@ namespace HomeBudgetManagement.Admin_
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var user = _userService.CreateUser(new Database.Entities.User()
+            if(Configuration.FirstConfiguration(textBoxSetAdminLogin.Text, "", "", textBoxSetAdminPassword.Text, textBoxSetAdminPassword.Text) == true)
             {
-                Limit = 1000,
-                Login = textBoxSetAdminLogin.Text,
-                Password = textBoxSetAdminPassword.Text,
-                Role = Role.Admin,
-            });
-
-            Configuration.LoggedUser = user;
-            Program.ChangeForm(typeof(Admin));
+                Program.ChangeForm(typeof(Admin));
+            }
         }
     }
 }
