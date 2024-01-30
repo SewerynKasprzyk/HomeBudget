@@ -18,13 +18,13 @@ namespace HomeBudgetManagement.Admin_
         public User_Account_Management()
         {
             InitializeComponent();
-
+            Reload();
         }
 
-        public void reload()
+        public void Reload()
         {
             UserManager userManager = new UserManager();
-            var users = userManager.GetAllUsers();
+            users = userManager.GetAllUsers();
             comboBox2.DataSource = users;
             comboBox2.DisplayMember = "Name";
         }
@@ -43,12 +43,15 @@ namespace HomeBudgetManagement.Admin_
         {
             //Add Validation messages
             UserManager userManager = new UserManager();
-            userManager.AddUser(login.Text);
+            userManager.AddUser(new User { Login = login.Text, Password = "1qaz@WSX"});
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             comboBox2.SelectedItem = users.FirstOrDefault();
+            UserManager userManager = new UserManager();
+            userManager.ManageUser((User)comboBox2.SelectedItem);
+            //userManager.GiveAccess(();
         }
     }
 }

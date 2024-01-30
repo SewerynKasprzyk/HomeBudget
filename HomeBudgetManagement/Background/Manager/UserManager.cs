@@ -16,25 +16,57 @@ namespace Model.Manager
         {
             _userService = new UserService(new HomeManagementDbContext());
         }
-        public UserManager(User user)
-        {
-            _userService = new UserService(new HomeManagementDbContext());
-            _user = user;
-        }
 
-        public void AddUser(String login)
+        public void ManageUser(User user)
         {
-                _userService.CreateUser(new User()
-                {
-                    Login = login,
-                    Password = "",
-                    Role = Role.User
-                });
+            _user = user;
         }   
 
-        public void DeleteUser(User user)
+        public User AddUser(User user)
         {
-            _userService.DeleteUser(user.Id);
+            var user2 = _userService.CreateUser(user);
+
+            return user2;
+        }
+
+        public User FindUserByID(long id)
+        {
+            return _userService.GetUser(id);
+        }
+
+        public User GetLoggedUser()
+        {
+            return _userService.GetUser(Configuration.LoggedUserID);
+        }
+
+        public User CreateFirstAdmin(String firstLogin, String firstPassword)
+        {
+            var user = _userService.CreateUser(new User()
+            {
+                Limit = 100000000000,
+                Login = firstLogin,
+                Password = firstPassword,
+                Role = Role.Admin,
+            });
+
+            return user;
+        }
+
+        public void GiveAccess()
+        {
+            _user.Role = Role.Admin;
+            _userService.UpdateUser(_user);
+        }
+
+        public void TakeAccess()
+        {
+            _user.Role = Role.User;
+            _userService.UpdateUser(_user);
+        }   
+
+        public void DeleteUser()
+        {
+            _userService.DeleteUser(_user.Id);
         }
         public List<User> GetAllUsers()
         {
@@ -62,7 +94,7 @@ namespace Model.Manager
             {
                 if (user.Login ==  username && user.Password == password) 
                 { 
-                    Configuration.LoggedUser = user;
+                    Configuration.LoggedUserID = user.Id;
                     Configuration.AccessLevel = user.Role;
                     return true;
                 }
@@ -72,7 +104,7 @@ namespace Model.Manager
 
         public void Logout()
         {
-            Configuration.LoggedUser = null;
+            Configuration.LoggedUserID = 0;
             Configuration.AccessLevel = Role.Guest;
         }
     }

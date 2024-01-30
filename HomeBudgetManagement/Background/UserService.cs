@@ -2,6 +2,7 @@
 using Database.Entities;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Diagnostics;
 using System.Linq;
 
 namespace Model

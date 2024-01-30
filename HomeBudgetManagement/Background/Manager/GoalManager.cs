@@ -14,7 +14,7 @@ namespace Model.Manager
         public Goal AddGoal(String name, String amount)
         {
             var goal = new Goal();
-            var user = _userService.GetUser(Configuration.LoggedUser.Id);
+            var user = _userService.GetUser(Configuration.LoggedUserID);
             goal = new Goal() { Amount = Convert.ToDecimal(amount), Name = name, User = user };
             goal = _goalService.CreateGoal(goal);
             return goal;
@@ -48,7 +48,7 @@ namespace Model.Manager
 
         public List<Goal> GetAllMyGoals()
         {
-            return _goalService.GetAllGoals(Configuration.LoggedUser.Id);
+            return _goalService.GetAllGoals(Configuration.LoggedUserID);
         }
 
     }

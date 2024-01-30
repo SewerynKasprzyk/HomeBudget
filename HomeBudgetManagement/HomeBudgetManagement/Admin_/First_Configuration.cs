@@ -9,11 +9,8 @@ namespace HomeBudgetManagement.Admin_
 {
     public partial class First_Configuration : Form
     {
-        private UserService _userService;
-
         public First_Configuration()
         {
-            _userService = new UserService(new HomeManagementDbContext());
             InitializeComponent();
         }
 

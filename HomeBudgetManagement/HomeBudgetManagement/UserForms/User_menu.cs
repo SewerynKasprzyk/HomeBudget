@@ -1,4 +1,5 @@
-﻿using HomeBudgetManagement.Model.ConfigurationContext;
+﻿using Database.Entities;
+using HomeBudgetManagement.Model.ConfigurationContext;
 using HomeBudgetManagement.UserForms;
 using Model.Manager;
 using System;
@@ -52,7 +53,9 @@ namespace HomeBudgetManagement
         }
         private void UpdateView()
         {
-            labelNickname.Text = Configuration.LoggedUser.Login;
+            UserManager userManager = new UserManager();
+            User user = userManager.FindUserByID(Configuration.LoggedUserID);
+            labelNickname.Text = user.Login;
         }
     }
 }

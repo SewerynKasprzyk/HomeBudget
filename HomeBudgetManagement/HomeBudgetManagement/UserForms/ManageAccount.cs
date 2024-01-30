@@ -1,4 +1,5 @@
 ﻿using Database;
+using Database.Entities;
 using HomeBudgetManagement.Model.ConfigurationContext;
 using Model;
 using Model.Manager;
@@ -9,11 +10,9 @@ namespace HomeBudgetManagement.UserForms
 {
     public partial class ManageAccount : Form
     {
-        private UserService _userService;
 
         public ManageAccount()
         {
-            _userService= new UserService(new HomeManagementDbContext());
             InitializeComponent();
         }
 
@@ -30,7 +29,10 @@ namespace HomeBudgetManagement.UserForms
         private void ButtonChangePassword_Click(object sender, EventArgs e)
         {
             //no logged user yet
-            UserManager userManager = new UserManager(Configuration.LoggedUser);
+            UserManager userManager = new UserManager();
+
+            User user = userManager.FindUserByID(Configuration.LoggedUserID);
+            userManager.ManageUser(user);
             //no textfield for confirm password
             //second textbox chnge to confirmpassword text box
             if (userManager.ChangePassword(TextBoxChangePassword.Text, TextBoxChangePassword.Text))
