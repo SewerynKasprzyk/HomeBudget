@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class GoalCurrentAmount : DbMigration
+    public partial class klcizi : DbMigration
     {
         public override void Up()
         {

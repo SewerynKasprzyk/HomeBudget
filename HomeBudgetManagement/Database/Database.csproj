@@ -60,9 +60,9 @@
     <Compile Include="Entities\User.cs" />
     <Compile Include="Enums\Role.cs" />
     <Compile Include="HomeManagementDbContext.cs" />
-    <Compile Include="Migrations\202401300336299_GoalCurrentAmount.cs" />
-    <Compile Include="Migrations\202401300336299_GoalCurrentAmount.designer.cs">
-      <DependentUpon>202401300336299_GoalCurrentAmount.cs</DependentUpon>
+    <Compile Include="Migrations\202401300615053_klcizi.cs" />
+    <Compile Include="Migrations\202401300615053_klcizi.designer.cs">
+      <DependentUpon>202401300615053_klcizi.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -72,8 +72,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202401300336299_GoalCurrentAmount.resx">
-      <DependentUpon>202401300336299_GoalCurrentAmount.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202401300615053_klcizi.resx">
+      <DependentUpon>202401300615053_klcizi.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
