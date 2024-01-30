@@ -1,9 +1,7 @@
 ﻿using Database;
 using Database.Entities;
 using HomeBudgetManagement.Model.ConfigurationContext;
-using System;
 using System.Collections.Generic;
-using System.Data.Entity.Core.Objects;
 using System.Linq;
 
 namespace Model.Manager
