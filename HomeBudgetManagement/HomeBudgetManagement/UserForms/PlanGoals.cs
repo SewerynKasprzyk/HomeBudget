@@ -4,7 +4,7 @@ using System;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace HomeBudgetManagement.User
+namespace HomeBudgetManagement.UserForms
 {
     public partial class PlanGoals : Form
     {

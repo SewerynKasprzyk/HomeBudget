@@ -2,7 +2,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace HomeBudgetManagement.User
+namespace HomeBudgetManagement.UserForms
 {
     public partial class CreateGoal : Form
     {

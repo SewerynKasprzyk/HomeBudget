@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HomeBudgetManagement.User
+namespace HomeBudgetManagement.UserForms
 {
     public partial class Manage_Account_Balance : Form
     {

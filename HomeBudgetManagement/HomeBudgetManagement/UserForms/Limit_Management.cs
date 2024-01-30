@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HomeBudgetManagement.User
+namespace HomeBudgetManagement.UserForms
 {
-    public partial class FinancialGoalManagement : Form
+    public partial class Limit_Management : Form
     {
-        public FinancialGoalManagement()
+        public Limit_Management()
         {
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
@@ -30,16 +30,6 @@ namespace HomeBudgetManagement.User
         private void buttonClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FinancialGoalManagement_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

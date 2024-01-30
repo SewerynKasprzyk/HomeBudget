@@ -1,4 +1,4 @@
-﻿namespace HomeBudgetManagement.User
+﻿namespace HomeBudgetManagement.UserForms
 {
     partial class Finance_Raport
     {

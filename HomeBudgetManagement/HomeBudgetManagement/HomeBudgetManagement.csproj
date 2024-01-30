@@ -129,64 +129,64 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="User\CreateGoal.cs">
+    <Compile Include="UserForms\CreateGoal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User\CreateGoal.Designer.cs">
+    <Compile Include="UserForms\CreateGoal.Designer.cs">
       <DependentUpon>CreateGoal.cs</DependentUpon>
     </Compile>
-    <Compile Include="User\Expense_Management.cs">
+    <Compile Include="UserForms\Expense_Management.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User\Expense_Management.Designer.cs">
+    <Compile Include="UserForms\Expense_Management.Designer.cs">
       <DependentUpon>Expense_Management.cs</DependentUpon>
     </Compile>
-    <Compile Include="User\FinancialGoalManagement.cs">
+    <Compile Include="UserForms\FinancialGoalManagement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User\FinancialGoalManagement.Designer.cs">
+    <Compile Include="UserForms\FinancialGoalManagement.Designer.cs">
       <DependentUpon>FinancialGoalManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="User\Limit_Management.cs">
+    <Compile Include="UserForms\Limit_Management.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User\Limit_Management.Designer.cs">
+    <Compile Include="UserForms\Limit_Management.Designer.cs">
       <DependentUpon>Limit_Management.cs</DependentUpon>
     </Compile>
-    <Compile Include="User\ManageAccount.cs">
+    <Compile Include="UserForms\ManageAccount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User\ManageAccount.Designer.cs">
+    <Compile Include="UserForms\ManageAccount.Designer.cs">
       <DependentUpon>ManageAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="User\Manage_Account_Balance.cs">
+    <Compile Include="UserForms\Manage_Account_Balance.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User\Manage_Account_Balance.Designer.cs">
+    <Compile Include="UserForms\Manage_Account_Balance.Designer.cs">
       <DependentUpon>Manage_Account_Balance.cs</DependentUpon>
     </Compile>
-    <Compile Include="User\ModifyGoals.cs">
+    <Compile Include="UserForms\ModifyGoals.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User\ModifyGoals.Designer.cs">
+    <Compile Include="UserForms\ModifyGoals.Designer.cs">
       <DependentUpon>ModifyGoals.cs</DependentUpon>
     </Compile>
-    <Compile Include="User\PlanGoals.cs">
+    <Compile Include="UserForms\PlanGoals.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User\PlanGoals.Designer.cs">
+    <Compile Include="UserForms\PlanGoals.Designer.cs">
       <DependentUpon>PlanGoals.cs</DependentUpon>
     </Compile>
-    <Compile Include="User\User_menu.cs">
+    <Compile Include="UserForms\User_menu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User\User_menu.designer.cs">
+    <Compile Include="UserForms\User_menu.designer.cs">
       <DependentUpon>User_menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="User\Finance_Raport.cs">
+    <Compile Include="UserForms\Finance_Raport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User\Finance_Raport.Designer.cs">
+    <Compile Include="UserForms\Finance_Raport.Designer.cs">
       <DependentUpon>Finance_Raport.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Admin_\Admin.resx">
@@ -231,34 +231,34 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="User\CreateGoal.resx">
+    <EmbeddedResource Include="UserForms\CreateGoal.resx">
       <DependentUpon>CreateGoal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User\Expense_Management.resx">
+    <EmbeddedResource Include="UserForms\Expense_Management.resx">
       <DependentUpon>Expense_Management.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User\FinancialGoalManagement.resx">
+    <EmbeddedResource Include="UserForms\FinancialGoalManagement.resx">
       <DependentUpon>FinancialGoalManagement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User\Limit_Management.resx">
+    <EmbeddedResource Include="UserForms\Limit_Management.resx">
       <DependentUpon>Limit_Management.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User\ManageAccount.resx">
+    <EmbeddedResource Include="UserForms\ManageAccount.resx">
       <DependentUpon>ManageAccount.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User\Manage_Account_Balance.resx">
+    <EmbeddedResource Include="UserForms\Manage_Account_Balance.resx">
       <DependentUpon>Manage_Account_Balance.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User\ModifyGoals.resx">
+    <EmbeddedResource Include="UserForms\ModifyGoals.resx">
       <DependentUpon>ModifyGoals.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User\PlanGoals.resx">
+    <EmbeddedResource Include="UserForms\PlanGoals.resx">
       <DependentUpon>PlanGoals.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User\User_menu.resx">
+    <EmbeddedResource Include="UserForms\User_menu.resx">
       <DependentUpon>User_menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User\Finance_Raport.resx">
+    <EmbeddedResource Include="UserForms\Finance_Raport.resx">
       <DependentUpon>Finance_Raport.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

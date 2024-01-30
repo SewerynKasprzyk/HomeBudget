@@ -3,6 +3,7 @@ using Database.Entities;
 using Database.Enums;
 using HomeBudgetManagement.Model.ConfigurationContext;
 using System;
+using System.Collections.Generic;
 
 namespace Model.Manager
 {
@@ -30,6 +31,15 @@ namespace Model.Manager
                     Role = Role.User
                 });
         }   
+
+        public void DeleteUser(User user)
+        {
+            _userService.DeleteUser(user.Id);
+        }
+        public List<User> GetAllUsers()
+        {
+            return _userService.GetAllUsers();
+        }
 
         public bool ChangePassword(String password, String confirmPassword)
         {

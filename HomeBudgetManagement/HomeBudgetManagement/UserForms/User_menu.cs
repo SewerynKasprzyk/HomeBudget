@@ -1,5 +1,5 @@
 ﻿using HomeBudgetManagement.Model.ConfigurationContext;
-using HomeBudgetManagement.User;
+using HomeBudgetManagement.UserForms;
 using Model.Manager;
 using System;
 using System.Windows.Forms;
