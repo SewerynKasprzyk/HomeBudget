@@ -1,4 +1,5 @@
 ﻿using Database.Entities;
+using Database.Enums;
 using Model.Manager;
 using System;
 using System.Collections.Generic;
@@ -27,6 +28,9 @@ namespace HomeBudgetManagement.Admin_
             users = userManager.GetAllUsers();
             comboBox2.DataSource = users;
             comboBox2.DisplayMember = "Name";
+
+            comboBox1.DataSource = users;
+            comboBox1.DisplayMember = "Name";
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -43,7 +47,8 @@ namespace HomeBudgetManagement.Admin_
         {
             //Add Validation messages
             UserManager userManager = new UserManager();
-            userManager.AddUser(new User { Login = login.Text, Password = "1qaz@WSX"});
+            userManager.AddUser(new User { Login = login.Text, Password = "1qaz@WSX", Role = Role.User});
+            Reload();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -51,7 +56,33 @@ namespace HomeBudgetManagement.Admin_
             comboBox2.SelectedItem = users.FirstOrDefault();
             UserManager userManager = new UserManager();
             userManager.ManageUser((User)comboBox2.SelectedItem);
-            //userManager.GiveAccess(();
+            userManager.GiveAccess();
+        }
+
+        private void login_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            comboBox2.SelectedItem = users.FirstOrDefault();
+            UserManager userManager = new UserManager();
+            userManager.ManageUser((User)comboBox2.SelectedItem);
+            userManager.TakeAccess();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            comboBox2.SelectedItem = users.FirstOrDefault();
+            UserManager userManager = new UserManager();
+            userManager.ManageUser((User)comboBox1.SelectedItem);
+            userManager.DeleteUser();
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Database;
 using Database.Entities;
 using System;
+using System.Collections.Generic;
 
 namespace Model.Manager
 {
@@ -15,9 +16,18 @@ namespace Model.Manager
             this.category = category;
         }
 
-        public void AddCategory(String name, decimal limit)
+        public CategoryManager()
         {
-            Service.Add(new Category { Name = name, Limit = limit });
+            Service = new CategoryService(new HomeManagementDbContext());
+        }
+
+        public void AddCategory(Category category)
+        {
+            Service.Add(category);
+        }
+        public List<Category> GetAll()
+        {
+            return Service.GetAll();
         }
 
         public void ChangeName(String name)
@@ -26,7 +36,7 @@ namespace Model.Manager
             Service.Update(category);
         }
 
-        public void ChangeName(decimal limit)
+        public void ChangeLimit(decimal limit)
         {
             category.Limit = limit;
             Service.Update(category);

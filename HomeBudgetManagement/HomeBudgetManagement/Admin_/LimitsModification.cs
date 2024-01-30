@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Database.Entities;
+using Model.Manager;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,20 @@ namespace HomeBudgetManagement
 {
     public partial class LimitsModification : Form
     {
+        private List<Category> categories;
         public LimitsModification()
         {
             InitializeComponent();
+            Reload();
+        }
+
+        public void Reload()
+        {
+            CategoryManager categoryManager = new CategoryManager();
+            categories = categoryManager.GetAll();
+
+            comboBox1.DataSource = categories;
+            comboBox1.DisplayMember = "Name";
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -35,6 +48,13 @@ namespace HomeBudgetManagement
         private void buttonClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void ButtonSetLimit_Click(object sender, EventArgs e)
+        {
+            comboBox1.SelectedItem = categories.FirstOrDefault();
+            CategoryManager categoryManager = new CategoryManager((Category)comboBox1.SelectedItem);
+            categoryManager.ChangeLimit(decimal.Parse(textBox1.Text));
         }
     }
 }

@@ -193,6 +193,7 @@
             this.login.Name = "login";
             this.login.Size = new System.Drawing.Size(231, 24);
             this.login.TabIndex = 12;
+            this.login.TextChanged += new System.EventHandler(this.login_TextChanged);
             // 
             // label10
             // 
@@ -250,6 +251,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(175, 25);
             this.comboBox2.TabIndex = 16;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // button2
             // 
@@ -281,6 +283,7 @@
             this.button3.TabIndex = 19;
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -296,6 +299,7 @@
             this.button4.TabIndex = 20;
             this.button4.Text = "Remove";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 

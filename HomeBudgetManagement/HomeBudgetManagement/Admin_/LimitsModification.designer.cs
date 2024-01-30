@@ -123,6 +123,7 @@
             this.ButtonSetLimit.TabIndex = 23;
             this.ButtonSetLimit.Text = "Set";
             this.ButtonSetLimit.UseVisualStyleBackColor = false;
+            this.ButtonSetLimit.Click += new System.EventHandler(this.ButtonSetLimit_Click);
             // 
             // flowLayoutPanel1
             // 
