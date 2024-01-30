@@ -10,15 +10,13 @@ namespace Model.Manager
         public CategoryService Service { get; set; }
         public Category category;
 
-        public CategoryManager(Category category)
-        {
-            Service = new CategoryService(new HomeManagementDbContext());
-            this.category = category;
-        }
-
         public CategoryManager()
         {
             Service = new CategoryService(new HomeManagementDbContext());
+        }
+        public void ManageCategory(Category category)
+        {
+            this.category = category;
         }
 
         public void AddCategory(Category category)

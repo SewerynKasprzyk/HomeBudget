@@ -64,6 +64,10 @@
     <Compile Include="Migrations\202401300615053_klcizi.designer.cs">
       <DependentUpon>202401300615053_klcizi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202401300724493_full.cs" />
+    <Compile Include="Migrations\202401300724493_full.designer.cs">
+      <DependentUpon>202401300724493_full.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -74,6 +78,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202401300615053_klcizi.resx">
       <DependentUpon>202401300615053_klcizi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202401300724493_full.resx">
+      <DependentUpon>202401300724493_full.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

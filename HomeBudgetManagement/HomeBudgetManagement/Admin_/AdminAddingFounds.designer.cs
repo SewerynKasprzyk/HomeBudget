@@ -45,6 +45,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonClose = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelLoginLeftBlue.SuspendLayout();
             this.panelPassword.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -93,9 +94,9 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
             this.label3.Location = new System.Drawing.Point(322, 211);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(242, 27);
+            this.label3.Size = new System.Drawing.Size(228, 27);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Enter the amout of founds";
+            this.label3.Text = "Add the amout of founds";
             // 
             // button5
             // 
@@ -227,7 +228,8 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(24, 24);
             this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;            // 
+            this.pictureBox1.TabStop = false;
+            // 
             // buttonClose
             // 
             this.buttonClose.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -243,12 +245,28 @@
             this.buttonClose.UseVisualStyleBackColor = true;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Impact", 12F);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(422, 319);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(257, 60);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "Confirm";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // AdminAddingFounds
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(218)))), ((int)(((byte)(244)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelSetAdminLogin);
@@ -297,5 +315,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button button1;
     }
 }

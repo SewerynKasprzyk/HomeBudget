@@ -1,6 +1,9 @@
-﻿using System.Data.Entity;
-using Database.Entities;
+﻿
 using Database;
+using Database.Entities;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
 
 namespace Model
 {
@@ -13,35 +16,34 @@ namespace Model
             _context = context;
         }
 
-        // Create
-        public Transaction CreateTransaction(Transaction transaction)
+        public List<Transaction> GetAll()
         {
-            _context.Transactions.Add(transaction);
+            return _context.Set<Transaction>().Include(t => t.User).Include(t => t.Category).ToList();
+        }
+
+        public Transaction GetById(int id)
+        {
+            return _context.Set<Transaction>().Include(t => t.User).Include(t => t.Category).SingleOrDefault(t => t.Id == id);
+        }
+
+        public void Add(Transaction transaction)
+        {
+            _context.Set<Transaction>().Add(transaction);
             _context.SaveChanges();
-            return transaction;
         }
 
-        // Read
-        public Transaction GetTransaction(int id)
-        {
-            return _context.Transactions.Find(id);
-        }
-
-        // Update
-        public Transaction UpdateTransaction(Transaction transaction)
+        public void Update(Transaction transaction)
         {
             _context.Entry(transaction).State = EntityState.Modified;
             _context.SaveChanges();
-            return transaction;
         }
 
-        // Delete
-        public void DeleteTransaction(int id)
+        public void Delete(int id)
         {
-            var transaction = _context.Transactions.Find(id);
+            var transaction = _context.Set<Transaction>().Find(id);
             if (transaction != null)
             {
-                _context.Transactions.Remove(transaction);
+                _context.Set<Transaction>().Remove(transaction);
                 _context.SaveChanges();
             }
         }

@@ -53,9 +53,10 @@
   <ItemGroup>
     <Compile Include="Manager\BalanceManager.cs" />
     <Compile Include="BalanceService.cs" />
-    <Compile Include="CategoryManager.cs" />
+    <Compile Include="Manager\CategoryManager.cs" />
     <Compile Include="CategoryService.cs" />
     <Compile Include="Manager\GoalManager.cs" />
+    <Compile Include="Manager\TransactionManager.cs" />
     <Compile Include="Manager\UserManager.cs" />
     <Compile Include="Manager\Configuration.cs" />
     <Compile Include="GoalService.cs" />

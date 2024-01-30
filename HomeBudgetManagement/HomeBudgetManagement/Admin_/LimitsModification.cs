@@ -53,7 +53,8 @@ namespace HomeBudgetManagement
         private void ButtonSetLimit_Click(object sender, EventArgs e)
         {
             comboBox1.SelectedItem = categories.FirstOrDefault();
-            CategoryManager categoryManager = new CategoryManager((Category)comboBox1.SelectedItem);
+            CategoryManager categoryManager = new CategoryManager();
+            categoryManager.ManageCategory((Category)comboBox1.SelectedItem);
             categoryManager.ChangeLimit(decimal.Parse(textBox1.Text));
         }
     }
