@@ -20,6 +20,10 @@ namespace Model.Manager
         public void ManageUser(User user)
         {
             _user = user;
+        }
+        public void ManageLoggedUser()
+        {
+            _user = _userService.GetUser(Configuration.LoggedUserID);
         }   
 
         public User AddUser(User user)
