@@ -50,29 +50,40 @@ namespace HomeBudgetManagement.UserForms
 
         private void ButtonAddToGoal_Click(object sender, EventArgs e)
         {
-            var selectedGoal = ComboBoxSelectGoal.SelectedItem;
-            ProgressBarGoal.Value = (int)(((Goal)selectedGoal).CurrentAmount);
-            var newAmount = decimal.Parse(TextBoxAddToValue.Text);
-            //var amountToFillBar = ((Goal)selectedGoal).Amount - newAmount;
-
-            if(((((Goal)selectedGoal).CurrentAmount) + newAmount) > ((Goal)selectedGoal).Amount)
+            try
             {
-                decimal x = ((Goal)selectedGoal).CurrentAmount + newAmount;
-                decimal y = Math.Abs(((Goal)selectedGoal).Amount - x);
-                _balanceManager.SubBalance(newAmount);
-                _balanceManager.AddBalance(y);
-                _goalManager.AddToGoal((Goal)selectedGoal, ((Goal)selectedGoal).Amount - ((Goal)selectedGoal).CurrentAmount);
-            }
-            else 
-            {
-                _balanceManager.SubBalance(newAmount);
-                //_balanceManager.AddBalance(newAmount);
-                _goalManager.AddToGoal((Goal)selectedGoal, newAmount);
-            }
+                if(TextBoxAddToValue.Text == "" || !Validation.NumbersValue(TextBoxAddToValue.Text))
+                {
+                    throw new Exception("Invalid value");
+                }
+                var selectedGoal = ComboBoxSelectGoal.SelectedItem;
+                ProgressBarGoal.Value = (int)(((Goal)selectedGoal).CurrentAmount);
+                var newAmount = decimal.Parse(TextBoxAddToValue.Text);
+                //var amountToFillBar = ((Goal)selectedGoal).Amount - newAmount;
 
-            Reload();
-            MessageBox.Show($"Amount successfully changed", "Goal Changed", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //_goalManager.UpdateCurrentAmount((Goal)selectedGoal, newAmount);
+                if(((((Goal)selectedGoal).CurrentAmount) + newAmount) > ((Goal)selectedGoal).Amount)
+                {
+                    decimal x = ((Goal)selectedGoal).CurrentAmount + newAmount;
+                    decimal y = Math.Abs(((Goal)selectedGoal).Amount - x);
+                    _balanceManager.SubBalance(newAmount);
+                    _balanceManager.AddBalance(y);
+                    _goalManager.AddToGoal((Goal)selectedGoal, ((Goal)selectedGoal).Amount - ((Goal)selectedGoal).CurrentAmount);
+                }
+                else 
+                {
+                    _balanceManager.SubBalance(newAmount);
+                    //_balanceManager.AddBalance(newAmount);
+                    _goalManager.AddToGoal((Goal)selectedGoal, newAmount);
+                }
+
+                Reload();
+                MessageBox.Show($"Amount successfully changed", "Goal Changed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //_goalManager.UpdateCurrentAmount((Goal)selectedGoal, newAmount);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             
         }
 
@@ -89,6 +100,22 @@ namespace HomeBudgetManagement.UserForms
             LabelBalance.Text = _balanceManager.GetBalance().Value.ToString();
             ProgressBarGoal.Maximum = (int)(selectedGoal.Amount);
             ProgressBarGoal.Value = (int)(selectedGoal.CurrentAmount);
+        }
+
+        private void ButtonToCashOut_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (TextBoxAddToValue.Text == "" || !Validation.NumbersValue(TextBoxAddToValue.Text))
+                {
+                    throw new Exception("Invalid value");
+                }
+                //Cash out code
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

@@ -49,6 +49,15 @@ namespace Model.Manager
 
             return true;
         }
+
+        public static bool NumbersValue(string str)
+        {
+            if (!Regex.IsMatch(str, "^[0-9]+$"))
+            {
+                return false;
+            }
+            return true;
+        }
         
     }
 }

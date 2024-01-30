@@ -46,9 +46,23 @@ namespace HomeBudgetManagement.Admin_
         private void button1_Click(object sender, EventArgs e)
         {
             //Add Validation messages
-            UserManager userManager = new UserManager();
-            userManager.AddUser(new User { Login = login.Text, Password = "1qaz@WSX", Role = Role.User});
-            Reload();
+            try
+            {
+                if(textBoxNewUser.Text == "")
+                {
+                    throw new Exception("Invalid new user name");
+                }
+                UserManager userManager = new UserManager();
+                userManager.AddUser(new User { Login = textBoxNewUser.Text, Password = "1qaz@WSX", Role = Role.User });
+                MessageBox.Show("New user added", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textBoxNewUser.Clear();
+                Reload();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)

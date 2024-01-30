@@ -32,9 +32,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.login = new System.Windows.Forms.TextBox();
+            this.textBoxAmount = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxConfirm = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -100,15 +100,16 @@
             this.radioButton2.Text = "Delete";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // login
+            // textBoxAmount
             // 
-            this.login.BackColor = System.Drawing.Color.White;
-            this.login.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.login.Font = new System.Drawing.Font("Impact", 10F);
-            this.login.Location = new System.Drawing.Point(488, 255);
-            this.login.Name = "login";
-            this.login.Size = new System.Drawing.Size(168, 24);
-            this.login.TabIndex = 13;
+            this.textBoxAmount.BackColor = System.Drawing.Color.White;
+            this.textBoxAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxAmount.Font = new System.Drawing.Font("Impact", 10F);
+            this.textBoxAmount.Location = new System.Drawing.Point(488, 255);
+            this.textBoxAmount.Name = "textBoxAmount";
+            this.textBoxAmount.Size = new System.Drawing.Size(168, 24);
+            this.textBoxAmount.TabIndex = 13;
+            this.textBoxAmount.TextChanged += new System.EventHandler(this.login_TextChanged);
             // 
             // label3
             // 
@@ -121,16 +122,16 @@
             this.label3.TabIndex = 14;
             this.label3.Text = "Amount";
             // 
-            // checkBox1
+            // checkBoxConfirm
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Impact", 12F);
-            this.checkBox1.Location = new System.Drawing.Point(488, 285);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(231, 24);
-            this.checkBox1.TabIndex = 15;
-            this.checkBox1.Text = "Do you want to add a category? ";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBoxConfirm.AutoSize = true;
+            this.checkBoxConfirm.Font = new System.Drawing.Font("Impact", 12F);
+            this.checkBoxConfirm.Location = new System.Drawing.Point(488, 285);
+            this.checkBoxConfirm.Name = "checkBoxConfirm";
+            this.checkBoxConfirm.Size = new System.Drawing.Size(231, 24);
+            this.checkBoxConfirm.TabIndex = 15;
+            this.checkBoxConfirm.Text = "Do you want to add a category? ";
+            this.checkBoxConfirm.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -144,7 +145,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(107, 37);
             this.button1.TabIndex = 16;
-            this.button1.Text = "Press";
+            this.button1.Text = "Confirm";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -333,9 +334,9 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.checkBoxConfirm);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.login);
+            this.Controls.Add(this.textBoxAmount);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.label1);
@@ -357,9 +358,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.TextBox login;
+        private System.Windows.Forms.TextBox textBoxAmount;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBoxConfirm;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label4;

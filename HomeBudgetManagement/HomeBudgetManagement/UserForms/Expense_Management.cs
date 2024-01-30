@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Model.Manager;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,10 +35,32 @@ namespace HomeBudgetManagement.UserForms
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (textBoxAmount.Text == "" || !Validation.NumbersValue(textBoxAmount.Text))
+                {
+                    throw new Exception("Invalid amount");
+                }
+                if(checkBoxConfirm.Checked == true)
+                {
+                    MessageBox.Show("New category added", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //Expenses management
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
+            
         }
 
         private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void login_TextChanged(object sender, EventArgs e)
         {
 
         }

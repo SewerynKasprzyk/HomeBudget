@@ -38,7 +38,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.login = new System.Windows.Forms.TextBox();
+            this.textBoxNewUser = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
@@ -184,16 +184,16 @@
             this.label9.Text = "Create new user";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // login
+            // textBoxNewUser
             // 
-            this.login.BackColor = System.Drawing.Color.White;
-            this.login.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.login.Font = new System.Drawing.Font("Impact", 10F);
-            this.login.Location = new System.Drawing.Point(428, 181);
-            this.login.Name = "login";
-            this.login.Size = new System.Drawing.Size(231, 24);
-            this.login.TabIndex = 12;
-            this.login.TextChanged += new System.EventHandler(this.login_TextChanged);
+            this.textBoxNewUser.BackColor = System.Drawing.Color.White;
+            this.textBoxNewUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxNewUser.Font = new System.Drawing.Font("Impact", 10F);
+            this.textBoxNewUser.Location = new System.Drawing.Point(428, 181);
+            this.textBoxNewUser.Name = "textBoxNewUser";
+            this.textBoxNewUser.Size = new System.Drawing.Size(231, 24);
+            this.textBoxNewUser.TabIndex = 12;
+            this.textBoxNewUser.TextChanged += new System.EventHandler(this.login_TextChanged);
             // 
             // label10
             // 
@@ -356,7 +356,7 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.login);
+            this.Controls.Add(this.textBoxNewUser);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -390,7 +390,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox login;
+        private System.Windows.Forms.TextBox textBoxNewUser;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label11;

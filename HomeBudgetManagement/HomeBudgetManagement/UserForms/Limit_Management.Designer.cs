@@ -31,11 +31,11 @@
             this.LabelModifyLimits = new System.Windows.Forms.Label();
             this.LabelSelectCategory = new System.Windows.Forms.Label();
             this.ComboBoxCategorySelect = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxSetLimit = new System.Windows.Forms.TextBox();
             this.LabelSetLimit = new System.Windows.Forms.Label();
             this.ButtonSetLimit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxWholeAcc = new System.Windows.Forms.TextBox();
             this.ButtonSetAccountLimit = new System.Windows.Forms.Button();
             this.LabelCurrentAccountLimit = new System.Windows.Forms.Label();
             this.LabelCurrentLimit = new System.Windows.Forms.Label();
@@ -78,13 +78,13 @@
             this.ComboBoxCategorySelect.Size = new System.Drawing.Size(189, 25);
             this.ComboBoxCategorySelect.TabIndex = 10;
             // 
-            // textBox1
+            // textBoxSetLimit
             // 
-            this.textBox1.Font = new System.Drawing.Font("Impact", 10F);
-            this.textBox1.Location = new System.Drawing.Point(69, 294);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(189, 24);
-            this.textBox1.TabIndex = 11;
+            this.textBoxSetLimit.Font = new System.Drawing.Font("Impact", 10F);
+            this.textBoxSetLimit.Location = new System.Drawing.Point(69, 294);
+            this.textBoxSetLimit.Name = "textBoxSetLimit";
+            this.textBoxSetLimit.Size = new System.Drawing.Size(189, 24);
+            this.textBoxSetLimit.TabIndex = 11;
             // 
             // LabelSetLimit
             // 
@@ -110,6 +110,7 @@
             this.ButtonSetLimit.TabIndex = 13;
             this.ButtonSetLimit.Text = "Set";
             this.ButtonSetLimit.UseVisualStyleBackColor = false;
+            this.ButtonSetLimit.Click += new System.EventHandler(this.ButtonSetLimit_Click);
             // 
             // label1
             // 
@@ -125,13 +126,13 @@
             this.label1.Text = "Set The Whole Account Limit";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox2
+            // textBoxWholeAcc
             // 
-            this.textBox2.Font = new System.Drawing.Font("Impact", 10F);
-            this.textBox2.Location = new System.Drawing.Point(453, 230);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(189, 24);
-            this.textBox2.TabIndex = 14;
+            this.textBoxWholeAcc.Font = new System.Drawing.Font("Impact", 10F);
+            this.textBoxWholeAcc.Location = new System.Drawing.Point(453, 230);
+            this.textBoxWholeAcc.Name = "textBoxWholeAcc";
+            this.textBoxWholeAcc.Size = new System.Drawing.Size(189, 24);
+            this.textBoxWholeAcc.TabIndex = 14;
             // 
             // ButtonSetAccountLimit
             // 
@@ -146,6 +147,7 @@
             this.ButtonSetAccountLimit.TabIndex = 16;
             this.ButtonSetAccountLimit.Text = "Set";
             this.ButtonSetAccountLimit.UseVisualStyleBackColor = false;
+            this.ButtonSetAccountLimit.Click += new System.EventHandler(this.ButtonSetAccountLimit_Click);
             // 
             // LabelCurrentAccountLimit
             // 
@@ -253,10 +255,10 @@
             this.Controls.Add(this.LabelCurrentAccountLimit);
             this.Controls.Add(this.ButtonSetAccountLimit);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBoxWholeAcc);
             this.Controls.Add(this.ButtonSetLimit);
             this.Controls.Add(this.LabelSetLimit);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxSetLimit);
             this.Controls.Add(this.ComboBoxCategorySelect);
             this.Controls.Add(this.LabelSelectCategory);
             this.Cursor = System.Windows.Forms.Cursors.Default;
@@ -276,11 +278,11 @@
         private System.Windows.Forms.Label LabelModifyLimits;
         private System.Windows.Forms.Label LabelSelectCategory;
         private System.Windows.Forms.ComboBox ComboBoxCategorySelect;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxSetLimit;
         private System.Windows.Forms.Label LabelSetLimit;
         private System.Windows.Forms.Button ButtonSetLimit;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxWholeAcc;
         private System.Windows.Forms.Button ButtonSetAccountLimit;
         private System.Windows.Forms.Label LabelCurrentAccountLimit;
         private System.Windows.Forms.Label LabelCurrentLimit;

@@ -52,9 +52,20 @@ namespace HomeBudgetManagement
 
         private void ButtonSetLimit_Click(object sender, EventArgs e)
         {
-            comboBox1.SelectedItem = categories.FirstOrDefault();
-            CategoryManager categoryManager = new CategoryManager((Category)comboBox1.SelectedItem);
-            categoryManager.ChangeLimit(decimal.Parse(textBox1.Text));
+            try
+            {
+                if(textBoxSetLimit.Text == "" || !Validation.NumbersValue(textBoxSetLimit.Text))
+                {
+                    throw new Exception("Invalid set limit");
+                }
+                comboBox1.SelectedItem = categories.FirstOrDefault();
+                CategoryManager categoryManager = new CategoryManager((Category)comboBox1.SelectedItem);
+                categoryManager.ChangeLimit(decimal.Parse(textBoxSetLimit.Text));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

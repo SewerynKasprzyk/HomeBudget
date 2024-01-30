@@ -150,6 +150,7 @@
             this.ButtonToCashOut.TabIndex = 12;
             this.ButtonToCashOut.Text = "Cash out";
             this.ButtonToCashOut.UseVisualStyleBackColor = false;
+            this.ButtonToCashOut.Click += new System.EventHandler(this.ButtonToCashOut_Click);
             // 
             // TextBoxValueToCashOut
             // 

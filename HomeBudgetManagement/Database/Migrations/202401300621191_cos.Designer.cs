@@ -7,13 +7,13 @@ namespace Database.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class GoalCurrentAmount : IMigrationMetadata
+    public sealed partial class cos : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(GoalCurrentAmount));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(cos));
         
         string IMigrationMetadata.Id
         {
-            get { return "202401300336299_GoalCurrentAmount"; }
+            get { return "202401300621191_cos"; }
         }
         
         string IMigrationMetadata.Source

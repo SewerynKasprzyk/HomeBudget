@@ -43,17 +43,39 @@ namespace HomeBudgetManagement.Admin_
 
         private void button1_Click(object sender, EventArgs e)
         {
-            comboBox1.SelectedItem = categories.FirstOrDefault();
-            CategoryManager categoryManager = new CategoryManager((Category)comboBox1.SelectedItem);
-            categoryManager.ChangeName(login.Text);
-            Reload();
+            try
+            {
+                if(texBoxChangeName.Text == "")
+                {
+                    throw new Exception("Invalid name");
+                }
+                comboBox1.SelectedItem = categories.FirstOrDefault();
+                CategoryManager categoryManager = new CategoryManager((Category)comboBox1.SelectedItem);
+                categoryManager.ChangeName(texBoxChangeName.Text);
+                Reload();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            CategoryManager categoryManager = new CategoryManager();
-            categoryManager.AddCategory(new Category { Name = textBox1.Text, Limit = 1000 });
-            Reload();
+            try
+            {
+                if(textBoxAdd.Text == "")
+                {
+                    throw new Exception("Invalid name of new category");
+                }
+                CategoryManager categoryManager = new CategoryManager();
+                categoryManager.AddCategory(new Category { Name = textBoxAdd.Text, Limit = 1000 });
+                Reload();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

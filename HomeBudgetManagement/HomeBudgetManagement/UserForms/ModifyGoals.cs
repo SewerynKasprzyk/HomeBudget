@@ -56,12 +56,35 @@ namespace HomeBudgetManagement.UserForms
 
         private void buttonSetChanges_Click(object sender, EventArgs e)
         {
-            EditGoalName();
+            try
+            {
+                if(textBoxNameGoal.Text == "")
+                {
+                    throw new Exception("Invalid new goal name");
+                }
+                EditGoalName();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+           
         }
 
         private void buttonChangeBalance_Click(object sender, EventArgs e)
         {
-            EditGoalValue();
+            try
+            {
+                if (textBoxBalanceGoal.Text == "")
+                {
+                    throw new Exception("Invalid new goal name");
+                }
+                EditGoalValue();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }            
         }
 
         private void buttonClose_Click(object sender, EventArgs e)

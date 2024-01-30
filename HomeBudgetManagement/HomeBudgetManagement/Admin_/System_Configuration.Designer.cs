@@ -31,12 +31,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.login = new System.Windows.Forms.TextBox();
+            this.texBoxChangeName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxAdd = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -84,15 +84,15 @@
             this.comboBox1.Size = new System.Drawing.Size(183, 25);
             this.comboBox1.TabIndex = 5;
             // 
-            // login
+            // texBoxChangeName
             // 
-            this.login.BackColor = System.Drawing.Color.White;
-            this.login.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.login.Font = new System.Drawing.Font("Impact", 10F);
-            this.login.Location = new System.Drawing.Point(35, 277);
-            this.login.Name = "login";
-            this.login.Size = new System.Drawing.Size(323, 24);
-            this.login.TabIndex = 7;
+            this.texBoxChangeName.BackColor = System.Drawing.Color.White;
+            this.texBoxChangeName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.texBoxChangeName.Font = new System.Drawing.Font("Impact", 10F);
+            this.texBoxChangeName.Location = new System.Drawing.Point(35, 277);
+            this.texBoxChangeName.Name = "texBoxChangeName";
+            this.texBoxChangeName.Size = new System.Drawing.Size(323, 24);
+            this.texBoxChangeName.TabIndex = 7;
             // 
             // label3
             // 
@@ -152,15 +152,15 @@
             this.label4.Text = "Add new";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // textBoxAdd
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Impact", 10F);
-            this.textBox1.Location = new System.Drawing.Point(424, 277);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(323, 24);
-            this.textBox1.TabIndex = 10;
+            this.textBoxAdd.BackColor = System.Drawing.Color.White;
+            this.textBoxAdd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxAdd.Font = new System.Drawing.Font("Impact", 10F);
+            this.textBoxAdd.Location = new System.Drawing.Point(424, 277);
+            this.textBoxAdd.Name = "textBoxAdd";
+            this.textBoxAdd.Size = new System.Drawing.Size(323, 24);
+            this.textBoxAdd.TabIndex = 10;
             // 
             // button3
             // 
@@ -211,10 +211,10 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxAdd);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.login);
+            this.Controls.Add(this.texBoxChangeName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
@@ -234,12 +234,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox login;
+        private System.Windows.Forms.TextBox texBoxChangeName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxAdd;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.Panel panel1;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Model.Manager;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,6 +31,41 @@ namespace HomeBudgetManagement.UserForms
         private void buttonClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void ButtonSetLimit_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                if (textBoxSetLimit.Text == "" || !Validation.NumbersValue(textBoxSetLimit.Text))
+                {
+                    throw new Exception("Invalid limit");
+                }
+                MessageBox.Show("A new limit has been set", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //set limit code
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
+        }
+
+        private void ButtonSetAccountLimit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (textBoxWholeAcc.Text == "" || !Validation.NumbersValue(textBoxWholeAcc.Text))
+                {
+                    throw new Exception("Invalid account limit");
+                }
+                //set whole account limit code
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

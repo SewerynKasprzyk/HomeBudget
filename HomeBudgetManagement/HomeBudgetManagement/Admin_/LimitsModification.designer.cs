@@ -32,7 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxSetLimit = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.ButtonSetLimit = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -85,15 +85,15 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Set Limit";
             // 
-            // textBox1
+            // textBoxSetLimit
             // 
-            this.textBox1.Font = new System.Drawing.Font("Impact", 10F);
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.textBox1.Location = new System.Drawing.Point(318, 238);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(160, 24);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBoxSetLimit.Font = new System.Drawing.Font("Impact", 10F);
+            this.textBoxSetLimit.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.textBoxSetLimit.Location = new System.Drawing.Point(318, 238);
+            this.textBoxSetLimit.Name = "textBoxSetLimit";
+            this.textBoxSetLimit.Size = new System.Drawing.Size(160, 24);
+            this.textBoxSetLimit.TabIndex = 6;
+            this.textBoxSetLimit.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button5
             // 
@@ -167,7 +167,7 @@
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.ButtonSetLimit);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxSetLimit);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -190,7 +190,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxSetLimit;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button ButtonSetLimit;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;

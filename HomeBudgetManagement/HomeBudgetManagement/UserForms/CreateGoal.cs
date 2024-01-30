@@ -23,9 +23,25 @@ namespace HomeBudgetManagement.UserForms
 
         private void buttonCreateGoal_Click(object sender, EventArgs e)
         {
-            GoalManager goalManager = new GoalManager();
-            goalManager.AddGoal(textBoxGoalName.Text, textBoxBalanceGoal.Text);
-            MessageBox.Show($"Goal successfully created", "Goal Created", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            try
+            {
+                if(textBoxGoalName.Text == "")
+                {
+                    throw new Exception("Invalid new goal name");
+                }
+                if(textBoxBalanceGoal.Text == "")
+                {
+                    throw new Exception("Invalid new goal amount");
+                }
+                GoalManager goalManager = new GoalManager();
+                goalManager.AddGoal(textBoxGoalName.Text, textBoxBalanceGoal.Text);
+                MessageBox.Show($"Goal successfully created", "Goal Created", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
     }
 }
