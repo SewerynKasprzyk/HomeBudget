@@ -93,7 +93,6 @@
             this.LabelCurrentBalance.Size = new System.Drawing.Size(182, 29);
             this.LabelCurrentBalance.TabIndex = 9;
             this.LabelCurrentBalance.Text = "Current Balance: ";
-            this.LabelCurrentBalance.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // LabelBalance
             // 
@@ -138,6 +137,7 @@
             this.ButtonAddToBalance.TabIndex = 13;
             this.ButtonAddToBalance.Text = "Add";
             this.ButtonAddToBalance.UseVisualStyleBackColor = false;
+            this.ButtonAddToBalance.Click += new System.EventHandler(this.ButtonAddToBalance_Click);
             // 
             // ButtonBackToUserMenu
             // 

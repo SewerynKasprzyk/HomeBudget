@@ -35,13 +35,17 @@
             this.TextBoxAddToValue = new System.Windows.Forms.TextBox();
             this.ButtonAddToGoal = new System.Windows.Forms.Button();
             this.LabelYourBalance = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.LabelBalance = new System.Windows.Forms.Label();
             this.ButtonToCashOut = new System.Windows.Forms.Button();
             this.TextBoxValueToCashOut = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.ButtonBackToUserMenu = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.buttonClose = new System.Windows.Forms.Button();
+            this.ProgressBarGoal = new System.Windows.Forms.ProgressBar();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.LabelCurrentValue = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -75,23 +79,23 @@
             this.ComboBoxSelectGoal.Name = "ComboBoxSelectGoal";
             this.ComboBoxSelectGoal.Size = new System.Drawing.Size(179, 25);
             this.ComboBoxSelectGoal.TabIndex = 4;
+            this.ComboBoxSelectGoal.SelectedIndexChanged += new System.EventHandler(this.ComboBoxSelectGoal_SelectedIndexChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Impact", 20F);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
-            this.label4.Location = new System.Drawing.Point(29, 255);
+            this.label4.Location = new System.Drawing.Point(28, 297);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(219, 34);
             this.label4.TabIndex = 5;
             this.label4.Text = "The Amount to add";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // TextBoxAddToValue
             // 
             this.TextBoxAddToValue.Font = new System.Drawing.Font("Impact", 10F);
-            this.TextBoxAddToValue.Location = new System.Drawing.Point(35, 292);
+            this.TextBoxAddToValue.Location = new System.Drawing.Point(34, 339);
             this.TextBoxAddToValue.Name = "TextBoxAddToValue";
             this.TextBoxAddToValue.Size = new System.Drawing.Size(178, 24);
             this.TextBoxAddToValue.TabIndex = 6;
@@ -103,12 +107,13 @@
             this.ButtonAddToGoal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonAddToGoal.Font = new System.Drawing.Font("Impact", 12F);
             this.ButtonAddToGoal.ForeColor = System.Drawing.Color.White;
-            this.ButtonAddToGoal.Location = new System.Drawing.Point(34, 328);
+            this.ButtonAddToGoal.Location = new System.Drawing.Point(34, 369);
             this.ButtonAddToGoal.Name = "ButtonAddToGoal";
             this.ButtonAddToGoal.Size = new System.Drawing.Size(179, 50);
             this.ButtonAddToGoal.TabIndex = 7;
             this.ButtonAddToGoal.Text = "Add";
             this.ButtonAddToGoal.UseVisualStyleBackColor = false;
+            this.ButtonAddToGoal.Click += new System.EventHandler(this.ButtonAddToGoal_Click);
             // 
             // LabelYourBalance
             // 
@@ -121,16 +126,16 @@
             this.LabelYourBalance.TabIndex = 8;
             this.LabelYourBalance.Text = "Your Balance:";
             // 
-            // label5
+            // LabelBalance
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Impact", 20F);
-            this.label5.ForeColor = System.Drawing.Color.Green;
-            this.label5.Location = new System.Drawing.Point(200, 133);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 34);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "XXXX$";
+            this.LabelBalance.AutoSize = true;
+            this.LabelBalance.Font = new System.Drawing.Font("Impact", 20F);
+            this.LabelBalance.ForeColor = System.Drawing.Color.Green;
+            this.LabelBalance.Location = new System.Drawing.Point(200, 133);
+            this.LabelBalance.Name = "LabelBalance";
+            this.LabelBalance.Size = new System.Drawing.Size(78, 34);
+            this.LabelBalance.TabIndex = 9;
+            this.LabelBalance.Text = "XXXX$";
             // 
             // ButtonToCashOut
             // 
@@ -139,7 +144,7 @@
             this.ButtonToCashOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonToCashOut.Font = new System.Drawing.Font("Impact", 12F);
             this.ButtonToCashOut.ForeColor = System.Drawing.Color.White;
-            this.ButtonToCashOut.Location = new System.Drawing.Point(286, 328);
+            this.ButtonToCashOut.Location = new System.Drawing.Point(286, 369);
             this.ButtonToCashOut.Name = "ButtonToCashOut";
             this.ButtonToCashOut.Size = new System.Drawing.Size(179, 50);
             this.ButtonToCashOut.TabIndex = 12;
@@ -149,7 +154,7 @@
             // TextBoxValueToCashOut
             // 
             this.TextBoxValueToCashOut.Font = new System.Drawing.Font("Impact", 10F);
-            this.TextBoxValueToCashOut.Location = new System.Drawing.Point(286, 292);
+            this.TextBoxValueToCashOut.Location = new System.Drawing.Point(286, 339);
             this.TextBoxValueToCashOut.Name = "TextBoxValueToCashOut";
             this.TextBoxValueToCashOut.Size = new System.Drawing.Size(179, 24);
             this.TextBoxValueToCashOut.TabIndex = 11;
@@ -159,7 +164,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Impact", 20F);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
-            this.label6.Location = new System.Drawing.Point(280, 255);
+            this.label6.Location = new System.Drawing.Point(280, 297);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(272, 34);
             this.label6.TabIndex = 10;
@@ -204,18 +209,63 @@
             this.buttonClose.UseVisualStyleBackColor = false;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
+            // ProgressBarGoal
+            // 
+            this.ProgressBarGoal.Location = new System.Drawing.Point(286, 220);
+            this.ProgressBarGoal.Name = "ProgressBarGoal";
+            this.ProgressBarGoal.Size = new System.Drawing.Size(203, 23);
+            this.ProgressBarGoal.TabIndex = 52;
+            this.ProgressBarGoal.Value = 69;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Impact", 20F);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
+            this.label2.Location = new System.Drawing.Point(280, 181);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(237, 34);
+            this.label2.TabIndex = 53;
+            this.label2.Text = "Progess Toward End";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Impact", 16F);
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(132)))), ((int)(((byte)(219)))));
+            this.label7.Location = new System.Drawing.Point(281, 256);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(141, 27);
+            this.label7.TabIndex = 54;
+            this.label7.Text = "Current Value:";
+            // 
+            // LabelCurrentValue
+            // 
+            this.LabelCurrentValue.AutoSize = true;
+            this.LabelCurrentValue.Font = new System.Drawing.Font("Impact", 16F);
+            this.LabelCurrentValue.ForeColor = System.Drawing.Color.Green;
+            this.LabelCurrentValue.Location = new System.Drawing.Point(428, 256);
+            this.LabelCurrentValue.Name = "LabelCurrentValue";
+            this.LabelCurrentValue.Size = new System.Drawing.Size(68, 27);
+            this.LabelCurrentValue.TabIndex = 55;
+            this.LabelCurrentValue.Text = "XXXX$";
+            // 
             // FinancialGoalManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(218)))), ((int)(((byte)(244)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.LabelCurrentValue);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.ProgressBarGoal);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.ButtonBackToUserMenu);
             this.Controls.Add(this.ButtonToCashOut);
             this.Controls.Add(this.TextBoxValueToCashOut);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.LabelBalance);
             this.Controls.Add(this.LabelYourBalance);
             this.Controls.Add(this.ButtonAddToGoal);
             this.Controls.Add(this.TextBoxAddToValue);
@@ -244,12 +294,16 @@
         private System.Windows.Forms.TextBox TextBoxAddToValue;
         private System.Windows.Forms.Button ButtonAddToGoal;
         private System.Windows.Forms.Label LabelYourBalance;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label LabelBalance;
         private System.Windows.Forms.Button ButtonToCashOut;
         private System.Windows.Forms.TextBox TextBoxValueToCashOut;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button ButtonBackToUserMenu;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button buttonClose;
+        private System.Windows.Forms.ProgressBar ProgressBarGoal;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label LabelCurrentValue;
     }
 }

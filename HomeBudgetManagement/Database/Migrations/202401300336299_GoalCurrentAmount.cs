@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class test : DbMigration
+    public partial class GoalCurrentAmount : DbMigration
     {
         public override void Up()
         {
@@ -72,6 +72,7 @@
                     {
                         Id = c.Int(nullable: false, identity: true),
                         Amount = c.Decimal(nullable: false, precision: 18, scale: 2),
+                        CurrentAmount = c.Decimal(nullable: false, precision: 18, scale: 2),
                         Name = c.String(),
                         User_Id = c.Int(),
                     })

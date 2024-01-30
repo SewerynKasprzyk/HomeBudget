@@ -1,4 +1,5 @@
 ﻿using Database.Entities;
+using Database.Enums;
 using Model.Manager;
 using System;
 using System.Collections.Generic;
@@ -43,7 +44,7 @@ namespace HomeBudgetManagement.Admin_
         {
             //Add Validation messages
             UserManager userManager = new UserManager();
-            userManager.AddUser(new User { Login = login.Text, Password = "1qaz@WSX"});
+            userManager.AddUser(new User { Login = login.Text, Password = "1qaz@WSX", Role = Role.User});
         }
 
         private void button2_Click(object sender, EventArgs e)
