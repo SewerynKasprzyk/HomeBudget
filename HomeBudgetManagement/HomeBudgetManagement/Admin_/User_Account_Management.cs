@@ -1,4 +1,7 @@
-﻿using Model.Manager;
+﻿using Database.Entities;
+using HomeBudgetManagement.Model.ConfigurationContext;
+using Model;
+using Model.Manager;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +16,11 @@ namespace HomeBudgetManagement.Admin_
 {
     public partial class User_Account_Management : Form
     {
+        UserService userService;
         public User_Account_Management()
         {
             InitializeComponent();
+            InitCombobox();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -31,8 +36,36 @@ namespace HomeBudgetManagement.Admin_
         private void button1_Click(object sender, EventArgs e)
         {
             //Add Validation messages
-            UserManager userManager = new UserManager();
-            userManager.AddUser(login.Text);
+            if(textLogin.Text.Length > 3) 
+            {
+                UserManager userManager = new UserManager();
+                userManager.AddUser(textLogin.Text);
+                MessageBox.Show("New user created");
+                textLogin.Text = string.Empty;
+                
+            }
+            else
+            {
+                MessageBox.Show("Invalid new user name");
+            }
+
+            InitCombobox();
+        }
+
+        private void comboboxUsers_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        public void InitCombobox()
+        {
+            comboboxUsers.Items.Clear();
+            foreach (var user in userService.GetAllUsers())
+            {
+                comboboxUsers.Items.Add(user.Login);
+            }
+        
+        
         }
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboboxUsers = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -38,7 +38,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.login = new System.Windows.Forms.TextBox();
+            this.textLogin = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
@@ -65,20 +65,21 @@
             this.label2.Text = "User account management";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox1
+            // comboboxUsers
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.White;
-            this.comboBox1.Font = new System.Drawing.Font("Impact", 10F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboboxUsers.BackColor = System.Drawing.Color.White;
+            this.comboboxUsers.Font = new System.Drawing.Font("Impact", 10F);
+            this.comboboxUsers.FormattingEnabled = true;
+            this.comboboxUsers.Items.AddRange(new object[] {
             "Maciek",
             "Basia",
             "Marek",
             "Kuba"});
-            this.comboBox1.Location = new System.Drawing.Point(27, 181);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(175, 25);
-            this.comboBox1.TabIndex = 3;
+            this.comboboxUsers.Location = new System.Drawing.Point(27, 181);
+            this.comboboxUsers.Name = "comboboxUsers";
+            this.comboboxUsers.Size = new System.Drawing.Size(175, 25);
+            this.comboboxUsers.TabIndex = 3;
+            this.comboboxUsers.SelectedIndexChanged += new System.EventHandler(this.comboboxUsers_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -184,15 +185,17 @@
             this.label9.Text = "Create new user";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // login
+            // textLogin
             // 
-            this.login.BackColor = System.Drawing.Color.White;
-            this.login.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.login.Font = new System.Drawing.Font("Impact", 10F);
-            this.login.Location = new System.Drawing.Point(428, 181);
-            this.login.Name = "login";
-            this.login.Size = new System.Drawing.Size(231, 24);
-            this.login.TabIndex = 12;
+            this.textLogin.AccessibleDescription = "textLogin";
+            this.textLogin.AccessibleName = "textLogin";
+            this.textLogin.BackColor = System.Drawing.Color.White;
+            this.textLogin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textLogin.Font = new System.Drawing.Font("Impact", 10F);
+            this.textLogin.Location = new System.Drawing.Point(428, 181);
+            this.textLogin.Name = "textLogin";
+            this.textLogin.Size = new System.Drawing.Size(231, 24);
+            this.textLogin.TabIndex = 12;
             // 
             // label10
             // 
@@ -351,7 +354,7 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.login);
+            this.Controls.Add(this.textLogin);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -360,7 +363,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboboxUsers);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "User_Account_Management";
@@ -376,7 +379,7 @@
         #endregion
 
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboboxUsers;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -385,7 +388,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox login;
+        private System.Windows.Forms.TextBox textLogin;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label11;
