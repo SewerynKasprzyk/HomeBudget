@@ -21,10 +21,20 @@ namespace Model.Manager
             _user = user;
         }
 
+        public void AddUser(String login)
+        {
+                _userService.CreateUser(new User()
+                {
+                    Login = login,
+                    Password = "",
+                    Role = Role.User
+                });
+        }   
+
         public bool ChangePassword(String password, String confirmPassword)
         {
             //use validate method
-            if (true) 
+            if (Validation.Validate(_user.Login, password, confirmPassword)) 
             {
                 _user.Password = password;
                 _userService.UpdateUser(_user);

@@ -60,9 +60,9 @@
     <Compile Include="Entities\User.cs" />
     <Compile Include="Enums\Role.cs" />
     <Compile Include="HomeManagementDbContext.cs" />
-    <Compile Include="Migrations\202401292320005_RepairingAfterMerge.cs" />
-    <Compile Include="Migrations\202401292320005_RepairingAfterMerge.designer.cs">
-      <DependentUpon>202401292320005_RepairingAfterMerge.cs</DependentUpon>
+    <Compile Include="Migrations\202401292356586_test.cs" />
+    <Compile Include="Migrations\202401292356586_test.designer.cs">
+      <DependentUpon>202401292356586_test.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -72,8 +72,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202401292320005_RepairingAfterMerge.resx">
-      <DependentUpon>202401292320005_RepairingAfterMerge.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202401292356586_test.resx">
+      <DependentUpon>202401292356586_test.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

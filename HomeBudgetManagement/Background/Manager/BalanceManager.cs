@@ -8,5 +8,6 @@ namespace Background
 {
     internal class BalanceManager
     {
+
     }
 }

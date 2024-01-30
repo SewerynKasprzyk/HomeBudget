@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Model.Manager;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +26,13 @@ namespace HomeBudgetManagement.Admin_
         private void buttonClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //Add Validation messages
+            UserManager userManager = new UserManager();
+            userManager.AddUser(login.Text);
         }
     }
 }
