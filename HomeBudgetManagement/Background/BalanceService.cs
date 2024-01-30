@@ -27,10 +27,11 @@ public class BalanceService
         _context.SaveChanges();
     }
 
-    public void Update(Balance balance)
+    public Balance Update(Balance balance)
     {
         _context.Entry(balance).State = EntityState.Modified;
         _context.SaveChanges();
+        return balance;
     }
 
     public void Delete(int id)

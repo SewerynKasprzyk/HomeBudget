@@ -39,7 +39,27 @@ namespace Model.Manager
             _goalService.UpdateGoal(oldGoal);
             return true;
         }
-        
+
+        public bool UpdateCurrentAmount(Goal oldGoal, decimal value)
+        {
+            oldGoal.CurrentAmount = value;
+            _goalService.UpdateGoal(oldGoal);
+            return true;
+        }
+
+        public bool AddToGoal(Goal oldGoal, decimal value)
+        {
+            oldGoal.CurrentAmount += value;
+            _goalService.UpdateGoal(oldGoal);
+            return true;
+        }
+        public bool SubGoal(Goal oldGoal, decimal value)
+        {
+            oldGoal.CurrentAmount -= value;
+            _goalService.UpdateGoal(oldGoal);
+            return true;
+        }
+
         public bool DeleteGoal(Goal goal)
         {
             _goalService.DeleteGoal(goal.Id);
