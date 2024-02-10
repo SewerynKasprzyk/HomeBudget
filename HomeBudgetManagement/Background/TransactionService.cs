@@ -1,5 +1,4 @@
-﻿
-using Database;
+﻿using Database;
 using Database.Entities;
 using System.Collections.Generic;
 using System.Data.Entity;
